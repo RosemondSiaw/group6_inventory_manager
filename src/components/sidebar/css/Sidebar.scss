@@ -1,8 +1,11 @@
+@import '../../../styles/colors/colors.scss';
+
 .sidebar {
     grid-area: sidebar;
     height: 100%;
-    background-color: #DDDDDD;
-    color: #4B4B4B;
+    width: 180px;
+    background-color: $container-background;
+    color: $text-color;
     overflow-y: auto;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -20,7 +23,7 @@
             }
 
             .sidebar-brand>img {
-                width: 60px;
+                width: 100px;
             }
         }
 
@@ -29,12 +32,17 @@
             overflow-x: hidden;
         }
 
+        ul.sidebar-list {
+            margin-top: 40%;
+        }
+
         .sidebar-list .sidebar-list-item {
-            font-size: 14px;
+            font-size: 17px;
             list-style: none;
             margin-left: 10px;
             padding-bottom: 12px;
             cursor: pointer;
+            font-weight: 700;
         }
 
         .sidebar-list .list-item-end {
@@ -43,24 +51,21 @@
         }
 
         .sidebar-list .sidebar-list-item {
-            display: flex;
-            gap: 10px;
             color: black;
+            margin-bottom: 15px;
 
-            .iconDash {
-                background: #F5F5F5;
-                width: 14px;
-                height: 14px;
-                padding: 10px;
+            .iconHead {
+                font-size: 17px;
                 border-radius: 22px;
-
-                &:hover {
-                    background: #5494E0;
-                }
+                padding-right: 10px;
             }
 
             span {
                 margin-top: 10px;
+            }
+
+            &:hover {
+                color: $secondary-color;
             }
         }
     }

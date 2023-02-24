@@ -25,6 +25,7 @@
   padding: 0 10px;
   border-radius: 30px;
   font-size: 14px;
+  background-color: #1F8A70;
 }
 .header .header-middle > form input {
   display: relative;
@@ -32,6 +33,7 @@
   outline: none;
   border: none;
   width: 100%;
+  color: white;
 }
 .header .header-middle > form button {
   display: absolute;
@@ -67,6 +69,10 @@
   outline: none;
   padding: 5px;
   background: none;
+}
+.header .header-right .language_shift select option {
+  background-color: #68B984;
+  color: white;
 }
 .header .header-right .notification_container .iconDash {
   font-size: 22px;

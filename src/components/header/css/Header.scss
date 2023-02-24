@@ -1,3 +1,5 @@
+@import '../../../styles/colors/colors.scss';
+
 .header {
     grid-area: header;
     height: 55px;
@@ -28,6 +30,7 @@
         padding: 0 10px;
         border-radius: 30px;
         font-size: 14px;
+        background-color: $primary-color;
 
         input {
             display: relative;
@@ -35,6 +38,7 @@
             outline: none;
             border: none;
             width: 100%;
+            color: white;
         }
 
         button {
@@ -77,6 +81,8 @@
                 background: none;
 
                 option {
+                    background-color: $secondary-color;
+                    color: white;
                 }
             }
         }

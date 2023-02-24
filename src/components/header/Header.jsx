@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import './css/Header.scss'
+import Profile from '../../assets/profilePicture.svg'
 
 // import scripts from scripts folder
 import DateTime from '../../scripts/DateTime'
@@ -8,13 +9,19 @@ import Greetings from '../../scripts/Greetings'
 //import Language context
 import { Context } from "../language-wrapper/Wrapper"
 
+//import icons from Fontawesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLanguage, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+const languageIcon = <FontAwesomeIcon className="iconHead" icon={faLanguage} />
+const searchIcon = <FontAwesomeIcon className="iconHead" icon={faMagnifyingGlass} />
+
 const Header = () => {
   const context = useContext(Context);
 
   return (
     <div className="header">
       <div className="header-left">
-        <div class="userProfile"> <img alt="" /> </div>
+        <div class="userProfile"> <img src={Profile} alt="" /> </div>
         <div>
           <p> <Greetings /> <span>Admin</span>! </p>
           <div>
@@ -24,13 +31,13 @@ const Header = () => {
       </div>
       <div className="header-middle">
         <form action="" method="post">
-          <button type="submit"> { } </button>
-          <input type="text" placeholder="Search record, contact, task, etc" />
+          <button type="submit"> {searchIcon} </button>
+          <input type="text" placeholder="Search item, order, manufacturer, etc" />
         </form>
       </div>
       <div className="header-right">
         <div className="language_shift">
-          { }
+          {languageIcon}
           <select value={context.locale} onChange={context.selectLang}>
             <option value="en-US">English</option>
             <option value="fr-FR">French</option>
