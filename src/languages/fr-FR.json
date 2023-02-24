@@ -1,0 +1,9 @@
+{
+    "app.header": "C'est Anglais",
+    "app.content": "C'est aussi Anglais",
+    "app.channel.plug": "C'est toujours Anglais",
+    "header.greetings.morning": "Bonjour",
+    "header.greetings.afternoon": "Bon après-midi",
+    "header.greetings.night": "Bonsoir",
+    "dashboard.stat.header": "Les statistiques d'aujourd'hui"
+}

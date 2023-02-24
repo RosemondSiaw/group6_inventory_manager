@@ -1,0 +1,10 @@
+{
+    "app.header": "It's English",
+    "app.content": "It's also English",
+    "app.channel.plug": "It's still react",
+    "header.greetings.morning": "Good morning",
+    "header.greetings.afternoon": "Good afternoon",
+    "header.greetings.night": "Good evening",
+    "dashboard.stat.header": "Today' s statistics"
+
+}
