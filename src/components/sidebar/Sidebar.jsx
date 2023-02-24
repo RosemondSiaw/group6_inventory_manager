@@ -27,16 +27,16 @@ const Sidebar = () => {
             <Link to='/' style={{ textDecoration: 'none' }}>
               <li className="sidebar-list-item"> {dashboardIcon} <span>Dashboard</span></li>
             </Link>
-            <Link to='/' style={{ textDecoration: 'none' }}>
+            <Link to='/items' style={{ textDecoration: 'none' }}>
               <li className="sidebar-list-item"> {itemsIcon} <span>Items</span></li>
             </Link>
-            <Link to='/' style={{ textDecoration: 'none' }}>
+            <Link to='/orders' style={{ textDecoration: 'none' }}>
               <li className="sidebar-list-item"> {ordersIcon} <span>Orders</span></li>
             </Link>
-            <Link to='/' style={{ textDecoration: 'none' }}>
+            <Link to='/analytics' style={{ textDecoration: 'none' }}>
               <li className="sidebar-list-item"> {analyticsIcon} <span>Analytics</span></li>
             </Link>
-            <Link to='/' style={{ textDecoration: 'none' }}>
+            <Link to='/settings' style={{ textDecoration: 'none' }}>
               <li className="sidebar-list-item"> {settingsIcon} <span>Settings</span></li>
             </Link>
           </div>

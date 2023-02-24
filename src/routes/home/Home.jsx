@@ -10,6 +10,7 @@ const Home = () => {
             <Sidebar />
             <Header />
             <div className="main-container">
+                TODO // COMPLETE DASHBOARD
                 Dashboard
             </div>
         </div>
