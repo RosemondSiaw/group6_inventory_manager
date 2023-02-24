@@ -1,0 +1,56 @@
+.sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  background-color: #DDDDDD;
+  color: #4B4B4B;
+  overflow-y: auto;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  position: fixed;
+}
+.sidebar .sidebarContainer {
+  padding-right: 20px;
+}
+.sidebar .sidebarContainer .sidebar-title {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.sidebar .sidebarContainer .sidebar-title .sidebar-brand {
+  text-align: center;
+}
+.sidebar .sidebarContainer .sidebar-title .sidebar-brand > img {
+  width: 60px;
+}
+.sidebar .sidebarContainer .list-scroll {
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+.sidebar .sidebarContainer .sidebar-list .sidebar-list-item {
+  font-size: 14px;
+  list-style: none;
+  margin-left: 10px;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+.sidebar .sidebarContainer .sidebar-list .list-item-end {
+  position: absolute;
+  bottom: 20px;
+}
+.sidebar .sidebarContainer .sidebar-list .sidebar-list-item {
+  display: flex;
+  gap: 10px;
+  color: black;
+}
+.sidebar .sidebarContainer .sidebar-list .sidebar-list-item .iconDash {
+  background: #F5F5F5;
+  width: 14px;
+  height: 14px;
+  padding: 10px;
+  border-radius: 22px;
+}
+.sidebar .sidebarContainer .sidebar-list .sidebar-list-item .iconDash:hover {
+  background: #5494E0;
+}
+.sidebar .sidebarContainer .sidebar-list .sidebar-list-item span {
+  margin-top: 10px;
+}/*# sourceMappingURL=Sidebar.css.map */

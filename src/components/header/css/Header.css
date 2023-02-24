@@ -1,0 +1,82 @@
+.header {
+  grid-area: header;
+  height: 55px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 10px;
+  margin-right: 20px;
+}
+.header .header-left {
+  display: flex;
+  gap: 10px;
+}
+.header .header-left div {
+  font-size: 14px;
+}
+.header .header-left .userProfile > img {
+  width: 40px;
+}
+.header .header-middle > form {
+  display: flex;
+  width: 500px;
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+.header .header-middle > form input {
+  display: relative;
+  background: none;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+.header .header-middle > form button {
+  display: absolute;
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.header .header-middle > form button:focus {
+  outline: none !important;
+  outline-offset: none !important;
+  box-shadow: none !important;
+}
+.header .header-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.header .header-right .language_shift {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+.header .header-right .language_shift .iconHead {
+  font-size: 18px;
+}
+.header .header-right .language_shift select {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: none;
+}
+.header .header-right .notification_container .iconDash {
+  font-size: 22px;
+}
+.header ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: white;
+  opacity: 1;
+}
+.header ::placeholder {
+  /* Most modern browsers support this now. */
+  color: white;
+}/*# sourceMappingURL=Header.css.map */

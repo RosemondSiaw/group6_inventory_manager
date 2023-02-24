@@ -1,6 +1,6 @@
 import React from 'react'
 import './css/Home.scss'
-import '../../styles/layout/container.scss'
+import '../../styles/layout/Layout.scss'
 import Header from '../../components/header/Header'
 import Sidebar from '../../components/sidebar/Sidebar'
 

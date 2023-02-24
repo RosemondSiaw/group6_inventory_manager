@@ -1,0 +1,30 @@
+.layout-container {
+  display: grid;
+  grid-template-columns: 180px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas: "sidebar header header header" "sidebar main main main";
+  height: 100vh;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.layout-container .main-container {
+  grid-area: main;
+  margin: 0 20px 10px 10px;
+}
+.layout-container ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  left: 100px;
+}
+.layout-container ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.layout-container ::-webkit-scrollbar-thumb {
+  background: #A5A5A5;
+  border-radius: 10px;
+}
+.layout-container ::-webkit-scrollbar-thumb:hover {
+  background: #5292DE;
+}/*# sourceMappingURL=Layout.css.map */

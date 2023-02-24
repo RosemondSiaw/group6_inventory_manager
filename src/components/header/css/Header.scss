@@ -1,0 +1,123 @@
+.header {
+    grid-area: header;
+    height: 55px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 10px;
+    margin-right: 20px;
+
+    .header-left {
+        display: flex;
+        gap: 10px;
+
+        div {
+            font-size: 14px;
+        }
+
+        .userProfile>img {
+            width: 40px;
+        }
+    }
+
+    .header-middle>form {
+        display: flex;
+        width: 500px;
+        height: 35px;
+        padding: 0 10px;
+        border-radius: 30px;
+        font-size: 14px;
+
+        input {
+            display: relative;
+            background: none;
+            outline: none;
+            border: none;
+            width: 100%;
+        }
+
+        button {
+            display: absolute;
+            background: none;
+            outline: none;
+            border: none;
+            color: white;
+            padding-right: 20px;
+            cursor: pointer;
+
+            &:focus {
+                outline: none !important;
+                outline-offset: none !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+
+    .header-right {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .language_shift {
+            display: flex;
+            gap: 3px;
+            align-items: center;
+            padding: 5px;
+            border-radius: 10px;
+
+            .iconHead {
+                font-size: 18px;
+            }
+
+            select {
+                border: none;
+                outline: none;
+                padding: 5px;
+                background: none;
+
+                option {
+                }
+            }
+        }
+
+        .notification_container {
+            .iconDash {
+                font-size: 22px;
+            }
+        }
+
+    }
+
+    ::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: white;
+    }
+
+    :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: white;
+        opacity: 1;
+    }
+
+    ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: white;
+        opacity: 1;
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: white;
+    }
+
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: white;
+    }
+
+    ::placeholder {
+        /* Most modern browsers support this now. */
+        color: white;
+    }
+}
