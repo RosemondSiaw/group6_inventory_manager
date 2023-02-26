@@ -1,3 +1,8 @@
 .home {
   background-color: #EDE4E0;
+}
+.home .main-container .dashboardCardContainer .dashboardCards {
+  display: flex;
+  justify-content: left;
+  gap: 80px;
 }/*# sourceMappingURL=Home.css.map */

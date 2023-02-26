@@ -1,0 +1,20 @@
+@import '../../../styles/colors/Colors.scss';
+@import '../../../styles/typography/Typography.scss';
+
+.statCardContainer {
+    width: 318.36px;
+    height: 162px;
+    background: $card-gradient;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+
+    .statCard {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}

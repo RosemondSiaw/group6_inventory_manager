@@ -14,13 +14,27 @@ h1 {
 h3 {
   font-weight: 300;
   font-size: 24px;
-  line-height: 29px;
   color: #000000;
 }
 
 p.num {
   font-weight: 600;
   font-size: 60px;
-  line-height: 73px;
   color: #000000;
-}/*# sourceMappingURL=typography.css.map */
+}
+
+.statCardContainer {
+  width: 318.36px;
+  height: 162px;
+  background: linear-gradient(285.25deg, #92C1A2 30.98%, rgba(107, 175, 109, 0.43) 77.71%);
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+.statCardContainer .statCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=Widget.css.map */

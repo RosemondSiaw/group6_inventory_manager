@@ -5,5 +5,15 @@
     "header.greetings.morning": "Bonjour",
     "header.greetings.afternoon": "Bon après-midi",
     "header.greetings.night": "Bonsoir",
-    "dashboard.stat.header": "Les statistiques d'aujourd'hui"
+    "search.placeholder": "Rechercher un article, une commande, un fabricant",
+    "navbar.link.home": "Acceuil",
+    "navbar.link.items": "Articles",
+    "navbar.link.orders": "Commandes",
+    "navbar.link.analytics": "Analytiques",
+    "navbar.link.settings": "Paramètres",
+    "navbar.link.logout": "Déconnexion",
+    "dashboard.stat.header": "Les statistiques d'aujourd'hui",
+    "dashboard.card.all.items": "Tous les articles",
+    "dashboard.card.out.of.stock": "Ruptures de stock",
+    "dashboard.card.overstock": "Surstock"
 }

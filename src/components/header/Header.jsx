@@ -9,6 +9,10 @@ import Greetings from '../../scripts/Greetings'
 //import Language context
 import { Context } from "../language-wrapper/Wrapper"
 
+
+//import Language translator jason files
+import { FormattedMessage } from "react-intl";
+
 //import icons from Fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLanguage, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
@@ -32,7 +36,9 @@ const Header = () => {
       <div className="header-middle">
         <form action="" method="post">
           <button type="submit"> {searchIcon} </button>
-          <input type="text" placeholder="Search item, order, manufacturer, etc" />
+          <input type="text" 
+          TODO
+          placeholder="Search item, order, manufacturer, etc" />
         </form>
       </div>
       <div className="header-right">
