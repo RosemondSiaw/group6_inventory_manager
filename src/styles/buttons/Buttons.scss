@@ -1,0 +1,14 @@
+@import '../colors/Colors.scss';
+@import '../typography/Typography.scss';
+
+button {
+    padding: 12px 15px;
+    background: #92C1A2;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: $card-gradient;
+    }
+}

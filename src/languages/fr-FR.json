@@ -15,5 +15,7 @@
     "dashboard.stat.header": "Les statistiques d'aujourd'hui",
     "dashboard.card.all.items": "Tous les articles",
     "dashboard.card.out.of.stock": "Ruptures de stock",
-    "dashboard.card.overstock": "Surstock"
+    "dashboard.card.overstock": "Surstock",
+    "dashboard.table.header.tile": "Journal des articles",
+    "dashboard.table.header.button": "Créer une entrée"
 }

@@ -20,6 +20,8 @@
 }
 .header .header-middle > form {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 500px;
   height: 35px;
   padding: 0 10px;
@@ -41,7 +43,6 @@
   outline: none;
   border: none;
   color: white;
-  padding-right: 20px;
   cursor: pointer;
 }
 .header .header-middle > form button:focus {

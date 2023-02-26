@@ -31,20 +31,13 @@ button {
   color: #000000;
 }
 
-.home {
-  background-color: #EDE4E0;
+button {
+  padding: 12px 15px;
+  background: #92C1A2;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
 }
-.home .main-container .dashboardCardContainer .dashboardCards {
-  display: flex;
-  justify-content: left;
-  gap: 100px;
-}
-.home .main-container .table-header {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.home .main-container .table-container {
-  margin-top: 20px;
-}/*# sourceMappingURL=Home.css.map */
+button:hover {
+  background: linear-gradient(285.25deg, #92C1A2 30.98%, rgba(107, 175, 109, 0.43) 77.71%);
+}/*# sourceMappingURL=Buttons.css.map */

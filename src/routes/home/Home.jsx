@@ -1,14 +1,20 @@
 import React from 'react'
+
+//import Language translator jason files
+import { FormattedMessage } from "react-intl";
+
+//import styles
 import './css/Home.scss'
 import '../../styles/layout/Layout.scss'
 import '../../styles/typography/Typography.scss'
 import '../../styles/colors/Colors.scss'
+
+//import components
 import Header from '../../components/header/Header'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Card from '../../components/Widgets/DashboardCard'
-
-//import Language translator jason files
-import { FormattedMessage } from "react-intl";
+import NewLogButton from '../../components/buttons/CreateNewLog'
+import LogTable from '../../components/Tables/LogTable';
 
 const Home = () => {
     return (
@@ -24,6 +30,14 @@ const Home = () => {
                         <Card type="out-of-stock" />
                         <Card type="overstock" />
                     </div>
+                </div>
+
+                <div className="table-header">
+                    <h1><FormattedMessage id="dashboard.table.header.tile" defaultMessage="Items Log" /></h1>
+                    <NewLogButton />
+                </div>
+                <div className="table-container">
+                    <LogTable />
                 </div>
             </div>
         </div>

@@ -1,0 +1,39 @@
+@import '../../../styles/colors/Colors.scss';
+@import '../../../styles/typography/Typography.scss';
+
+.table-container {
+    background-color: $primary-color;
+    height: 55vh;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+
+    .log-table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%;
+
+        thead th {
+            color: $text-color;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        tbody tr {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid $text-color;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tfoot tr:last-child td {
+            border-bottom: 0;
+        }
+    }
+}
