@@ -15,6 +15,7 @@ import Sidebar from '../../components/sidebar/Sidebar'
 import Card from '../../components/Widgets/DashboardCard'
 import NewLogButton from '../../components/buttons/CreateNewLog'
 import LogTable from '../../components/Tables/LogTable';
+import ViewAllLogs from '../../components/buttons/ViewAllLogs';
 
 const Home = () => {
     return (
@@ -34,7 +35,10 @@ const Home = () => {
 
                 <div className="table-header">
                     <h1><FormattedMessage id="dashboard.table.header.tile" defaultMessage="Items Log" /></h1>
-                    <NewLogButton />
+                    <div className="dashboard-buttons">
+                        <NewLogButton />
+                        <ViewAllLogs />
+                    </div>
                 </div>
                 <div className="table-container">
                     <LogTable />

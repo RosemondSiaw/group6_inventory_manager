@@ -5,6 +5,11 @@
   font-weight: normal;
 }
 
+Link {
+  text-decoration: none;
+  color: #000000;
+}
+
 h1 {
   font-weight: 600;
   font-size: 20px;
@@ -43,6 +48,12 @@ button {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.home .main-container .table-header .dashboard-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
 .home .main-container .table-container {

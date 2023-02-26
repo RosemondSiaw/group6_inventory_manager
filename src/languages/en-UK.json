@@ -17,5 +17,9 @@
     "dashboard.card.out.of.stock": "Out of stock",
     "dashboard.card.overstock": "Overstock",
     "dashboard.table.header.tile": "Items Log",
-    "dashboard.table.header.button": "Create a log"
+    "dashboard.table.header.button": "Create a log",
+    "dashboard.table.header.view.all.logs": "View logbook",
+    "items.table.header.title": "All items",
+    "items.table.header.download.button": "Download logbook",
+    "items.table.header.add.item.button": "Add new item"
 }

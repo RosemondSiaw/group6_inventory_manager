@@ -5,6 +5,11 @@
   font-weight: normal;
 }
 
+Link {
+  text-decoration: none;
+  color: #000000;
+}
+
 h1 {
   font-weight: 600;
   font-size: 20px;
@@ -29,4 +34,4 @@ button {
   font-weight: 400;
   font-size: 16px;
   color: #000000;
-}/*# sourceMappingURL=typography.css.map */
+}/*# sourceMappingURL=Typography.css.map */

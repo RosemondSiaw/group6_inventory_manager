@@ -10,6 +10,11 @@ sans-serif;
     font-weight: normal;
 }
 
+Link {
+    text-decoration: none;
+    color: $text-color;
+}
+
 h1 {
     font-weight: 600;
     font-size: 20px;

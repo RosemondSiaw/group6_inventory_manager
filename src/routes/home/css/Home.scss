@@ -19,6 +19,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            .dashboard-buttons {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                align-items: center;
+            }
         }
 
         .table-container {

@@ -5,6 +5,11 @@
   font-weight: normal;
 }
 
+Link {
+  text-decoration: none;
+  color: #000000;
+}
+
 h1 {
   font-weight: 600;
   font-size: 20px;
@@ -61,4 +66,13 @@ button {
 }
 .table-container .log-table tfoot tr:last-child td {
   border-bottom: 0;
+}
+
+.all-items {
+  background-color: #1F8A70;
+  height: 85vh;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=Tables.css.map */

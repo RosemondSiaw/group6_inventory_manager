@@ -17,5 +17,9 @@
     "dashboard.card.out.of.stock": "Ruptures de stock",
     "dashboard.card.overstock": "Surstock",
     "dashboard.table.header.tile": "Journal des articles",
-    "dashboard.table.header.button": "Créer une entrée"
+    "dashboard.table.header.button": "Créer une entrée",
+    "dashboard.table.header.view.all.logs": "Voir cahier de suivi",
+    "items.table.header.title": "Tous les articles",
+    "items.table.header.download.button": "Télécharger cahier de suivi",
+    "items.table.header.add.item.button": "Ajouter un article"
 }
