@@ -1,0 +1,28 @@
+@import '../../../styles/colors/colors.scss';
+@import '../../../styles/typography/Typography.scss';
+
+
+.all-logs {
+    background-color: $background-color;
+
+    .main-container {
+        .all-logs-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+
+            .all-items-buttons {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                align-items: center;
+            }
+        }
+
+        .logbook-table {
+            margin-top: 20px;
+        }
+    }
+
+}

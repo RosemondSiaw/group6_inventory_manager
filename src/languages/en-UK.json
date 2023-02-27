@@ -21,5 +21,8 @@
     "dashboard.table.header.view.all.logs": "View logbook",
     "items.table.header.title": "All items",
     "items.table.header.download.button": "Download items' list",
-    "items.table.header.add.item.button": "Add new item"
+    "items.table.header.add.item.button": "Add new item",
+    "logbook.page.header": "Logbook",
+    "logbook.table.header.add.log.button": "Add new log",
+    "log.table.header.download.logbook.button": "Download Logbook"
 }

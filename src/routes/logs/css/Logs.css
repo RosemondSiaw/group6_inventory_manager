@@ -1,1 +1,56 @@
-/*# sourceMappingURL=Logs.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+Link {
+  text-decoration: none;
+  color: #000000;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+p.num {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 73px;
+  color: #000000;
+}
+
+button {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+.all-logs {
+  background-color: #EDE4E0;
+}
+.all-logs .main-container .all-logs-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.all-logs .main-container .all-logs-header .all-items-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.all-logs .main-container .logbook-table {
+  margin-top: 20px;
+}/*# sourceMappingURL=Logs.css.map */

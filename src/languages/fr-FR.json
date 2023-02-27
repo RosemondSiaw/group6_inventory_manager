@@ -21,5 +21,8 @@
     "dashboard.table.header.view.all.logs": "Voir cahier de suivi",
     "items.table.header.title": "Tous les articles",
     "items.table.header.download.button": "Télécharger liste des articles",
-    "items.table.header.add.item.button": "Ajouter un article"
+    "items.table.header.add.item.button": "Ajouter un article",
+    "logbook.page.header": "Cahier de suivi",
+    "logbook.table.header.add.log.button": "Créer une entrée",
+    "log.table.header.download.logbook.button": "Télécharger cahier de suivi"
 }

@@ -12,6 +12,9 @@ import '../../styles/colors/Colors.scss'
 //import components
 import Header from '../../components/header/Header'
 import Sidebar from '../../components/sidebar/Sidebar'
+import AddNewLog from '../../components/buttons/AddNewLog';
+import DownloadLoagbook from '../../components/buttons/DownloadLoagbook';
+import AllLogsTable from '../../components/Tables/AllLogsTable';
 
 const AllLogs = () => {
   return (
@@ -20,12 +23,15 @@ const AllLogs = () => {
       <Header />
       <div className="main-container">
         <div className="all-logs-header">
-          <h1>Logbook</h1>
+          <h1><FormattedMessage id="logbook.page.header" defaultMessage="Logbook" /></h1>
           {/* TODO FINISH THIS PAGE  */}
           <div className="all-items-buttons">
-            <span>Add a new log</span>
-            <span>Download logbook</span>
+            <AddNewLog />
+            <DownloadLoagbook />
           </div>
+        </div>
+        <div className="logbook-table">
+          <AllLogsTable />
         </div>
       </div>
     </div>
