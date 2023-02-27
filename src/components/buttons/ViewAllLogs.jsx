@@ -14,7 +14,7 @@ const ViewAllLogs = () => {
     return (
         <div className='buttonContainer'>
             <button className='addType'>
-                <Link to="/logs" style={{color: "black", textDecoration: "none"}}>
+                <Link to="items/logs" style={{color: "black", textDecoration: "none"}}>
                     {AddIcon} &nbsp;
                     <FormattedMessage id="dashboard.table.header.view.all.logs" defaultMessage="View logbook" />
                 </Link>

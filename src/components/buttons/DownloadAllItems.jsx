@@ -16,7 +16,7 @@ const DownloadAllItems = () => {
       <button>
         <Link to="" style={{ color: "black", textDecoration: "none" }}>
           {AddIcon} &nbsp;
-          <FormattedMessage id="items.table.header.download.button" defaultMessage="Download logbook" />
+          <FormattedMessage id="items.table.header.download.button" defaultMessage="Download list of items" />
         </Link>
       </button>
     </div>

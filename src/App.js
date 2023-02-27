@@ -5,7 +5,6 @@ import Items from './routes/items/Items'
 import Orders from './routes/orders/Orders'
 import Analytics from './routes/analytics/Analytics'
 import Settings from './routes/settings/Settings'
-import AllItems from './routes/items/AllItems';
 import AllLogs from './routes/logs/AllLogs';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path='/items'>
             <Route index element={<Items />} /> 
-            <Route path='all' element={<AllItems />} /> {/*A nested route!*/}
             <Route path='logs' element={<AllLogs />} /> {/*A nested route!*/}
           </Route>
           <Route path='/orders' element={<Orders />} />

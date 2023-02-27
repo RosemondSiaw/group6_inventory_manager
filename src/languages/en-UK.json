@@ -20,6 +20,6 @@
     "dashboard.table.header.button": "Create a log",
     "dashboard.table.header.view.all.logs": "View logbook",
     "items.table.header.title": "All items",
-    "items.table.header.download.button": "Download logbook",
+    "items.table.header.download.button": "Download items' list",
     "items.table.header.add.item.button": "Add new item"
 }
