@@ -8,14 +8,14 @@ import { FormattedMessage } from "react-intl";
 //import icons from Fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloud } from '@fortawesome/free-solid-svg-icons'
-const AddIcon = <FontAwesomeIcon className="iconHead" icon={faCloud} />
+const DownloadIcon = <FontAwesomeIcon className="iconHead" icon={faCloud} />
 
 const DownloadLoagbook = () => {
   return (
     <div className='buttonContainer'>
       <button>
         <Link to="" style={{ color: "black", textDecoration: "none" }}>
-          {AddIcon} &nbsp;
+          {DownloadIcon} &nbsp;
           <FormattedMessage id="log.table.header.download.logbook.button" defaultMessage="Download logbook" />
         </Link>
       </button>

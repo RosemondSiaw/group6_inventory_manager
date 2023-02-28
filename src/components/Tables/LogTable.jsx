@@ -91,8 +91,6 @@ function LogTable() {
 
   )
 
-
-
   const {
 
     getTableProps,

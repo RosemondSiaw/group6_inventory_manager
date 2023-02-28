@@ -24,5 +24,8 @@
     "items.table.header.add.item.button": "Ajouter un article",
     "logbook.page.header": "Cahier de suivi",
     "logbook.table.header.add.log.button": "Créer une entrée",
-    "log.table.header.download.logbook.button": "Télécharger cahier de suivi"
+    "log.table.header.download.logbook.button": "Télécharger cahier de suivi",
+    "orders.page.header.title": "Commandes",
+    "orders.table.header.create.order.button": "Créer une commande",
+    "orders.table.header.download.orders.button": "Télécharger liste des commandes"
 }

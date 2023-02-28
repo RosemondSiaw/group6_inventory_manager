@@ -1,5 +1,26 @@
 @import '../../../styles/colors/colors.scss';
+@import '../../../styles/typography/Typography.scss';
 
 .orders-page {
     background-color: $background-color;
+
+    .main-container {
+        .order-page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+
+            .page-buttons {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+
+        .order-table-container {
+            margin-top: 30px;
+        }
+    }
 }

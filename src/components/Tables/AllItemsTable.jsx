@@ -249,7 +249,7 @@ function AllItemsTable() {
     </pre>
     */}
       {/* TODO
-      // ADD DATE SORTING TO THIS TABLE
+      // ADD DATE, A-Z, etc SORTING TO THIS TABLE
      */}
       <div className='all-items-table-container'>
         <table {...getTableProps()} className='all-items-table'>
