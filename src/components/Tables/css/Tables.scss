@@ -45,8 +45,65 @@
     border-radius: 10px;
     overflow-x: auto;
     margin-bottom: 20px;
+    width: 100%;
 
     .all-items-table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%;
+
+        thead th {
+            color: $text-color;
+            font-weight: 500;
+            font-size: 16px;
+            width: 180px;
+        }
+
+        tbody tr {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid $text-color;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tfoot tr:last-child td {
+            border-bottom: 0;
+        }
+    }
+}
+
+.pagination {
+    margin-bottom: 20px;
+
+    input {
+        background-color: $table-background;
+        border: none;
+        padding: 6px;
+        border-radius: 10px;
+    }
+
+    select {
+        background-color: $table-background;
+        border: none;
+        padding: 6px;
+        border-radius:10px
+    }
+}
+
+.all-logs-table-container {
+    background-color: $primary-color;
+    height: 75vh;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+
+    .all-logs-table {
         border-collapse: collapse;
         table-layout: fixed;
         width: 100%;
@@ -73,8 +130,4 @@
             border-bottom: 0;
         }
     }
-}
-
-.pagination {
-    margin-bottom: 20px;
 }

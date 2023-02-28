@@ -20,21 +20,26 @@ const IndeterminateCheckbox = React.forwardRef(
 )
 
 function AllItemsTable() {
-
   const data = React.useMemo(
 
     () => [
 
       {
-
-        col1: 'CTR3425',
-        col2: 'Gloves',
-        col3: '23',
-        col4: 'Yes',
-        col5: 'N/A',
-        col6: 'Apex Medical Co.',
-        col7: 'Jordan Eko',
-
+        col1: 'SYR64867-5322',
+        col2: '752378594',
+        col3: 'Walmeck Prenium 10oz syringe',
+        col4: 'Kiron',
+        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
+        col6: 'XOF 250.00',
+        col7: '200',
+        col8: 'XOF 50,000.00',
+        col9: '50',
+        col10: '14',
+        col11: '100',
+        col12: 'No',
+        col13: '60 ml',
+        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
+        col15: '10/03/2023'
       },
 
     ],
@@ -57,7 +62,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Item name',
+        Header: 'SKU',
 
         accessor: 'col2',
 
@@ -65,7 +70,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Units',
+        Header: 'Name',
 
         accessor: 'col3',
 
@@ -73,7 +78,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'In',
+        Header: 'Manufacturer',
 
         accessor: 'col4',
 
@@ -81,7 +86,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Out',
+        Header: 'Description',
 
         accessor: 'col5',
 
@@ -89,7 +94,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Manufacturer',
+        Header: 'Cost per item',
 
         accessor: 'col6',
 
@@ -97,9 +102,73 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Ordered by',
+        Header: 'Stock quantity',
 
         accessor: 'col7',
+
+      },
+
+      {
+
+        Header: 'Inventory value',
+
+        accessor: 'col8',
+
+      },
+
+      {
+
+        Header: 'Reorder level',
+
+        accessor: 'col9',
+
+      },
+
+      {
+
+        Header: 'Days per reorder',
+
+        accessor: 'col10',
+
+      },
+
+      {
+
+        Header: 'Item reorder quantity',
+
+        accessor: 'col11',
+
+      },
+
+      {
+
+        Header: 'Item dicontinued?',
+
+        accessor: 'col12',
+
+      },
+
+      {
+
+        Header: 'Item volume',
+
+        accessor: 'col13',
+
+      },
+
+      {
+
+        Header: 'Item Dimensions',
+
+        accessor: 'col14',
+
+      },
+
+      {
+
+        Header: 'Date added',
+
+        accessor: 'col15',
 
       },
 
@@ -160,27 +229,28 @@ function AllItemsTable() {
       ])
     }
   )
-
-  // Render the UI for your table
   return (
     <>
       {/*
-      <pre>
-        <code>
-          {JSON.stringify(
-            {
-              pageIndex,
-              pageSize,
-              pageCount,
-              canNextPage,
-              canPreviousPage,
-            },
-            null,
-            2
-          )}
-        </code>
-      </pre>
-      */}
+    <pre>
+      <code>
+        {JSON.stringify(
+          {
+            pageIndex,
+            pageSize,
+            pageCount,
+            canNextPage,
+            canPreviousPage,
+          },
+          null,
+          2
+        )}
+      </code>
+    </pre>
+    */}
+      {/* TODO
+      // ADD DATE SORTING TO THIS TABLE
+     */}
       <div className='all-items-table-container'>
         <table {...getTableProps()} className='all-items-table'>
           <thead>
@@ -207,9 +277,9 @@ function AllItemsTable() {
         </table>
       </div>
       {/* 
-        Pagination can be built however you'd like. 
-        This is just a very basic UI implementation:
-      */}
+      Pagination can be built however you'd like. 
+      This is just a very basic UI implementation:
+    */}
       <div className="pagination">
         <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
           {'<<'}
@@ -255,22 +325,22 @@ function AllItemsTable() {
         </select>
         {/*
 
-        <pre>
-          <code>
-            {JSON.stringify(
-              {
-                selectedRowIds: selectedRowIds,
-                'selectedFlatRows[].original': selectedFlatRows.map(
-                  d => d.original
-                ),
-              },
-              null,
-              2
-            )}
-          </code>
-        </pre>
-        
-        */}
+      <pre>
+        <code>
+          {JSON.stringify(
+            {
+              selectedRowIds: selectedRowIds,
+              'selectedFlatRows[].original': selectedFlatRows.map(
+                d => d.original
+              ),
+            },
+            null,
+            2
+          )}
+        </code>
+      </pre>
+      
+      */}
       </div>
     </>
   )
