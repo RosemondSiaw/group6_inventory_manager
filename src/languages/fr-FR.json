@@ -27,5 +27,6 @@
     "log.table.header.download.logbook.button": "Télécharger cahier de suivi",
     "orders.page.header.title": "Commandes",
     "orders.table.header.create.order.button": "Créer une commande",
-    "orders.table.header.download.orders.button": "Télécharger liste des commandes"
+    "orders.table.header.download.orders.button": "Télécharger liste des commandes",
+    "order.single.page.header.title": "Numéro de commande"
 }

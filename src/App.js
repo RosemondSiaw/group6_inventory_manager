@@ -6,6 +6,7 @@ import Orders from './routes/orders/Orders'
 import Analytics from './routes/analytics/Analytics'
 import Settings from './routes/settings/Settings'
 import AllLogs from './routes/logs/AllLogs';
+import SingleOrder from './routes/orders/SingleOrder';
 
 function App() {
   return (
@@ -14,10 +15,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/items'>
-            <Route index element={<Items />} /> 
+            <Route index element={<Items />} />
             <Route path='logs' element={<AllLogs />} /> {/*A nested route!*/}
           </Route>
-          <Route path='/orders' element={<Orders />} />
+          <Route path='/orders'>
+            <Route index element={<Orders />} />
+            <Route path=':orderid' element={<SingleOrder />} /> {/*A nested route!*/}
+          </Route>
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
