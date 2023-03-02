@@ -16,6 +16,12 @@ h1 {
   color: #000000;
 }
 
+h2 {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+}
+
 h3 {
   font-weight: 300;
   font-size: 24px;
@@ -30,8 +36,28 @@ p.num {
   color: #000000;
 }
 
+p.card-num {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 73px;
+  color: #000000;
+}
+
 button {
   font-weight: 400;
   font-size: 16px;
+  color: #000000;
+}
+
+.analytics-widget-container h3 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
+.analytics-widget-container p.num {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 73px;
   color: #000000;
 }/*# sourceMappingURL=Typography.css.map */

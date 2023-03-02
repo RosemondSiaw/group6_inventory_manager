@@ -45,4 +45,11 @@ button {
 }
 button:hover {
   background: linear-gradient(285.25deg, #92C1A2 30.98%, rgba(107, 175, 109, 0.43) 77.71%);
+}
+
+.analytics-date-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }/*# sourceMappingURL=Buttons.css.map */

@@ -1,0 +1,83 @@
+@import '../../../styles/colors/Colors.scss';
+@import '../../../styles/typography/Typography.scss';
+
+//Analytics Cards Styling
+
+.analytics-card-default {
+    background: $table-background;
+    height: 271px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.available-items-card {
+    position: relative;
+
+    .available-items-chart {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .available-items-card-num {
+        position: absolute;
+        bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: baseline;
+    }
+}
+
+.top-orders-card {
+    .top-orders-card-list {
+        margin-top: 20px;
+
+        ol {
+            line-height: 30px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.inventory-shrinkage-card,
+.inventory-turnover-card,
+.stockout-rate-card {
+    position: relative;
+
+    .scale-chart-container {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+
+.scale-num {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+
+    position: absolute;
+    bottom: 5px;
+
+    .indicator {
+        border-radius: 100%;
+        width: 10px;
+        height: 10px;
+        background-color: green;
+        font-size: 10px;
+    }
+}
+
+.emergency-require-card {
+    .emergency-require-item-list ol {
+        line-height: 30px;
+        margin-left: 20px;
+        margin-top: 10px;
+
+        .item-list .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

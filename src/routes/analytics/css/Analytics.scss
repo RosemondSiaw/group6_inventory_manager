@@ -1,5 +1,46 @@
-@import '../../../styles/colors/colors.scss';
+@import '../../../styles/colors/Colors.scss';
 
 .analytics-page {
     background-color: $background-color;
+
+    .main-container {
+        .analytics-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .global-analytics-report {
+            margin-top: 30px;
+            background: $card-gradient;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        .detailed-analytics-report {
+            margin: 20px 0 20px 0;
+
+            .analytics-cards-container {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                row-gap: 20px;
+
+                .analytics-cards-container-top {
+                    display: grid;
+                    grid-template-columns: 400px 300px 400px;
+                    gap: 20px;
+                }
+
+                .analytics-cards-container-bottom {
+                    display: grid;
+                    grid-template-columns: 370px 370px 370px;
+                    gap: 15px;
+                }
+            }
+        }
+    }
 }

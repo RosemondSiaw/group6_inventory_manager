@@ -1,3 +1,36 @@
 .analytics-page {
   background-color: #EDE4E0;
+}
+.analytics-page .main-container .analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.analytics-page .main-container .global-analytics-report {
+  margin-top: 30px;
+  background: linear-gradient(285.25deg, #92C1A2 30.98%, rgba(107, 175, 109, 0.43) 77.71%);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 100%;
+}
+.analytics-page .main-container .detailed-analytics-report {
+  margin: 20px 0 20px 0;
+}
+.analytics-page .main-container .detailed-analytics-report .analytics-cards-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+}
+.analytics-page .main-container .detailed-analytics-report .analytics-cards-container .analytics-cards-container-top {
+  display: grid;
+  grid-template-columns: 400px 300px 400px;
+  gap: 20px;
+}
+.analytics-page .main-container .detailed-analytics-report .analytics-cards-container .analytics-cards-container-bottom {
+  display: grid;
+  grid-template-columns: 370px 370px 370px;
+  gap: 15px;
 }/*# sourceMappingURL=Analytics.css.map */

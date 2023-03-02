@@ -27,5 +27,6 @@
     "log.table.header.download.logbook.button": "Download Logbook",
     "orders.page.header.title": "Orders",
     "orders.table.header.create.order.button": "Create new order",         "orders.table.header.download.orders.button": "Download orders list",
-    "order.single.page.header.title": "Order ID"
+    "order.single.page.header.title": "Order ID",
+    "analytics.page.header.title": "Analytics"
 }
