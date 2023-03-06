@@ -7,6 +7,11 @@ import Analytics from './routes/analytics/Analytics'
 import Settings from './routes/settings/Settings'
 import AllLogs from './routes/logs/AllLogs';
 import SingleOrder from './routes/orders/SingleOrder';
+import Item from './routes/items/Item';
+import Users from './routes/users/Users';
+import Vendors from './routes/vendors/Vendors';
+import Reports from './routes/reports/Reports';
+import Report from './routes/reports/Report'
 
 function App() {
   return (
@@ -16,13 +21,20 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path='/items'>
             <Route index element={<Items />} />
+            <Route path=':itemid' element={<Item />} /> {/*A nested route!*/}
             <Route path='logs' element={<AllLogs />} /> {/*A nested route!*/}
           </Route>
+          <Route path="/users" element={<Users />} />
+          <Route path="/vendors" element={<Vendors />} />
           <Route path='/orders'>
             <Route index element={<Orders />} />
             <Route path=':orderid' element={<SingleOrder />} /> {/*A nested route!*/}
           </Route>
           <Route path="/analytics" element={<Analytics />} />
+          <Route path='/reports'>
+            <Route index element={<Reports />} />
+            <Route path=':reportid' element={<Report />} /> {/*A nested route!*/}
+          </Route>
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </Router>

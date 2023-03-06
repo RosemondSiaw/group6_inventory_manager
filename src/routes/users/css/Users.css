@@ -1,0 +1,14 @@
+.users-page {
+  background-color: #EDE4E0;
+}
+.users-page .main-container .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.users-page .main-container .page-header .page-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}/*# sourceMappingURL=Users.css.map */

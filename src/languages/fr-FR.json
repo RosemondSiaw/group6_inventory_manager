@@ -8,8 +8,11 @@
     "search.placeholder": "Rechercher un article, une commande, un fabricant",
     "navbar.link.home": "Acceuil",
     "navbar.link.items": "Articles",
+    "navbar.link.users": "Utilisateurs",
+    "navbar.link.vendors": "Vendeurs",
     "navbar.link.orders": "Commandes",
     "navbar.link.analytics": "Analytiques",
+    "navbar.link.reports": "Rapports",
     "navbar.link.settings": "Paramètres",
     "navbar.link.logout": "Déconnexion",
     "dashboard.stat.header": "Les statistiques d'aujourd'hui",
@@ -28,6 +31,9 @@
     "orders.page.header.title": "Commandes",
     "orders.table.header.create.order.button": "Créer une commande",
     "orders.table.header.download.orders.button": "Télécharger liste des commandes",
-    "order.single.page.header.title": "Numéro de commande",
-    "analytics.page.header.title": "Analytiques"
+    "order.single.page.header.title": "Numéro de commande:",
+    "vendors.page.header.title": "Vendeurs",
+    "users.page.header.title": "Utilisateurs",
+    "analytics.page.header.title": "Analytiques",
+    "reports.page.header.title": "Mes Rapports"
 }

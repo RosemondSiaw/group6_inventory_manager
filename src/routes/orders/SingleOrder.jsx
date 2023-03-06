@@ -14,7 +14,7 @@ const SingleOrder = () => {
             <Header />
             <div className="main-container">
                 <div className="order-single-page-header">
-                    <h1><FormattedMessage id="order.single.page.header.title" defaultMessage="Order ID" /></h1>
+                    <h1><FormattedMessage id="order.single.page.header.title" defaultMessage="Order ID" /> &nbsp; BKL561</h1>
                 </div>
             </div>
         </div>)

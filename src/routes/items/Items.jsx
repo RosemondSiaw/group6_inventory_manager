@@ -22,7 +22,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 const AddIcon = <FontAwesomeIcon className="iconHead" icon={faBook} />
 
-
 const Items = () => {
   return (
     <div className="items-page layout-container">

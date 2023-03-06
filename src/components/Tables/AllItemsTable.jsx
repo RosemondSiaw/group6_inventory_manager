@@ -28,414 +28,19 @@ function AllItemsTable() {
         col1: 'SYR64867-5322',
         col2: '752378594',
         col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
-      },
-
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Kiron',
-        col5: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col6: 'XOF 250.00',
-        col7: '200',
-        col8: 'XOF 50,000.00',
-        col9: '50',
-        col10: '14',
-        col11: '100',
-        col12: 'No',
-        col13: '60 ml',
-        col14: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col15: '10/03/2023'
+        col4: 'Bany Laboratory Supplies',
+        col5: 'Kiron',
+        col6: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
+        col7: 'XOF 250.00',
+        col8: '200',
+        col9: 'XOF 50,000.00',
+        col10: '50',
+        col11: '14',
+        col12: '100',
+        col13: 'No',
+        col14: '60 ml',
+        col15: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
+        col16: '10/03/2023'
       },
 
     ],
@@ -458,7 +63,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'SKU',
+        Header: 'Barcode',
 
         accessor: 'col2',
 
@@ -474,15 +79,14 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Manufacturer',
+        Header: 'Vendor',
 
         accessor: 'col4',
 
       },
-
       {
 
-        Header: 'Description',
+        Header: 'Manufacturer',
 
         accessor: 'col5',
 
@@ -490,7 +94,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Cost per item',
+        Header: 'Description',
 
         accessor: 'col6',
 
@@ -498,7 +102,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Stock quantity',
+        Header: 'Cost per item',
 
         accessor: 'col7',
 
@@ -506,7 +110,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Inventory value',
+        Header: 'Stock quantity',
 
         accessor: 'col8',
 
@@ -514,7 +118,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Reorder level',
+        Header: 'Inventory value',
 
         accessor: 'col9',
 
@@ -522,7 +126,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Days per reorder',
+        Header: 'Reorder level',
 
         accessor: 'col10',
 
@@ -530,7 +134,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Item reorder quantity',
+        Header: 'Days per reorder',
 
         accessor: 'col11',
 
@@ -538,7 +142,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Item dicontinued?',
+        Header: 'Item reorder quantity',
 
         accessor: 'col12',
 
@@ -546,7 +150,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Item volume',
+        Header: 'Item dicontinued?',
 
         accessor: 'col13',
 
@@ -554,7 +158,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Item Dimensions',
+        Header: 'Item volume',
 
         accessor: 'col14',
 
@@ -562,9 +166,17 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Date added',
+        Header: 'Item Dimensions',
 
         accessor: 'col15',
+
+      },
+
+      {
+
+        Header: 'Date added',
+
+        accessor: 'col16',
 
       },
 

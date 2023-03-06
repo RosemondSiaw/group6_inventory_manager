@@ -8,8 +8,11 @@
     "search.placeholder": "Search item, order, manufacturer",
     "navbar.link.home": "Dashboard",
     "navbar.link.items": "Items",
+    "navbar.link.users": "Users",
+    "navbar.link.vendors": "Vendors",
     "navbar.link.orders": "Orders",
     "navbar.link.analytics": "Analytics",
+    "navbar.link.reports": "Reports",
     "navbar.link.settings": "Settings",
     "navbar.link.logout": "Logout",
     "dashboard.stat.header": "Today' s statistics",
@@ -26,7 +29,11 @@
     "logbook.table.header.add.log.button": "Add new log",
     "log.table.header.download.logbook.button": "Download Logbook",
     "orders.page.header.title": "Orders",
-    "orders.table.header.create.order.button": "Create new order",         "orders.table.header.download.orders.button": "Download orders list",
-    "order.single.page.header.title": "Order ID",
-    "analytics.page.header.title": "Analytics"
+    "orders.table.header.create.order.button": "Create new order",
+    "orders.table.header.download.orders.button": "Download orders list",
+    "order.single.page.header.title": "Order ID:",
+    "vendors.page.header.title": "Vendors",
+    "users.page.header.title": "Users",
+    "analytics.page.header.title": "Analytics",
+    "reports.page.header.title": "My Reports"
 }

@@ -9,13 +9,16 @@ import Logo from '../../assets/geia-logo.png'
 
 // import fonts from FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faBoxOpen, faCartShopping, faChartSimple, faGear, faRightFromBracket } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faBoxOpen, faCartShopping, faChartSimple, faGear, faRightFromBracket, faBox, faUsers, faChartPie } from '@fortawesome/free-solid-svg-icons'
 const dashboardIcon = <FontAwesomeIcon className="iconHead" icon={faHouse} />
 const itemsIcon = <FontAwesomeIcon className="iconHead" icon={faBoxOpen} />
 const ordersIcon = <FontAwesomeIcon className="iconHead" icon={faCartShopping} />
 const analyticsIcon = <FontAwesomeIcon className="iconHead" icon={faChartSimple} />
 const settingsIcon = <FontAwesomeIcon className="iconHead" icon={faGear} />
 const logoutIcon = <FontAwesomeIcon className="iconHead" icon={faRightFromBracket} />
+const vendorsIcon = <FontAwesomeIcon className="iconHead" icon={faBox} />
+const usersIcon = <FontAwesomeIcon className="iconHead" icon={faUsers} />
+const reportsIcon = <FontAwesomeIcon className="iconHead" icon={faChartPie}/>
 
 const Sidebar = () => {
   return (
@@ -33,11 +36,20 @@ const Sidebar = () => {
             <Link to='/items' style={{ textDecoration: 'none' }}>
               <li className="sidebar-list-item"> {itemsIcon} <span><FormattedMessage id="navbar.link.items" defaultMessage="Items" /></span></li>
             </Link>
+            <Link to='/users' style={{ textDecoration: 'none' }}>
+              <li className="sidebar-list-item"> {usersIcon} <span><FormattedMessage id="navbar.link.users" defaultMessage="Users" /></span></li>
+            </Link>
+            <Link to='/vendors' style={{ textDecoration: 'none' }}>
+              <li className="sidebar-list-item"> {vendorsIcon} <span><FormattedMessage id="navbar.link.vendors" defaultMessage="Vendors" /></span></li>
+            </Link>
             <Link to='/orders' style={{ textDecoration: 'none' }}>
               <li className="sidebar-list-item"> {ordersIcon} <span><FormattedMessage id="navbar.link.orders" defaultMessage="Orders" /></span></li>
             </Link>
             <Link to='/analytics' style={{ textDecoration: 'none' }}>
               <li className="sidebar-list-item"> {analyticsIcon} <span><FormattedMessage id="navbar.link.analytics" defaultMessage="Analytics" /></span></li>
+            </Link>
+            <Link to='/reports' style={{ textDecoration: 'none' }}>
+              <li className="sidebar-list-item"> {reportsIcon} <span><FormattedMessage id="navbar.link.reports" defaultMessage="Reports" /></span></li>
             </Link>
             <Link to='/settings' style={{ textDecoration: 'none' }}>
               <li className="sidebar-list-item"> {settingsIcon} <span><FormattedMessage id="navbar.link.settings" defaultMessage="Settings" /></span></li>

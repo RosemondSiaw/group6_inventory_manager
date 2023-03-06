@@ -1,0 +1,14 @@
+.reports-page {
+  background-color: #EDE4E0;
+}
+.reports-page .main-container .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.reports-page .main-container .page-header .page-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}/*# sourceMappingURL=Reports.css.map */
