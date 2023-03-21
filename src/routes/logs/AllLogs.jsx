@@ -12,7 +12,7 @@ import '../../styles/colors/Colors.scss'
 //import components
 import Header from '../../components/header/Header'
 import Sidebar from '../../components/sidebar/Sidebar'
-import AddNewLog from '../../components/buttons/AddNewLog';
+// import AddNewLog from '../../components/buttons/AddNewLog';
 import DownloadLoagbook from '../../components/buttons/DownloadLoagbook';
 import AllLogsTable from '../../components/Tables/AllLogsTable';
 
@@ -26,7 +26,6 @@ const AllLogs = () => {
           <h1><FormattedMessage id="logbook.page.header" defaultMessage="Logbook" /></h1>
           {/* TODO FINISH THIS PAGE  */}
           <div className="all-items-buttons">
-            <AddNewLog />
             <DownloadLoagbook />
           </div>
         </div>

@@ -1,0 +1,27 @@
+@import '../../../styles/colors/colors.scss';
+@import '../../../styles/typography/Typography.scss';
+
+.procurement-page {
+    background-color: $background-color;
+
+    .main-container {
+        .procurement-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+
+            .page-buttons {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                align-items: center;
+            }
+        }
+
+        .procurement-table {
+            margin-top: 20px;
+        }
+    }
+
+}

@@ -13,7 +13,7 @@ import '../../styles/colors/Colors.scss'
 import Header from '../../components/header/Header'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Card from '../../components/Widgets/DashboardCard'
-import NewLogButton from '../../components/buttons/CreateNewLog'
+// import NewLogButton from '../../components/buttons/CreateNewLog'
 import LogTable from '../../components/Tables/LogTable';
 import ViewAllLogs from '../../components/buttons/ViewAllLogs';
 
@@ -36,7 +36,6 @@ const Home = () => {
                 <div className="table-header">
                     <h1><FormattedMessage id="dashboard.table.header.tile" defaultMessage="Items Log" /></h1>
                     <div className="dashboard-buttons">
-                        <NewLogButton />
                         <ViewAllLogs />
                     </div>
                 </div>
