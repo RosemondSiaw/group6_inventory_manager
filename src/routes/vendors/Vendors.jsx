@@ -22,6 +22,10 @@ const Vendors = () => {
             <div className="main-container">
                 <div className="page-header">
                     <h1 className="page-title"><FormattedMessage id="vendors.page.header.title" defaultMessage="Vendors" /></h1>
+                    <div className="page-buttons">
+                        add a new vendor 
+                        download vendors list
+                    </div>
                 </div>
                 <div className="vendors-table-container">
                     <VendorsTable/>

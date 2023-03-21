@@ -30,6 +30,9 @@ function UsersTable() {
         col3: 'Carla',
         col4: 'Jamison',
         col5: 'Surgeon',
+        col6: 'carla.jamison@randomemail.com',
+        col7: '+2331112223333',
+        col8: 'Standard',
       },
 
     ],
@@ -79,6 +82,30 @@ function UsersTable() {
         Header: 'Job Title',
 
         accessor: 'col5',
+
+      },
+
+      {
+
+        Header: 'Email',
+
+        accessor: 'col6',
+
+      },
+
+      {
+
+        Header: 'Telephone Number',
+
+        accessor: 'col7',
+
+      },
+
+      {
+
+        Header: 'Access Type',
+
+        accessor: 'col8',
 
       },
 
