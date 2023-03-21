@@ -13,6 +13,7 @@
     "users.table.header.download.users.button": "Télécharger la liste des utilisateurs",
     "navbar.link.vendors": "Vendeurs",
     "navbar.link.orders": "Commandes",
+    "navbar.link.procurement": "Provisions",
     "navbar.link.analytics": "Analytiques",
     "navbar.link.reports": "Rapports",
     "navbar.link.settings": "Paramètres",

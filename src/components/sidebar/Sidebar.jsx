@@ -9,7 +9,7 @@ import Logo from '../../assets/geia-logo.png'
 
 // import fonts from FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faBoxOpen, faCartShopping, faChartSimple, faGear, faRightFromBracket, faBox, faUsers, faChartPie } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faBoxOpen, faCartShopping, faChartSimple, faGear, faRightFromBracket, faBox, faUsers, faChartPie, faTruckPlane } from '@fortawesome/free-solid-svg-icons'
 const dashboardIcon = <FontAwesomeIcon className="iconHead" icon={faHouse} />
 const itemsIcon = <FontAwesomeIcon className="iconHead" icon={faBoxOpen} />
 const ordersIcon = <FontAwesomeIcon className="iconHead" icon={faCartShopping} />
@@ -18,7 +18,8 @@ const settingsIcon = <FontAwesomeIcon className="iconHead" icon={faGear} />
 const logoutIcon = <FontAwesomeIcon className="iconHead" icon={faRightFromBracket} />
 const vendorsIcon = <FontAwesomeIcon className="iconHead" icon={faBox} />
 const usersIcon = <FontAwesomeIcon className="iconHead" icon={faUsers} />
-const reportsIcon = <FontAwesomeIcon className="iconHead" icon={faChartPie}/>
+const reportsIcon = <FontAwesomeIcon className="iconHead" icon={faChartPie} />
+const procurementIcon = <FontAwesomeIcon className="iconHead" icon={faTruckPlane} />
 
 const Sidebar = () => {
   return (
@@ -44,6 +45,9 @@ const Sidebar = () => {
             </Link>
             <Link to='/orders' style={{ textDecoration: 'none' }}>
               <li className="sidebar-list-item"> {ordersIcon} <span><FormattedMessage id="navbar.link.orders" defaultMessage="Orders" /></span></li>
+            </Link>
+            <Link to='/procurement' style={{ textDecoration: 'none' }}>
+              <li className="sidebar-list-item"> {procurementIcon} <span><FormattedMessage id="navbar.link.procurement" defaultMessage="Procurement" /></span></li>
             </Link>
             <Link to='/analytics' style={{ textDecoration: 'none' }}>
               <li className="sidebar-list-item"> {analyticsIcon} <span><FormattedMessage id="navbar.link.analytics" defaultMessage="Analytics" /></span></li>

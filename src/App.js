@@ -1,17 +1,18 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './routes/home/Home'
-import Items from './routes/items/Items'
-import Orders from './routes/orders/Orders'
+import Home from './routes/home/Home';
+import Items from './routes/items/Items';
+import Orders from './routes/orders/Orders';
+import Procurement from './routes/procurement/Procurement';
 import Analytics from './routes/analytics/Analytics'
-import Settings from './routes/settings/Settings'
+import Settings from './routes/settings/Settings';
 import AllLogs from './routes/logs/AllLogs';
 import SingleOrder from './routes/orders/SingleOrder';
 import Item from './routes/items/Item';
 import Users from './routes/users/Users';
 import Vendors from './routes/vendors/Vendors';
 import Reports from './routes/reports/Reports';
-import Report from './routes/reports/Report'
+import Report from './routes/reports/Report';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route index element={<Orders />} />
             <Route path=':orderid' element={<SingleOrder />} /> {/*A nested route!*/}
           </Route>
+          <Route path="/procurement" element={<Procurement />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path='/reports'>
             <Route index element={<Reports />} />
