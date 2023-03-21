@@ -13,6 +13,7 @@ import Users from './routes/users/Users';
 import Vendors from './routes/vendors/Vendors';
 import Reports from './routes/reports/Reports';
 import Report from './routes/reports/Report';
+import SingleProcurement from './routes/procurement/SingleProcurement';
 
 function App() {
   return (
@@ -31,7 +32,10 @@ function App() {
             <Route index element={<Orders />} />
             <Route path=':orderid' element={<SingleOrder />} /> {/*A nested route!*/}
           </Route>
-          <Route path="/procurement" element={<Procurement />} />
+          <Route path='/procurement'>
+            <Route index element={<Procurement />} />
+            <Route path=':procurementid' element={<SingleProcurement />} /> {/*A nested route!*/}
+          </Route>
           <Route path="/analytics" element={<Analytics />} />
           <Route path='/reports'>
             <Route index element={<Reports />} />
