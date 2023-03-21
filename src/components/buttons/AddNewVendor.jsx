@@ -7,20 +7,20 @@ import { FormattedMessage } from "react-intl";
 
 //import icons from Fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCloud } from '@fortawesome/free-solid-svg-icons'
-const DownloadIcon = <FontAwesomeIcon className="iconHead" icon={faCloud} />
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+const AddIcon = <FontAwesomeIcon className="iconHead" icon={faPlus} />
 
-const DownloadUsersList = () => {
+const AddNewVendor = () => {
   return (
     <div className='buttonContainer'>
-      <button>
+      <button className='addType'>
         <Link to="" style={{ color: "black", textDecoration: "none" }}>
-          {DownloadIcon} &nbsp;
-          <FormattedMessage id="users.table.header.download.users.button" defaultMessage="Download users' list" />
+          {AddIcon} &nbsp;
+          <FormattedMessage id="vendors.table.header.add.vendor.button" defaultMessage="Add new vendor" />
         </Link>
       </button>
     </div>
   )
 }
 
-export default DownloadUsersList
+export default AddNewVendor
