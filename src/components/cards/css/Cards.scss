@@ -81,3 +81,44 @@
         }
     }
 }
+
+.report-container {
+    background: $tertiary-color;
+    width: 200px;
+    height: 250px;
+    padding: 12px;
+    border-radius: 10px;
+    display: grid;
+    gap: 12px;
+
+    .report-header {
+        p.date {
+            opacity: 0.5;
+            font-size: 14px;
+            margin-top: 14px;
+        }
+    }
+
+    div.tag-container {
+        .tag {
+            background: $secondary-color;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+    }
+
+    .report-card-deets {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p.file-size {
+            font-size: 14px;
+        }
+
+        button {
+            font-size: 14px;
+        }
+    }
+}

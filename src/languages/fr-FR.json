@@ -43,5 +43,6 @@
     "vendors.table.header.download.vendors.button": "Télécharger la liste des vendeurs",
     "users.page.header.title": "Utilisateurs",
     "analytics.page.header.title": "Analytiques",
-    "reports.page.header.title": "Mes Rapports"
+    "reports.page.header.title": "Mes rapports",
+    "reports.table.header.create.report.button": "Créer un rapport"
 }

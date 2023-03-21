@@ -63,7 +63,7 @@ button {
 }
 
 .analytics-card-default {
-  background: #1F8A70;
+  background: #D6DCD8;
   height: 271px;
   padding: 10px;
   border-radius: 10px;
@@ -130,4 +130,36 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.report-container {
+  background: #D6DCD8;
+  width: 200px;
+  height: 250px;
+  padding: 12px;
+  border-radius: 10px;
+  display: grid;
+  gap: 12px;
+}
+.report-container .report-header p.date {
+  opacity: 0.5;
+  font-size: 14px;
+  margin-top: 14px;
+}
+.report-container div.tag-container .tag {
+  background: #68B984;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.report-container .report-card-deets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.report-container .report-card-deets p.file-size {
+  font-size: 14px;
+}
+.report-container .report-card-deets button {
+  font-size: 14px;
 }/*# sourceMappingURL=Cards.css.map */

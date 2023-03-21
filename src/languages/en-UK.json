@@ -43,5 +43,6 @@
     "vendors.table.header.download.vendors.button": "Download vendors' list",
     "users.page.header.title": "Users",
     "analytics.page.header.title": "Analytics",
-    "reports.page.header.title": "My Reports"
+    "reports.page.header.title": "My Reports",
+    "reports.table.header.create.report.button": "Create new report"
 }
