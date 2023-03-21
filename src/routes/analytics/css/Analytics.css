@@ -17,7 +17,9 @@
   max-width: 100%;
 }
 .analytics-page .main-container .detailed-analytics-report {
-  margin: 20px 0 20px 0;
+  margin: 40px 0 20px 0;
+  display: flex;
+  justify-content: center;
 }
 .analytics-page .main-container .detailed-analytics-report .analytics-cards-container {
   display: grid;

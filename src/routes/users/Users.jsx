@@ -13,6 +13,8 @@ import UsersTable from '../../components/Tables/UsersTable';
 
 //import Language translator jason files
 import { FormattedMessage } from "react-intl";
+import AddNewUser from '../../components/buttons/AddNewUser'
+import DownloadUsersList from '../../components/buttons/DownloadUsersList'
 
 const Users = () => {
     return (
@@ -22,6 +24,10 @@ const Users = () => {
             <div className="main-container">
                 <div className="page-header">
                     <h1 className="page-title"><FormattedMessage id="users.page.header.title" defaultMessage="Users" /></h1>
+                    <div className="page-buttons">
+                        <AddNewUser />
+                        <DownloadUsersList />
+                    </div>
                 </div>
                 <div>
                     <UsersTable />

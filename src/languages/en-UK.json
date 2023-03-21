@@ -9,6 +9,8 @@
     "navbar.link.home": "Dashboard",
     "navbar.link.items": "Items",
     "navbar.link.users": "Users",
+    "users.table.header.add.user.button": "Add a user",
+    "users.table.header.download.users.button": "Download users' list",
     "navbar.link.vendors": "Vendors",
     "navbar.link.orders": "Orders",
     "navbar.link.analytics": "Analytics",

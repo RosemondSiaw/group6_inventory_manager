@@ -2,7 +2,7 @@
 @import '../../../styles/typography/Typography.scss';
 
 .table-container {
-    background-color: $primary-color;
+    background-color: $table-background;
     height: 55vh;
     margin-top: 20px;
     border-radius: 10px;
@@ -14,26 +14,31 @@
         table-layout: fixed;
         width: 100%;
 
+
         thead th {
             color: $text-color;
             font-weight: 500;
             font-size: 18px;
+            color: $text-color-light;
         }
 
         tbody tr {
             font-size: 14px;
             font-weight: 400;
+            color: $text-color-light;
         }
 
         th,
         td {
-            border-bottom: 1px solid $text-color;
+            border-bottom: 1px solid $text-color-light;
             padding: 10px;
             text-align: center;
+            color: $text-color-light;
         }
 
         tfoot tr:last-child td {
             border-bottom: 0;
+            color: $text-color-light;
         }
     }
 }
@@ -51,22 +56,27 @@
         border-collapse: collapse;
         table-layout: fixed;
         width: 100%;
+        color: $text-color-light;
 
         thead th {
             color: $text-color;
             font-weight: 500;
             font-size: 16px;
             width: 180px;
+            color: $text-color-light;
+
         }
 
         tbody tr {
             font-size: 14px;
             font-weight: 400;
+            color: $text-color-light;
+
         }
 
         th,
         td {
-            border-bottom: 1px solid $text-color;
+            border-bottom: 1px solid $text-color-light;
             padding: 10px;
             text-align: center;
         }
@@ -85,10 +95,12 @@
         border: none;
         padding: 6px;
         border-radius: 10px;
+        color: $text-color-light;
     }
 
     select {
         background-color: $table-background;
+        color: $text-color-light;
         border: none;
         padding: 6px;
         border-radius: 10px
@@ -112,18 +124,24 @@
             color: $text-color;
             font-weight: 500;
             font-size: 18px;
+            color: $text-color-light;
+
         }
 
         tbody tr {
             font-size: 14px;
             font-weight: 400;
+            color: $text-color-light;
+
         }
 
         th,
         td {
-            border-bottom: 1px solid $text-color;
+            border-bottom: 1px solid $text-color-light;
             padding: 10px;
             text-align: center;
+            color: $text-color-light;
+
         }
 
         tfoot tr:last-child td {
@@ -149,16 +167,64 @@
             color: $text-color;
             font-weight: 500;
             font-size: 18px;
+            color: $text-color-light;
+
         }
 
         tbody tr {
             font-size: 14px;
             font-weight: 400;
+            color: $text-color-light;
+
         }
 
         th,
         td {
-            border-bottom: 1px solid $text-color;
+            border-bottom: 1px solid $text-color-light;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tfoot tr:last-child td {
+            border-bottom: 0;
+        }
+    }
+}
+
+.users-table-container {
+    background-color: $primary-color;
+    height: 75vh;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    width: 100%;
+
+    .users-table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%;
+        color: $text-color-light;
+
+        thead th {
+            color: $text-color;
+            font-weight: 500;
+            font-size: 16px;
+            width: 180px;
+            color: $text-color-light;
+
+        }
+
+        tbody tr {
+            font-size: 14px;
+            font-weight: 400;
+            color: $text-color-light;
+
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid $text-color-light;
             padding: 10px;
             text-align: center;
         }

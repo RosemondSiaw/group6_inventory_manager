@@ -12,10 +12,8 @@ function OrdersTable() {
             col1: 'ORD38632',
             col2: '28/02/2023',
             col3: 'In progress',
-            col4: 'Walmeck Prenium 10oz syringe',
-            col5: '20',
-            col6: 'Jeannette Dogbe', 
-            col7: '28/02/2023 at 3:05 PM'   
+            col4: 'Jeannette Dogbe', 
+            col5: '28/02/2023 at 3:05 PM'   
           },
     
         ],
@@ -54,7 +52,7 @@ function OrdersTable() {
     
           {
     
-            Header: 'Item',
+            Header: 'Ordered by',
     
             accessor: 'col4',
     
@@ -62,25 +60,9 @@ function OrdersTable() {
     
           {
     
-            Header: 'Units',
-    
-            accessor: 'col5',
-    
-          },
-    
-          {
-    
-            Header: 'Ordered by',
-    
-            accessor: 'col6',
-    
-          },
-    
-          {
-    
             Header: 'Received',
     
-            accessor: 'col7',
+            accessor: 'col5',
     
           },
     
