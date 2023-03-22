@@ -29,7 +29,6 @@ function Report(props) {
                     </div>
                 </div>
             ))}
-            ;
         </>
     )
 }
