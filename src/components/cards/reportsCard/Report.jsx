@@ -1,6 +1,17 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+import '../../../styles/colors/Colors.scss'
+
+const DynamicBackground = styled.div`
+background-color: ${props =>
+        props.tag === 'Daily' ? '#90A17D'
+            : props.tag === 'Yearly' ? '#B08BBB'
+                : '#6096B4'
+    };
+`
+
 function Report(props) {
-    
+
     return (
         <>
             {props.details.map((value, index) => (
@@ -10,7 +21,7 @@ function Report(props) {
                         <p className="date">{value.creation_date}</p>
                     </div>
                     <div className="tag-container">
-                        <span className="tag"> {value.tag} </span>
+                        <DynamicBackground className='tag' tag={value.tag} > {value.tag} </DynamicBackground>
                     </div>
                     <div className="report-card-deets">
                         <p className="file-size"> {value.file_size} </p>

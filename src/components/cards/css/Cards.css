@@ -147,10 +147,13 @@ button {
   margin-top: 14px;
 }
 .report-container div.tag-container .tag {
-  background: #68B984;
-  padding: 10px;
   border-radius: 10px;
   font-size: 14px;
+  width: 50px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
 }
 .report-container .report-card-deets {
   display: flex;

@@ -101,10 +101,13 @@
 
     div.tag-container {
         .tag {
-            background: $secondary-color;
-            padding: 10px;
             border-radius: 10px;
             font-size: 14px;
+            width: 50px;
+            text-align: center;
+            padding: 10px;
+            color: $text-color-light;
+            font-weight: 600;
         }
     }
 
