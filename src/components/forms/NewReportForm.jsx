@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { FormattedMessage } from "react-intl";
 import './css/forms.scss';
 
-const NewItemForm = () => {
+const NewReportForm = () => {
     const start_ref = useRef();
     const end_ref = useRef();
 
@@ -46,8 +46,7 @@ const NewItemForm = () => {
                     <button type="submit"><FormattedMessage id="popup.form.save.button" defaultMessage="SAVE" /></button>
                 </div>
             </form>
-        </div>
-    )
+        </div>)
 }
 
-export default NewItemForm
+export default NewReportForm

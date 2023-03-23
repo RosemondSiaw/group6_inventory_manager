@@ -27,7 +27,7 @@ const AddNewItem = () => {
       </button>
 
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-        <h3 style={{ color: 'white', fontWeight: 'bold' }}>Create a new item</h3>
+        <h3 style={{ color: 'white', fontWeight: 'bold' }}><FormattedMessage id="new.item.form.title" defaultMessage="Add a new item" /></h3>
         <NewItemForm />
       </Popup>
     </div>

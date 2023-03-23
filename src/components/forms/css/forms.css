@@ -137,4 +137,312 @@ button {
   align-self: center;
   display: flex;
   justify-content: center;
+}
+
+.new_user_form_container {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.new_user_form_container form {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+.new_user_form_container form .datetime_picker {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+}
+.new_user_form_container form input {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  color: #1F8A70;
+}
+.new_user_form_container form input:focus {
+  outline-color: #1F8A70;
+}
+.new_user_form_container form select {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  color: #1F8A70;
+}
+.new_user_form_container form select option {
+  color: black;
+}
+.new_user_form_container form select:focus {
+  outline-color: #1F8A70;
+}
+.new_user_form_container form textarea {
+  width: 280px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #1F8A70;
+}
+.new_user_form_container form textarea:focus {
+  outline-color: #1F8A70;
+}
+.new_user_form_container form .submit-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.new_user_form_container form button {
+  width: 310px;
+  font-size: 16px;
+  padding: 15px;
+  background: #1F8A70;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.new_vendor_form_container {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.new_vendor_form_container form {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+.new_vendor_form_container form .datetime_picker {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+}
+.new_vendor_form_container form input {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  color: #1F8A70;
+}
+.new_vendor_form_container form input:focus {
+  outline-color: #1F8A70;
+}
+.new_vendor_form_container form select {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  color: #1F8A70;
+}
+.new_vendor_form_container form select option {
+  color: black;
+}
+.new_vendor_form_container form select:focus {
+  outline-color: #1F8A70;
+}
+.new_vendor_form_container form textarea {
+  width: 280px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #1F8A70;
+}
+.new_vendor_form_container form textarea:focus {
+  outline-color: #1F8A70;
+}
+.new_vendor_form_container form .submit-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.new_vendor_form_container form button {
+  width: 310px;
+  font-size: 16px;
+  padding: 15px;
+  background: #1F8A70;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.new_order_form_container {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.new_order_form_container form {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+.new_order_form_container form .datetime_picker {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+}
+.new_order_form_container form input {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  color: #1F8A70;
+}
+.new_order_form_container form input:focus {
+  outline-color: #1F8A70;
+}
+.new_order_form_container form select {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  color: #1F8A70;
+}
+.new_order_form_container form select option {
+  color: black;
+}
+.new_order_form_container form select:focus {
+  outline-color: #1F8A70;
+}
+.new_order_form_container form textarea {
+  width: 280px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #1F8A70;
+}
+.new_order_form_container form textarea:focus {
+  outline-color: #1F8A70;
+}
+.new_order_form_container form .submit-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.new_order_form_container form button {
+  width: 310px;
+  font-size: 16px;
+  padding: 15px;
+  background: #1F8A70;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.new_supply_order_form_container {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.new_supply_order_form_container form {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+.new_supply_order_form_container form .datetime_picker {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+}
+.new_supply_order_form_container form input {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  color: #1F8A70;
+}
+.new_supply_order_form_container form input:focus {
+  outline-color: #1F8A70;
+}
+.new_supply_order_form_container form select {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  color: #1F8A70;
+}
+.new_supply_order_form_container form select option {
+  color: black;
+}
+.new_supply_order_form_container form select:focus {
+  outline-color: #1F8A70;
+}
+.new_supply_order_form_container form textarea {
+  width: 280px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #1F8A70;
+}
+.new_supply_order_form_container form textarea:focus {
+  outline-color: #1F8A70;
+}
+.new_supply_order_form_container form .submit-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.new_supply_order_form_container form button {
+  width: 310px;
+  font-size: 16px;
+  padding: 15px;
+  background: #1F8A70;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  align-self: center;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=forms.css.map */

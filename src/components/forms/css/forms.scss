@@ -88,3 +88,355 @@
         }
     }
 }
+
+.new_user_form_container {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+
+    form {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0 auto;
+
+        .datetime_picker {
+            display: grid;
+            grid-template-rows: 1fr;
+            row-gap: 20px;
+        }
+
+        input {
+            width: 300px;
+            background: $text-color-light;
+            border-radius: 15px;
+            border: none;
+            padding: 12px;
+            font-size: 14px;
+            color: $primary-color;
+        }
+
+        input:focus {
+            outline-color: $primary-color;
+        }
+
+        select {
+            width: 300px;
+            background: white;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            font-size: 14px;
+            color: $primary-color;
+
+            option {
+                color: black;
+            }
+        }
+
+        select:focus {
+            outline-color: $primary-color;
+        }
+
+        textarea {
+            width: 280px;
+            background: white;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            color: $primary-color;
+        }
+
+        textarea:focus {
+            outline-color: $primary-color;
+        }
+
+        .submit-btn {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            width: 310px;
+            font-size: 16px;
+            padding: 15px;
+            background: $primary-color;
+            border-radius: 15px;
+            color: $text-color-light;
+            font-weight: 600;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.new_vendor_form_container {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+
+    form {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0 auto;
+
+        .datetime_picker {
+            display: grid;
+            grid-template-rows: 1fr;
+            row-gap: 20px;
+        }
+
+        input {
+            width: 300px;
+            background: $text-color-light;
+            border-radius: 15px;
+            border: none;
+            padding: 12px;
+            font-size: 14px;
+            color: $primary-color;
+        }
+
+        input:focus {
+            outline-color: $primary-color;
+        }
+
+        select {
+            width: 300px;
+            background: white;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            font-size: 14px;
+            color: $primary-color;
+
+            option {
+                color: black;
+            }
+        }
+
+        select:focus {
+            outline-color: $primary-color;
+        }
+
+        textarea {
+            width: 280px;
+            background: white;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            color: $primary-color;
+        }
+
+        textarea:focus {
+            outline-color: $primary-color;
+        }
+
+        .submit-btn {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            width: 310px;
+            font-size: 16px;
+            padding: 15px;
+            background: $primary-color;
+            border-radius: 15px;
+            color: $text-color-light;
+            font-weight: 600;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.new_order_form_container {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+
+    form {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0 auto;
+
+        .datetime_picker {
+            display: grid;
+            grid-template-rows: 1fr;
+            row-gap: 20px;
+        }
+
+        input {
+            width: 300px;
+            background: $text-color-light;
+            border-radius: 15px;
+            border: none;
+            padding: 12px;
+            font-size: 14px;
+            color: $primary-color;
+        }
+
+        input:focus {
+            outline-color: $primary-color;
+        }
+
+        select {
+            width: 300px;
+            background: white;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            font-size: 14px;
+            color: $primary-color;
+
+            option {
+                color: black;
+            }
+        }
+
+        select:focus {
+            outline-color: $primary-color;
+        }
+
+        textarea {
+            width: 280px;
+            background: white;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            color: $primary-color;
+        }
+
+        textarea:focus {
+            outline-color: $primary-color;
+        }
+
+        .submit-btn {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            width: 310px;
+            font-size: 16px;
+            padding: 15px;
+            background: $primary-color;
+            border-radius: 15px;
+            color: $text-color-light;
+            font-weight: 600;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.new_supply_order_form_container {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+
+    form {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0 auto;
+
+        .datetime_picker {
+            display: grid;
+            grid-template-rows: 1fr;
+            row-gap: 20px;
+        }
+
+        input {
+            width: 300px;
+            background: $text-color-light;
+            border-radius: 15px;
+            border: none;
+            padding: 12px;
+            font-size: 14px;
+            color: $primary-color;
+        }
+
+        input:focus {
+            outline-color: $primary-color;
+        }
+
+        select {
+            width: 300px;
+            background: white;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            font-size: 14px;
+            color: $primary-color;
+
+            option {
+                color: black;
+            }
+        }
+
+        select:focus {
+            outline-color: $primary-color;
+        }
+
+        textarea {
+            width: 280px;
+            background: white;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            color: $primary-color;
+        }
+
+        textarea:focus {
+            outline-color: $primary-color;
+        }
+
+        .submit-btn {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            width: 310px;
+            font-size: 16px;
+            padding: 15px;
+            background: $primary-color;
+            border-radius: 15px;
+            color: $text-color-light;
+            font-weight: 600;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

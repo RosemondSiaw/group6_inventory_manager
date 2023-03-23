@@ -2,12 +2,12 @@ import React, { useRef } from "react";
 import { FormattedMessage } from "react-intl";
 import './css/forms.scss';
 
-const NewItemForm = () => {
+const NewVendorForm = () => {
     const start_ref = useRef();
     const end_ref = useRef();
 
     return (
-        <div className="new_item_form_container">
+        <div className="new_vendor_form_container">
             <form action="">
                 <input type="text" placeholder="Activity name" />
                 <select name="" id="">
@@ -43,11 +43,9 @@ const NewItemForm = () => {
                     <option value="">Reminder</option>
                 </select>
                 <div className="submit-btn">
-                    <button type="submit"><FormattedMessage id="popup.form.save.button" defaultMessage="SAVE" /></button>
-                </div>
+                    <button type="submit"><FormattedMessage id="popup.form.save.button" defaultMessage="SAVE" /></button>                </div>
             </form>
-        </div>
-    )
+        </div>)
 }
 
-export default NewItemForm
+export default NewVendorForm
