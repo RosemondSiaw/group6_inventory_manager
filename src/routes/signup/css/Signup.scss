@@ -1,0 +1,80 @@
+@import '../../../styles/colors/Colors.scss';
+@import '../../../styles/layout/Layout.scss';
+@import '../../../styles/typography/Typography.scss';
+
+.signup_container {
+    background: $user-registration-login-gradient;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    .blob {
+        position: absolute;
+        overflow: hidden;
+
+        img {
+            width: 480px;
+        }
+
+        .blob2 {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+        }
+
+        .blob1 {
+            position: fixed;
+            top: 0;
+            overflow: hidden;
+            left: 40%;
+        }
+    }
+
+    .signup_container_content {
+        position: absolute;
+        width: 100%;
+
+        .signup_content {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .logo_container {
+        padding: 20px;
+
+        img {
+            width: 150px;
+        }
+    }
+
+    .form_container {
+        padding: 80px 120px 0 0;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .signup_container {
+        .blob {
+
+            img {
+                width: 700px;
+            }
+
+        }
+        
+        .logo_container {
+            padding: 20px 0 0 30px;
+
+            img {
+                width: 190px;
+            }
+        }
+
+        .form_container {
+            margin: 0 15% 0 0;
+        }
+    }
+}

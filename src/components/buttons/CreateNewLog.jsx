@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/buttons/Buttons.scss'
 
-//import Language translator jason files
+//import Language translator json files
 import { FormattedMessage } from "react-intl";
 
 //import icons from Fontawesome

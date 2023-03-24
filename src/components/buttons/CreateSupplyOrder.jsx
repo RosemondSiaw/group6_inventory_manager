@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 //import popup components
 import Popup from '../../components/popup/Popup'
 
-//import Language translator jason files
+//import Language translator json files
 import { FormattedMessage } from "react-intl";
 
 //import icons from Fontawesome

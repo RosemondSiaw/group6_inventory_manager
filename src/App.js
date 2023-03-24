@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from './routes/login/Login';
+import Signup from './routes/signup/Signup';
 import Home from './routes/home/Home';
 import Items from './routes/items/Items';
 import Orders from './routes/orders/Orders';
@@ -20,6 +22,8 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/" element={<Home />} />
           <Route path='/items'>
             <Route index element={<Items />} />

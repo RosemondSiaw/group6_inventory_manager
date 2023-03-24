@@ -1,1 +1,153 @@
-/*# sourceMappingURL=Login.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.layout-container {
+  display: grid;
+  grid-template-columns: 180px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas: "sidebar header header header" "sidebar main main main";
+  height: 100vh;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.layout-container .main-container {
+  grid-area: main;
+  margin: 0 20px 20px 20px;
+}
+.layout-container ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  left: 100px;
+}
+.layout-container ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.layout-container ::-webkit-scrollbar-thumb {
+  background: #A5A5A5;
+  border-radius: 10px;
+}
+.layout-container ::-webkit-scrollbar-thumb:hover {
+  background: #5292DE;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+Link {
+  text-decoration: none;
+  color: #000000;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+p.num {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 73px;
+  color: #000000;
+}
+
+p.card-num {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 73px;
+  color: #000000;
+}
+
+button {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+.analytics-widget-container h3 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
+.analytics-widget-container p.num {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 73px;
+  color: #000000;
+}
+
+.login_container {
+  background: linear-gradient(to bottom, #4ca77a, #5fb487, #70c094, #82cda1, #93daaf, #90d7ae, #8dd5ac, #8ad2ab, #72c09c, #5aae8d, #3f9c7e, #1f8a70);
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.login_container .blob {
+  position: absolute;
+  overflow: hidden;
+}
+.login_container .blob img {
+  width: 480px;
+}
+.login_container .blob .blob2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.login_container .blob .blob1 {
+  position: fixed;
+  top: 0;
+  left: 40%;
+  overflow: hidden;
+}
+.login_container .login_container_content {
+  position: absolute;
+  width: 100%;
+}
+.login_container .login_container_content .login_content {
+  display: flex;
+  justify-content: space-between;
+}
+.login_container .logo_container {
+  padding: 20px;
+}
+.login_container .logo_container img {
+  width: 150px;
+}
+.login_container .form_container {
+  margin: 3% 10% 0 0;
+}
+
+@media screen and (min-width: 1400px) {
+  .login_container .blob img {
+    width: 700px;
+  }
+  .login_container .logo_container {
+    padding: 20px 0 0 30px;
+  }
+  .login_container .logo_container img {
+    width: 190px;
+  }
+  .login_container .form_container {
+    margin: 10% 20% 0 0;
+  }
+}/*# sourceMappingURL=Login.css.map */
