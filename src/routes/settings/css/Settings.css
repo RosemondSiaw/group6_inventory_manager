@@ -1,3 +1,65 @@
 .settings-page {
-  background-color: #EDE4E0;
+  display: grid;
+  grid-template-columns: 180px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas: "sidebar header header header" "sidebar main main main";
+  height: 100vh;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.settings-page .main-container {
+  grid-area: main;
+  margin: 0 20px 10px 10px;
+}
+.settings-page .main-container .settings_card_container {
+  background: #d7d7d7;
+  border-radius: 10px;
+  height: 70vh;
+  padding: 10px;
+  margin-top: 20px;
+}
+.settings-page .main-container .settings_card_container .cards_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  /* optional, adds spacing between grid items */
+}
+.settings-page .main-container .settings_card_container .card {
+  padding: 10px;
+}
+.settings-page .main-container .settings_card_container .card .container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.settings-page .main-container .settings_card_container .card .container:hover {
+  background: white;
+  border-radius: 10px;
+}
+.settings-page .main-container .settings_card_container .card .container .left_container .icon_container {
+  background: rgb(235, 232, 232);
+  padding: 8px 10px;
+  color: #1F8A70;
+  border-radius: 8px;
+}
+.settings-page .main-container .settings_card_container .card .container p {
+  font-size: 14px;
+  padding-top: 7px;
+}
+.settings-page ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  left: 100px;
+}
+.settings-page ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.settings-page ::-webkit-scrollbar-thumb {
+  background: #A5A5A5;
+  border-radius: 10px;
+}
+.settings-page ::-webkit-scrollbar-thumb:hover {
+  background: #5292DE;
 }/*# sourceMappingURL=Settings.css.map */

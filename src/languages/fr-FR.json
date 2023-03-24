@@ -52,5 +52,6 @@
     "analytics.page.header.title": "Analytiques",
     "reports.page.header.title": "Mes rapports",
     "reports.table.header.create.report.button": "Créer un rapport",
-    "new.report.form.title": "Créer un rapport"
+    "new.report.form.title": "Créer un rapport",
+    "settings.screen.header.title": "Paramètres"
 }
