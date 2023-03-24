@@ -53,5 +53,17 @@
     "reports.page.header.title": "My Reports",
     "reports.table.header.create.report.button": "Create new report",
     "new.report.form.title": "Create a new report",
-    "settings.screen.header.title": "Settings"
+    "settings.screen.header.title": "Settings",
+    "settings.general.option.title": "General",
+    "settings.general.option.text": "View and update your details.",
+    "settings.shipping.option.title": "Shipping",
+    "settings.shipping.option.text": "Manage how you ship to customers.",
+    "settings.location.option.title": "Location",
+    "settings.location.option.text": "Manage the places where you store your inventory.",
+    "settings.files.option.title": "Files",
+    "settings.files.option.text": "Upload your documents and images.",
+    "settings.account.option.title": "Account",
+    "settings.account.option.text": "Manage your account and permissions.",
+    "settings.billing.option.title": "Billing",
+    "settings.billing.option.text": "Manage your billing information and view your invoices."
 }

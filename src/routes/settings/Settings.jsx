@@ -35,8 +35,8 @@ const Settings = () => {
                   </div>
                 </div>
                 <div className="right_container">
-                  <Link to="general" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}>General</Link>
-                  <p>View and update your details.</p>
+                  <Link to="general" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}> <FormattedMessage id="settings.general.option.title" defaultMessage="General" /></Link>
+                  <p><FormattedMessage id="settings.general.option.text" defaultMessage="View and update your details." /></p>
                 </div>
               </div>
             </div>
@@ -48,8 +48,8 @@ const Settings = () => {
                   </div>
                 </div>
                 <div className="right_container">
-                  <Link to="general" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}>Shipping</Link>
-                  <p>Manage how you ship to customers.</p>
+                  <Link to="shipping" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}><FormattedMessage id="settings.shipping.option.title" defaultMessage="Shipping" /></Link>
+                  <p><FormattedMessage id="settings.shipping.option.text" defaultMessage="Manage how you ship to customers." /></p>
                 </div>
               </div>
             </div>
@@ -61,8 +61,8 @@ const Settings = () => {
                   </div>
                 </div>
                 <div className="right_container">
-                  <Link to="general" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}>Location</Link>
-                  <p>Manage the places you store your inventory</p>
+                  <Link to="location" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}><FormattedMessage id="settings.location.option.title" defaultMessage="Location" /></Link>
+                  <p><FormattedMessage id="settings.location.option.text" defaultMessage="Manage the places where you store your inventory." /></p>
                 </div>
               </div>
             </div>
@@ -74,8 +74,8 @@ const Settings = () => {
                   </div>
                 </div>
                 <div className="right_container">
-                  <Link to="files" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}>File</Link>
-                  <p>Upload documents and images.</p>
+                  <Link to="files" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}><FormattedMessage id="settings.files.option.title" defaultMessage="Files" /></Link>
+                  <p><FormattedMessage id="settings.files.option.text" defaultMessage="Upload your documents and images." /></p>
                 </div>
               </div>
             </div>
@@ -87,8 +87,8 @@ const Settings = () => {
                   </div>
                 </div>
                 <div className="right_container">
-                  <Link to="account" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}>Account</Link>
-                  <p>Manage your account and permissions.</p>
+                  <Link to="account" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}><FormattedMessage id="settings.account.option.title" defaultMessage="Account" /></Link>
+                  <p><FormattedMessage id="settings.account.option.text" defaultMessage="Manage your account and permissions." /></p>
                 </div>
               </div>
             </div>
@@ -100,8 +100,8 @@ const Settings = () => {
                   </div>
                 </div>
                 <div className="right_container">
-                  <Link to="billing" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}>Billing</Link>
-                  <p>Manage your billing information and view your invoices.</p>
+                  <Link to="billing" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}><FormattedMessage id="settings.billing.option.title" defaultMessage="Billing" /></Link>
+                  <p><FormattedMessage id="settings.billing.option.text" defaultMessage="Manage your billing information and view your invoices." /></p>
                 </div>
               </div>
             </div>

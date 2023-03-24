@@ -53,5 +53,17 @@
     "reports.page.header.title": "Mes rapports",
     "reports.table.header.create.report.button": "Créer un rapport",
     "new.report.form.title": "Créer un rapport",
-    "settings.screen.header.title": "Paramètres"
+    "settings.screen.header.title": "Paramètres",
+    "settings.general.option.title": "Général",
+    "settings.general.option.text": "Consultez et mettez à jour vos informations.",
+    "settings.shipping.option.title": "Livraison",
+    "settings.shipping.option.text": "Gérez vos méthodes de livraison.",
+    "settings.location.option.title": "Lieux de stockage",
+    "settings.location.option.text": "Gérez les endroits où vous stockez votre inventaire.",
+    "settings.files.option.title": "Fichiers",
+    "settings.files.option.text": "Télécharger vos documents et vos images.",
+    "settings.account.option.title": "Votre compte",
+    "settings.account.option.text": "Gérez votre compte et vos autorisations.",
+    "settings.billing.option.title": "Facturation",
+    "settings.billing.option.text": "Gérez vos informations de facturation et consultez vos factures."
 }
