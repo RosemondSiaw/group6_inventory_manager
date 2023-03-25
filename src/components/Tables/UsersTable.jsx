@@ -26,13 +26,12 @@ function UsersTable() {
 
       {
         col1: 'SYR64867-5322',
-        col2: 'carlajs',
-        col3: 'Carla',
-        col4: 'Jamison',
-        col5: 'Surgeon',
-        col6: 'carla.jamison@randomemail.com',
-        col7: '+2331112223333',
-        col8: 'Standard',
+        col2: 'Carla',
+        col3: 'Jamison',
+        col4: 'Surgeon',
+        col5: 'carla.jamison@randomemail.com',
+        col6: '+2331112223333',
+        col7: 'Standard',
       },
 
     ],
@@ -55,7 +54,7 @@ function UsersTable() {
 
       {
 
-        Header: 'Username',
+        Header: 'First Name',
 
         accessor: 'col2',
 
@@ -63,7 +62,7 @@ function UsersTable() {
 
       {
 
-        Header: 'First Name',
+        Header: 'Last Name',
 
         accessor: 'col3',
 
@@ -71,7 +70,7 @@ function UsersTable() {
 
       {
 
-        Header: 'Last Name',
+        Header: 'Job Title',
 
         accessor: 'col4',
 
@@ -79,7 +78,7 @@ function UsersTable() {
 
       {
 
-        Header: 'Job Title',
+        Header: 'Email',
 
         accessor: 'col5',
 
@@ -87,7 +86,7 @@ function UsersTable() {
 
       {
 
-        Header: 'Email',
+        Header: 'Telephone Number',
 
         accessor: 'col6',
 
@@ -95,17 +94,9 @@ function UsersTable() {
 
       {
 
-        Header: 'Telephone Number',
-
-        accessor: 'col7',
-
-      },
-
-      {
-
         Header: 'Access Type',
 
-        accessor: 'col8',
+        accessor: 'col7',
 
       },
 

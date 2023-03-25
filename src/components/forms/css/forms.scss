@@ -171,6 +171,7 @@
                 }
             }
         }
+
         .confirm_password_field .confirmPassword {
             display: flex;
 
@@ -335,13 +336,16 @@
 
     form {
         box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
         padding: 20px;
         margin: 0 auto;
+
+        .form_fields {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
 
         .datetime_picker {
             display: grid;
@@ -423,13 +427,16 @@
 
     form {
         box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
         padding: 20px;
         margin: 0 auto;
+
+        .form_fields {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
 
         .datetime_picker {
             display: grid;

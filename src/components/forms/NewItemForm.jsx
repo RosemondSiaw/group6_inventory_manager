@@ -30,7 +30,7 @@ const NewItemForm = () => {
                     <option value="">No</option>
                 </select>
                 <div className="volume">
-                <select name="" id="">
+                    <select name="" id="">
                         <option value="" selected>Choose a metric unit of liquid volume</option>
                         <option value="">cl</option>
                         <option value="">ml</option>
@@ -39,7 +39,7 @@ const NewItemForm = () => {
                     <input type="number" name="" id="" min={1} placeholder="Volume" />
                 </div>
                 <div className="dimensions">
-                <select name="" id="">
+                    <select name="" id="">
                         <option value="" selected>Choose a metric unit of length</option>
                         <option value="">Inches</option>
                         <option value="">Meters</option>
@@ -49,12 +49,12 @@ const NewItemForm = () => {
                     <input type="number" name="" id="" min={1} placeholder="Height" />
                 </div>
                 <div className="weight">
-                    <input type="number" name="" id="" min={1} placeholder="Weight" />
                     <select name="" id="">
                         <option value="" selected>Weight metrics</option>
                         <option value="">Pounds</option>
                         <option value="">Kilogram</option>
                     </select>
+                    <input type="number" name="" id="" min={1} placeholder="Weight" />
                 </div>
                 <div className="submit-btn">
                     <button type="submit"><FormattedMessage id="popup.form.save.button" defaultMessage="SAVE" /></button>

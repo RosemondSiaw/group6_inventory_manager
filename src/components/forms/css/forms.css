@@ -368,13 +368,15 @@ button {
 }
 .new_user_form_container form {
   box-sizing: border-box;
+  padding: 20px;
+  margin: 0 auto;
+}
+.new_user_form_container form .form_fields {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin: 0 auto;
 }
 .new_user_form_container form .datetime_picker {
   display: grid;
@@ -445,13 +447,15 @@ button {
 }
 .new_vendor_form_container form {
   box-sizing: border-box;
+  padding: 20px;
+  margin: 0 auto;
+}
+.new_vendor_form_container form .form_fields {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin: 0 auto;
 }
 .new_vendor_form_container form .datetime_picker {
   display: grid;

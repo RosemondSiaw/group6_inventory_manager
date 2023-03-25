@@ -31,16 +31,17 @@ function AllItemsTable() {
         col4: 'Bany Laboratory Supplies',
         col5: 'Kiron',
         col6: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col7: 'XOF 250.00',
-        col8: '200',
-        col9: 'XOF 50,000.00',
-        col10: '50',
-        col11: '14',
-        col12: '100',
-        col13: 'No',
-        col14: '60 ml',
-        col15: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col16: '10/03/2023'
+        col7: 'Acute care',
+        col8: 'XOF 250.00',
+        col9: '200',
+        col10: 'XOF 50,000.00',
+        col11: '50',
+        col12: '14',
+        col13: '100',
+        col14: 'No',
+        col15: '60 ml',
+        col16: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
+        col17: '10/03/2023'
       },
 
     ],
@@ -102,7 +103,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Cost per item',
+        Header: 'Category',
 
         accessor: 'col7',
 
@@ -110,7 +111,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Stock quantity',
+        Header: 'Cost per item',
 
         accessor: 'col8',
 
@@ -118,7 +119,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Inventory value',
+        Header: 'Stock quantity',
 
         accessor: 'col9',
 
@@ -126,7 +127,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Reorder level',
+        Header: 'Inventory value',
 
         accessor: 'col10',
 
@@ -134,7 +135,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Days per reorder',
+        Header: 'Reorder level',
 
         accessor: 'col11',
 
@@ -142,7 +143,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Item reorder quantity',
+        Header: 'Days per reorder',
 
         accessor: 'col12',
 
@@ -150,7 +151,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Item dicontinued?',
+        Header: 'Item reorder quantity',
 
         accessor: 'col13',
 
@@ -158,7 +159,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Item volume',
+        Header: 'Item dicontinued?',
 
         accessor: 'col14',
 
@@ -166,7 +167,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Item Dimensions',
+        Header: 'Item volume',
 
         accessor: 'col15',
 
@@ -174,9 +175,17 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Date added',
+        Header: 'Item Dimensions',
 
         accessor: 'col16',
+
+      },
+
+      {
+
+        Header: 'Date added',
+
+        accessor: 'col17',
 
       },
 
