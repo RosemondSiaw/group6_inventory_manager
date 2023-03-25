@@ -39,7 +39,7 @@ const SignupForm = () => {
                 </div>
             </form>
             <div className="login_external_link">
-                <Link style={{ color: "#68B984", textDecoration: "none" }} to='/login'>Already have an account? Signin here.</Link>
+                <Link style={{ color: "#68B984", textDecoration: "none" }} to='/login'>Already have an account? Sign in here.</Link>
             </div>
         </div>)
 }

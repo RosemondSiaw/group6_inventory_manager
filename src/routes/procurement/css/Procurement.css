@@ -62,6 +62,25 @@ button {
   color: #000000;
 }
 
+.procurements-page {
+  background-color: #EDE4E0;
+}
+.procurements-page .main-container .procurement-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.procurements-page .main-container .procurement-header .page-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.procurements-page .main-container .procurement-table {
+  margin-top: 20px;
+}
+
 .procurement-page {
   background-color: #EDE4E0;
 }

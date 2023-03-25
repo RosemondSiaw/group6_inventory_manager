@@ -25,7 +25,7 @@ const LoginForm = () => {
                 </div>
             </form>
             <div className="signup_external_link">
-                <Link style={{ color: "#68B984", textDecoration: "none" }} to='/signup'>Don't have an account? Signup here.</Link>
+                <Link style={{ color: "#68B984", textDecoration: "none" }} to='/signup'>Don't have an account? Sign up here.</Link>
             </div>
         </div>
     )

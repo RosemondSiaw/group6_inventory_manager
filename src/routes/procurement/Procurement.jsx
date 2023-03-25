@@ -18,7 +18,7 @@ import DownloadSupplyOrders from '../../components/buttons/DownloadSupplyOrders'
 
 const Procurement = () => {
     return (
-        <div className="procurement-page layout-container">
+        <div className="procurements-page layout-container">
             <Sidebar />
             <Header />
             <div className="main-container">
