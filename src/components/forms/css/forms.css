@@ -111,6 +111,18 @@ button {
   display: flex;
   justify-content: center;
 }
+.login_form_container form .password_field .password {
+  display: flex;
+  position: relative;
+}
+.login_form_container form .password_field .password button {
+  background: none;
+  position: absolute;
+  right: 0%;
+}
+.login_form_container form .password_field .password button img {
+  width: 28px;
+}
 .login_form_container form .buttons {
   display: grid;
   grid-auto-columns: auto;
@@ -162,7 +174,9 @@ button {
   display: grid;
   justify-items: center;
 }
-.signup_form_container form .fname_field, .signup_form_container form .lname_field, .signup_form_container form .email_field,
+.signup_form_container form .fname_field,
+.signup_form_container form .lname_field,
+.signup_form_container form .email_field,
 .signup_form_container form .password_field,
 .signup_form_container form .confirm_password_field,
 .signup_form_container form .company_name_field {
@@ -171,14 +185,18 @@ button {
   gap: 15px;
   margin-bottom: 30px;
 }
-.signup_form_container form .fname_field label, .signup_form_container form .lname_field label, .signup_form_container form .email_field label,
+.signup_form_container form .fname_field label,
+.signup_form_container form .lname_field label,
+.signup_form_container form .email_field label,
 .signup_form_container form .password_field label,
 .signup_form_container form .confirm_password_field label,
 .signup_form_container form .company_name_field label {
   font-weight: 500;
   text-align: left;
 }
-.signup_form_container form .fname_field input, .signup_form_container form .lname_field input, .signup_form_container form .email_field input,
+.signup_form_container form .fname_field input,
+.signup_form_container form .lname_field input,
+.signup_form_container form .email_field input,
 .signup_form_container form .password_field input,
 .signup_form_container form .confirm_password_field input,
 .signup_form_container form .company_name_field input {
@@ -189,11 +207,37 @@ button {
   border: none;
   background-color: #D6DCD8;
 }
-.signup_form_container form .fname_field input:focus, .signup_form_container form .lname_field input:focus, .signup_form_container form .email_field input:focus,
+.signup_form_container form .fname_field input:focus,
+.signup_form_container form .lname_field input:focus,
+.signup_form_container form .email_field input:focus,
 .signup_form_container form .password_field input:focus,
 .signup_form_container form .confirm_password_field input:focus,
 .signup_form_container form .company_name_field input:focus {
   outline-color: #1F8A70;
+}
+.signup_form_container form .password_field .password {
+  display: flex;
+  position: relative;
+}
+.signup_form_container form .password_field .password button {
+  background: none;
+  position: absolute;
+  right: 0%;
+}
+.signup_form_container form .password_field .password button img {
+  width: 28px;
+}
+.signup_form_container form .confirm_password_field .confirmPassword {
+  display: flex;
+  position: relative;
+}
+.signup_form_container form .confirm_password_field .confirmPassword button {
+  background: none;
+  position: absolute;
+  right: 0%;
+}
+.signup_form_container form .confirm_password_field .confirmPassword button img {
+  width: 28px;
 }
 .signup_form_container form .buttons {
   display: grid;
@@ -240,6 +284,20 @@ button {
   align-items: center;
   padding: 20px;
   margin: 0 auto;
+}
+.new_item_form_container form .volume,
+.new_item_form_container form .weight {
+  display: flex;
+  gap: 12px;
+}
+.new_item_form_container form .volume select,
+.new_item_form_container form .weight select {
+  width: 320px;
+}
+.new_item_form_container form .dimensions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 .new_item_form_container form .datetime_picker {
   display: grid;
