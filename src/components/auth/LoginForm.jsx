@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {auth} from '../../scripts/firebase'
+import { auth } from '../../scripts/firebase'
 import { Link } from 'react-router-dom'
 import Lock from '../../assets/security-icon.png'
 import Google from '../../assets/google-logo.png'
@@ -23,16 +23,16 @@ const LoginForm = () => {
         setPasswordType("password")
     }
 
-    const [email, setEmail]= useState("");
+    const [email, setEmail] = useState("");
 
     const signIn = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, passwordInput)
-        .then((userCredential)=> {
-            console.log(userCredential);
-        }).catch((error) => {
-            console.log(error);
-        })
+            .then((userCredential) => {
+                console.log(userCredential);
+            }).catch((error) => {
+                console.log(error);
+            })
     }
 
     return (
@@ -57,10 +57,10 @@ const LoginForm = () => {
                     <span className="forgot_password"  ><Link style={{ color: "black", textDecoration: "none" }} to="">Forgot your password?</Link></span>
                 </div>
                 <div className="buttons">
-                    <button type='submit' className='login'> <img src={Lock} alt="" /> &nbsp; Login</button>
+                    <button type='submit' className='login'> <img src={Lock} alt="" /> &nbsp; Log in</button>
                     <span>or</span>
-                    <button className="google-signin"> <img src={Google} alt="" /> &nbsp; Sign in with Google</button>
-                    <button className="google-signin"> <img src={Microsoft} alt="" /> &nbsp; Sign in with Microsoft</button>
+                    <button className="google-signin"> <img src={Google} alt="" /> &nbsp; Log in with Google</button>
+                    <button className="google-signin"> <img src={Microsoft} alt="" /> &nbsp; Log in with Microsoft</button>
                 </div>
             </form>
             <div className="signup_external_link">

@@ -144,12 +144,15 @@ button {
 }
 .login_form_container form .buttons .login img,
 .login_form_container form .buttons .google-signin img {
+  width: 14px;
+}
+.login_form_container form .buttons .login img {
   width: 16px;
 }
 .login_form_container form .buttons .google-signin {
   background: rgb(255, 255, 255);
-  font-size: 12px;
-  padding: 8px 0;
+  font-size: 14px;
+  padding: 9px 0;
   border-radius: 8px;
 }
 .login_form_container .signup_external_link {
@@ -263,12 +266,12 @@ button {
 }
 .signup_form_container form .buttons .login img,
 .signup_form_container form .buttons .google-signin img {
-  width: 12px;
+  width: 14px;
 }
 .signup_form_container form .buttons .google-signin {
   background: rgb(255, 255, 255);
-  font-size: 12px;
-  padding: 8px 0;
+  font-size: 14px;
+  padding: 9px 0;
   border-radius: 8px;
 }
 .signup_form_container .login_external_link {

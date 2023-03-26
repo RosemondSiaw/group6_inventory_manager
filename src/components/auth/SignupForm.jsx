@@ -107,7 +107,7 @@ const SignupForm = () => {
                     <button type='submit' className='login'> Sign up</button>
                     <span>or</span>
                     <button className="google-signin"> <img src={Google} alt="" /> &nbsp; Sign up with Google</button>
-                    <button className="google-signin"> <img src={Microsoft} alt="" /> &nbsp; Sign in with Microsoft</button>
+                    <button className="google-signin"> <img src={Microsoft} alt="" /> &nbsp; Sign up with Microsoft</button>
                 </div>
             </form>
             <div className="login_external_link">
