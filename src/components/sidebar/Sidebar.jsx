@@ -1,4 +1,7 @@
-import React from 'react'
+//firebase authentification
+import { onAuthStateChanged, signOut } from 'firebase/auth';
+import React, { useEffect, useState } from 'react';
+import { auth } from '../../scripts/firebase';
 import './css/Sidebar.scss'
 import { Link } from 'react-router-dom'
 
@@ -22,6 +25,27 @@ const reportsIcon = <FontAwesomeIcon className="iconHead" icon={faChartPie} />
 const procurementIcon = <FontAwesomeIcon className="iconHead" icon={faTruckPlane} />
 
 const Sidebar = () => {
+  const [authUser, setAuthUser] = useState(null);
+
+  useEffect(() => {
+    const listen = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setAuthUser(user)
+      } else {
+        setAuthUser(null);
+      }
+    });
+    return () => {
+      listen();
+    }
+  }, []);
+
+  const userSignOut = () => {
+    signOut(auth).then(() => {
+      console.log(`${authUser.email} signed out successfully`)
+    }).catch(error => console.log(error));
+  }
+
   return (
     <div className="sidebar">
       <div className="sidebarContainer">
@@ -59,7 +83,7 @@ const Sidebar = () => {
               <li className="sidebar-list-item"> {settingsIcon} <span><FormattedMessage id="navbar.link.settings" defaultMessage="Settings" /></span></li>
             </Link>
           </div>
-          <li className="sidebar-list-item list-item-end"> {logoutIcon} <span><FormattedMessage id="navbar.link.logout" defaultMessage="Logout" /></span></li>
+          <li className="sidebar-list-item list-item-end"> {logoutIcon} <span><button onClick={userSignOut} style={{ background: 'none', padding: '0px' }}><FormattedMessage id="navbar.link.logout" defaultMessage="Logout" /></button></span></li>
         </ul>
       </div>
     </div>

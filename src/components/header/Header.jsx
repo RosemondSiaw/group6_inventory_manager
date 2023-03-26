@@ -9,6 +9,7 @@ import Greetings from '../../scripts/Greetings'
 //import Language context
 import { Context } from "../language-wrapper/Wrapper"
 
+import AuthDetails from '../auth/AuthDetails';
 
 //import Language translator jason files
 import { FormattedMessage } from "react-intl";
@@ -27,7 +28,7 @@ const Header = () => {
       <div className="header-left">
         <div class="userProfile"> <img src={Profile} alt="" /> </div>
         <div>
-          <p> <Greetings /> <span>Admin</span>! </p>
+          <p> <Greetings /> &nbsp; <span> <AuthDetails /> </span>! </p>
           <div>
             <DateTime />
           </div>
@@ -36,9 +37,9 @@ const Header = () => {
       <div className="header-middle">
         <form action="" method="post">
           <button type="submit"> {searchIcon} </button>
-          <input type="text" 
-          TODO
-          placeholder="Search item, order, manufacturer, etc" />
+          <input type="text"
+            TODO
+            placeholder="Search item, order, manufacturer, etc" />
         </form>
       </div>
       <div className="header-right">

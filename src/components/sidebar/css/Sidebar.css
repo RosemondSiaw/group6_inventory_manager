@@ -53,6 +53,9 @@
 .sidebar .sidebarContainer .sidebar-list .sidebar-list-item span {
   margin-top: 10px;
 }
+.sidebar .sidebarContainer .sidebar-list .sidebar-list-item button:hover {
+  color: #68B984;
+}
 .sidebar .sidebarContainer .sidebar-list .sidebar-list-item:hover {
   color: #68B984;
 }/*# sourceMappingURL=Sidebar.css.map */

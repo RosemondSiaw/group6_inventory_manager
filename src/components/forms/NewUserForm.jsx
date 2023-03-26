@@ -19,7 +19,7 @@ const NewUserForm = () => {
                         <option value="" selected>Access type</option>
                         <option value="">Adminitrator</option>
                         <option value="">User</option>
-                        <option value="">Client</option>
+                        <option value="">Staff (Client)</option>
                     </select>
                 </div>
                 <div className="submit-btn">
