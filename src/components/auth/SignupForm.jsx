@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom'
 import Google from '../../assets/google-logo.png'
 import closedEyes from '../../assets/eyes_closed.png';
 import openedEyes from '../../assets/eye_open.png';
-import './css/forms.scss';
+import Microsoft from '../../assets/microsoft.png'
+import './css/Auth.scss';
 
 import PasswordChecklist from "react-password-checklist"
 
@@ -100,12 +101,13 @@ const SignupForm = () => {
                 />
                 <div className="company_name_field" style={{ marginTop: '19px' }}>
                     <label htmlFor="">Company name</label>
-                    <input type="text" name="company_name" id="company_name" placeholder='Company name' onChange={(e) => setCname(e.target.value)} autoComplete='none'/>
+                    <input type="text" name="company_name" id="company_name" placeholder='Company name' onChange={(e) => setCname(e.target.value)} autoComplete='none' />
                 </div>
                 <div className="buttons">
                     <button type='submit' className='login'> Sign up</button>
                     <span>or</span>
                     <button className="google-signin"> <img src={Google} alt="" /> &nbsp; Sign up with Google</button>
+                    <button className="google-signin"> <img src={Microsoft} alt="" /> &nbsp; Sign in with Microsoft</button>
                 </div>
             </form>
             <div className="login_external_link">

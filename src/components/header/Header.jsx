@@ -9,8 +9,6 @@ import Greetings from '../../scripts/Greetings'
 //import Language context
 import { Context } from "../language-wrapper/Wrapper"
 
-import AuthDetails from '../auth/AuthDetails';
-
 //import Language translator jason files
 import { FormattedMessage } from "react-intl";
 
@@ -28,7 +26,7 @@ const Header = () => {
       <div className="header-left">
         <div class="userProfile"> <img src={Profile} alt="" /> </div>
         <div>
-          <p> <Greetings /> &nbsp; <span> <AuthDetails /> </span>! </p>
+          <p> <Greetings /> &nbsp; <span> User </span>! </p>
           <div>
             <DateTime />
           </div>

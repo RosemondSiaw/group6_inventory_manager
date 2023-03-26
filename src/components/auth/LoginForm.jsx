@@ -5,7 +5,8 @@ import Lock from '../../assets/security-icon.png'
 import Google from '../../assets/google-logo.png'
 import closedEyes from '../../assets/eyes_closed.png';
 import openedEyes from '../../assets/eye_open.png';
-import './css/forms.scss';
+import Microsoft from '../../assets/microsoft.png'
+import './css/Auth.scss';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
 const LoginForm = () => {
@@ -59,6 +60,7 @@ const LoginForm = () => {
                     <button type='submit' className='login'> <img src={Lock} alt="" /> &nbsp; Login</button>
                     <span>or</span>
                     <button className="google-signin"> <img src={Google} alt="" /> &nbsp; Sign in with Google</button>
+                    <button className="google-signin"> <img src={Microsoft} alt="" /> &nbsp; Sign in with Microsoft</button>
                 </div>
             </form>
             <div className="signup_external_link">

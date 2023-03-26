@@ -1,5 +1,5 @@
 import React from 'react'
-import SignupForm from '../../components/forms/SignupForm'
+import SignupForm from '../../components/auth/SignupForm'
 import './css/Signup.scss'
 
 import Logo from '../../assets/geia-logo.png'
