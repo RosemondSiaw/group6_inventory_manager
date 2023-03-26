@@ -7,7 +7,21 @@
   overflow-y: auto;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+  position: relative;
   position: fixed;
+}
+.sidebar .error_container {
+  margin: 20px;
+  text-align: center;
+  position: absolute;
+  top: 77%;
+}
+.sidebar .error_container .error {
+  background: #efcdcd;
+  border-radius: 12px;
+  color: #ff0000;
+  border: 1px solid red;
+  padding: 10px;
 }
 .sidebar .sidebarContainer {
   padding-right: 20px;

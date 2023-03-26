@@ -43,7 +43,7 @@ const LoginForm = () => {
             await login(emailRef.current.value, passwordRef.current.value)
             navigate("/")
         } catch {
-            setError("Failed to log in")
+            setError("Failed to log in. Wrong email/password. Try again")
         }
 
         setLoading(false)

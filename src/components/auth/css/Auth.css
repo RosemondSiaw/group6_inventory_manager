@@ -77,6 +77,21 @@ button {
   text-align: center;
   margin-top: 10px;
 }
+.login_form_container .error_container {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.login_form_container .error_container .error {
+  padding: 10px;
+  background: rgb(239, 205, 205);
+  border-radius: 12px;
+  color: red;
+  border: 1px solid red;
+}
 .login_form_container form {
   margin-top: 30px;
   display: grid;

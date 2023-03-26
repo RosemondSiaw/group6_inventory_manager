@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { useAuth } from '../contexts/AuthContext'
 import './css/Header.scss'
 import Profile from '../../assets/profilePicture.svg'
 
@@ -10,7 +11,7 @@ import Greetings from '../../scripts/Greetings'
 import { Context } from "../language-wrapper/Wrapper"
 
 //import Language translator jason files
-import { FormattedMessage } from "react-intl";
+//import { FormattedMessage } from "react-intl";
 
 //import icons from Fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -21,12 +22,14 @@ const searchIcon = <FontAwesomeIcon className="iconHead" icon={faMagnifyingGlass
 const Header = () => {
   const context = useContext(Context);
 
+  const { currentUser } = useAuth()
+
   return (
     <div className="header">
       <div className="header-left">
         <div class="userProfile"> <img src={Profile} alt="" /> </div>
         <div>
-          <p> <Greetings /> &nbsp; <span> User </span>! </p>
+          <p> <Greetings /> &nbsp; <span> {currentUser.email} </span>! </p>
           <div>
             <DateTime />
           </div>
