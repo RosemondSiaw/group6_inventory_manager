@@ -131,6 +131,20 @@
         margin-top: 10px;
     }
 
+    .error_container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        .error {
+            padding: 12px;
+            background: rgb(239, 205, 205);
+            border-radius: 12px;
+            color: red;
+            border: 1px solid red;
+        }
+    }
+
     form {
         margin-top: 30px;
         display: grid;
