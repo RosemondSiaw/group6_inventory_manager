@@ -1,7 +1,11 @@
 import React from 'react'
+import { Outlet, Navigate } from 'react-router-dom'
 
-export default function PrivateRoute({component: Component, ...rest}) {
-  return (
-    <div>PrivateRoute</div>
-  )
+const PrivateRoute = () => {
+    let auth = { 'token': false }
+    return (
+        auth.token ? <Outlet /> : <Navigate to='/login' />
+    )
 }
+
+export default PrivateRoute

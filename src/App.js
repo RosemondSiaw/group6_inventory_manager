@@ -17,6 +17,7 @@ import Vendors from './routes/vendors/Vendors'
 import Reports from './routes/reports/Reports'
 import Report from './routes/reports/Report'
 import SingleProcurement from './routes/procurement/SingleProcurement'
+import PrivateRoute from './routes/private/PrivateRoute'
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
       <Router>
         <AuthProvider>
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route element={<PrivateRoute />}>
+              <Route element={Home} exact path="/" />
+            </Route>
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path='/items'>
