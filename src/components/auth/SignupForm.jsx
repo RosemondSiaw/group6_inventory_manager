@@ -15,7 +15,7 @@ const SignupForm = () => {
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
-    const { signup, currentUser } = useAuth()
+    const { signup } = useAuth()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const navigate = useNavigate()
@@ -74,7 +74,6 @@ const SignupForm = () => {
 
     return (
         <div className="signup_form_container">
-            {currentUser && currentUser.email}
             <h1>Join Us!</h1>
             {error && <div className="error_container"> <span className="error">{error}</span> </div>}
             <form onSubmit={handleSubmit} autoComplete='none'>

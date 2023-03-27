@@ -13,7 +13,7 @@ const LoginForm = () => {
     //declaring variables
     const emailRef = useRef()
     const passwordRef = useRef()
-    const { login, currentUser } = useAuth()
+    const { login } = useAuth()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const navigate = useNavigate()
@@ -51,7 +51,6 @@ const LoginForm = () => {
 
     return (
         <div className="login_form_container">
-            {currentUser && currentUser.email}
             <h1>Welcome!</h1>
             {error && <div className="error_container"> <span className="error">{error}</span> </div>}
             <form onSubmit={handleSubmit} autoComplete='none'>
