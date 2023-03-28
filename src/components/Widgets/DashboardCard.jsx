@@ -7,8 +7,20 @@ const DashboardCard = ({ type }) => {
     switch (type) {
         case "all-items":
             data = {
-                title: "All Items",
-                count: 1532,
+                title: "All items",
+                count: 568,
+            };
+            break;
+        case "in-stock":
+            data = {
+                title: "In stock",
+                count: 130,
+            };
+            break;
+        case "low-stock":
+            data = {
+                title: "Low of stock",
+                count: 41,
             };
             break;
         case "out-of-stock":
@@ -17,10 +29,10 @@ const DashboardCard = ({ type }) => {
                 count: 0,
             };
             break;
-        case "overstock":
+        case "on-order":
             data = {
-                title: "Overstock",
-                count: 1,
+                title: "On order",
+                count: 15,
             };
             break;
         default:

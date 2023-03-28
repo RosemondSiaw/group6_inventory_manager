@@ -28,8 +28,10 @@ const Home = () => {
 
                     <div className="dashboardCards">
                         <Card type="all-items" />
+                        <Card type="in-stock" />
+                        <Card type="low-stock" />
                         <Card type="out-of-stock" />
-                        <Card type="overstock" />
+                        <Card type="on-order" />
                     </div>
                 </div>
 

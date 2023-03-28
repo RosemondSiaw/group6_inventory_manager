@@ -38,7 +38,7 @@ function AllItemsTable() {
         col11: '50',
         col12: '14',
         col13: '100',
-        col14: 'No',
+        col14: 'In stock',
         col15: '60 ml',
         col16: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
         col17: '10/03/2023'
@@ -159,7 +159,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Item dicontinued?',
+        Header: 'Status',
 
         accessor: 'col14',
 
@@ -183,7 +183,7 @@ function AllItemsTable() {
 
       {
 
-        Header: 'Date added',
+        Header: 'Last update',
 
         accessor: 'col17',
 
