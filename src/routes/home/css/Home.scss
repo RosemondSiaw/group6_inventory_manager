@@ -6,8 +6,10 @@
     background-color: $background-color;
 
     .main-container {
+        padding-bottom: 20px;
+
         .dashboardCardContainer {
-            .dashboardCards{
+            .dashboardCards {
                 display: flex;
                 justify-content: left;
                 gap: 100px;
@@ -26,10 +28,6 @@
                 gap: 20px;
                 align-items: center;
             }
-        }
-
-        .table-container {
-            margin-top: 20px;
         }
     }
 }

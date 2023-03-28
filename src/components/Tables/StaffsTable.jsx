@@ -181,8 +181,8 @@ function UsersTable() {
     ADD CATEGORY FILTER
    */}
 
-      <div className='users-table-container'>
-        <table {...getTableProps()} className='users-table'>
+      <div className='staffs-table-container'>
+        <table {...getTableProps()} className='staffs-table'>
           <thead>
             {headerGroups.map(headerGroup => (
               <tr {...headerGroup.getHeaderGroupProps()}>

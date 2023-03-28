@@ -12,7 +12,7 @@ import Settings from './routes/settings/Settings'
 import AllLogs from './routes/logs/AllLogs'
 import SingleOrder from './routes/orders/SingleOrder'
 import Item from './routes/items/Item'
-import Users from './routes/users/Users'
+import Staffs from './routes/staffs/Staff'
 import Vendors from './routes/vendors/Vendors'
 import Reports from './routes/reports/Reports'
 import Report from './routes/reports/Report'
@@ -35,7 +35,7 @@ function App() {
               <Route path=':itemid' element={<Item />} /> {/*A nested route!*/}
               <Route path='logs' element={<AllLogs />} /> {/*A nested route!*/}
             </Route>
-            <Route path="/users" element={<Users />} />
+            <Route path="/staffs" element={<Staffs />} />
             <Route path="/vendors" element={<Vendors />} />
             <Route path='/orders'>
               <Route index element={<Orders />} />

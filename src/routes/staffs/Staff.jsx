@@ -2,14 +2,14 @@ import React from 'react'
 
 //import style
 import '../../styles/buttons/Buttons.scss'
-import './css/Users.scss'
+import './css/Staff.scss'
 import '../../styles/layout/Layout.scss'
 import '../../styles/typography/Typography.scss'
 
 //import components
 import Header from '../../components/header/Header'
 import Sidebar from '../../components/sidebar/Sidebar'
-import UsersTable from '../../components/Tables/UsersTable';
+import UsersTable from '../../components/Tables/StaffsTable';
 
 //import Language translator jason files
 import { FormattedMessage } from "react-intl";

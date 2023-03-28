@@ -58,7 +58,7 @@ const Sidebar = () => {
               <Link to='/items' style={{ textDecoration: 'none' }}>
                 <li className="sidebar-list-item"> {itemsIcon} <span><FormattedMessage id="navbar.link.items" defaultMessage="Items" /></span></li>
               </Link>
-              <Link to='/users' style={{ textDecoration: 'none' }}>
+              <Link to='/staffs' style={{ textDecoration: 'none' }}>
                 <li className="sidebar-list-item"> {usersIcon} <span><FormattedMessage id="navbar.link.users" defaultMessage="Users" /></span></li>
               </Link>
               <Link to='/vendors' style={{ textDecoration: 'none' }}>

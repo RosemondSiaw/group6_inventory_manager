@@ -65,6 +65,9 @@ button {
 .home {
   background-color: #EDE4E0;
 }
+.home .main-container {
+  padding-bottom: 20px;
+}
 .home .main-container .dashboardCardContainer .dashboardCards {
   display: flex;
   justify-content: left;
@@ -81,7 +84,4 @@ button {
   justify-content: space-between;
   gap: 20px;
   align-items: center;
-}
-.home .main-container .table-container {
-  margin-top: 20px;
 }/*# sourceMappingURL=Home.css.map */

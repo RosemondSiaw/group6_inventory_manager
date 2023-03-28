@@ -28,12 +28,15 @@ function AllLogsTable() {
       {
 
         col1: 'CTR3425',
-        col2: 'Gloves',
-        col3: '23',
-        col4: 'Yes',
+        col2: 'Irvick yringes',
+        col3: 'Sandrine Couper',
+        col4: 'N/A',
         col5: 'N/A',
-        col6: 'Apex Medical Co.',
-        col7: 'Jordan Eko',
+        col6: 'Delete',
+        col7: '12',
+        col8: 'Tuesday, March 28, 2023, 11:24 AM',
+        col9: 'Clinique Des Roses',
+        col10: 'N/A',
 
       },
 
@@ -65,7 +68,7 @@ function AllLogsTable() {
 
       {
 
-        Header: 'Units',
+        Header: 'User',
 
         accessor: 'col3',
 
@@ -73,7 +76,7 @@ function AllLogsTable() {
 
       {
 
-        Header: 'In',
+        Header: 'Staff',
 
         accessor: 'col4',
 
@@ -81,7 +84,7 @@ function AllLogsTable() {
 
       {
 
-        Header: 'Out',
+        Header: 'Vendor',
 
         accessor: 'col5',
 
@@ -89,7 +92,7 @@ function AllLogsTable() {
 
       {
 
-        Header: 'Manufacturer',
+        Header: 'Action',
 
         accessor: 'col6',
 
@@ -97,9 +100,33 @@ function AllLogsTable() {
 
       {
 
-        Header: 'Ordered by',
+        Header: 'Quantity',
 
         accessor: 'col7',
+
+      },
+
+      {
+
+        Header: 'Timestamp',
+
+        accessor: 'col8',
+
+      },
+
+      {
+
+        Header: 'Location',
+
+        accessor: 'col9',
+
+      },
+
+      {
+
+        Header: 'Note',
+
+        accessor: 'col10',
 
       },
 

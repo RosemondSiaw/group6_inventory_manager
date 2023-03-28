@@ -62,40 +62,61 @@ button {
   color: #000000;
 }
 
-.table-container {
+.logs-table-container {
   background-color: #1F8A70;
   height: 55vh;
   margin-top: 20px;
   border-radius: 10px;
-  overflow-x: auto;
-  margin-bottom: 20px;
+  overflow: auto;
+  width: 100%;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
 }
-.table-container .log-table {
+.logs-table-container .log-table {
   border-collapse: collapse;
   table-layout: fixed;
   width: 100%;
-}
-.table-container .log-table thead th {
-  color: #000000;
-  font-weight: 500;
-  font-size: 18px;
   color: white;
 }
-.table-container .log-table tbody tr {
+.logs-table-container .log-table thead th {
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+  width: 180px;
+  color: white;
+}
+.logs-table-container .log-table tbody tr {
   font-size: 14px;
   font-weight: 400;
   color: white;
 }
-.table-container .log-table th,
-.table-container .log-table td {
+.logs-table-container .log-table th,
+.logs-table-container .log-table td {
   border-bottom: 1px solid white;
   padding: 10px;
   text-align: center;
   color: white;
 }
-.table-container .log-table tfoot tr:last-child td {
+.logs-table-container .log-table tfoot tr:last-child td {
   border-bottom: 0;
   color: white;
+}
+.logs-table-container ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  left: 100px;
+}
+.logs-table-container ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.logs-table-container ::-webkit-scrollbar-thumb {
+  background: #A5A5A5;
+  border-radius: 10px;
+}
+.logs-table-container ::-webkit-scrollbar-thumb:hover {
+  background: #68B984;
 }
 
 .all-items-table-container {
@@ -103,7 +124,7 @@ button {
   height: 75vh;
   margin-top: 20px;
   border-radius: 10px;
-  overflow-x: auto;
+  overflow: auto;
   margin-bottom: 20px;
   width: 100%;
 }
@@ -169,7 +190,8 @@ button {
 .all-logs-table-container .all-logs-table thead th {
   color: #000000;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
+  width: 180px;
   color: white;
 }
 .all-logs-table-container .all-logs-table tbody tr {
@@ -222,7 +244,7 @@ button {
   border-bottom: 0;
 }
 
-.users-table-container {
+.staffs-table-container {
   background-color: #1F8A70;
   height: 75vh;
   margin-top: 20px;
@@ -231,31 +253,31 @@ button {
   margin-bottom: 20px;
   width: 100%;
 }
-.users-table-container .users-table {
+.staffs-table-container .staffs-table {
   border-collapse: collapse;
   table-layout: fixed;
   width: 100%;
   color: white;
 }
-.users-table-container .users-table thead th {
+.staffs-table-container .staffs-table thead th {
   color: #000000;
   font-weight: 500;
   font-size: 16px;
   width: 200px;
   color: white;
 }
-.users-table-container .users-table tbody tr {
+.staffs-table-container .staffs-table tbody tr {
   font-size: 14px;
   font-weight: 400;
   color: white;
 }
-.users-table-container .users-table th,
-.users-table-container .users-table td {
+.staffs-table-container .staffs-table th,
+.staffs-table-container .staffs-table td {
   border-bottom: 1px solid white;
   padding: 10px;
   text-align: center;
 }
-.users-table-container .users-table tfoot tr:last-child td {
+.staffs-table-container .staffs-table tfoot tr:last-child td {
   border-bottom: 0;
 }
 
@@ -294,4 +316,27 @@ button {
 }
 .procurement-table-container .procurement-table tfoot tr:last-child td {
   border-bottom: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  left: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #A5A5A5;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #68B984;
 }/*# sourceMappingURL=Tables.css.map */

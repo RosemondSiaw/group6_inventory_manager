@@ -1,24 +1,26 @@
 @import '../../../styles/colors/Colors.scss';
 @import '../../../styles/typography/Typography.scss';
 
-.table-container {
-    background-color: $table-background;
+.logs-table-container {
+    background-color: $primary-color;
     height: 55vh;
     margin-top: 20px;
     border-radius: 10px;
-    overflow-x: auto;
-    margin-bottom: 20px;
+    overflow: auto;
+    width: 100%;
+
 
     .log-table {
         border-collapse: collapse;
         table-layout: fixed;
         width: 100%;
-
+        color: $text-color-light;
 
         thead th {
             color: $text-color;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 16px;
+            width: 180px;
             color: $text-color-light;
         }
 
@@ -40,6 +42,30 @@
             border-bottom: 0;
             color: $text-color-light;
         }
+
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        left: 100px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #A5A5A5;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #68B984;
     }
 }
 
@@ -48,7 +74,7 @@
     height: 75vh;
     margin-top: 20px;
     border-radius: 10px;
-    overflow-x: auto;
+    overflow: auto;
     margin-bottom: 20px;
     width: 100%;
 
@@ -123,7 +149,8 @@
         thead th {
             color: $text-color;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 16px;
+            width: 180px;
             color: $text-color-light;
 
         }
@@ -191,7 +218,7 @@
     }
 }
 
-.users-table-container {
+.staffs-table-container {
     background-color: $primary-color;
     height: 75vh;
     margin-top: 20px;
@@ -200,7 +227,7 @@
     margin-bottom: 20px;
     width: 100%;
 
-    .users-table {
+    .staffs-table {
         border-collapse: collapse;
         table-layout: fixed;
         width: 100%;
@@ -276,4 +303,27 @@
             border-bottom: 0;
         }
     }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    left: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #A5A5A5;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #68B984;
 }
