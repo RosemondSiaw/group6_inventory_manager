@@ -32,6 +32,7 @@ function VendorsTable() {
         col5: 'koffi.ly@johnson-johnson.com',
         col6: 'Due on receipt',
         col7: '151 North Pendergast Circle Rockville, MD 20850',
+        col8: 'Active'
       },
 
     ],
@@ -97,6 +98,22 @@ function VendorsTable() {
         Header: 'Billing Address',
 
         accessor: 'col7',
+
+      },
+
+      {
+
+        Header: 'Status',
+
+        accessor: 'col8',
+
+      },
+
+      {
+
+        Header: 'Status',
+
+        accessor: 'col9',
 
       },
 

@@ -28,9 +28,12 @@ function OrdersTable() {
 
         col1: 'ORD38632',
         col2: '28/02/2023',
-        col3: 'In progress',
+        col3: 'Sammy Kpeglo',
         col4: 'Jeannette Dogbe',
-        col5: '28/02/2023 at 3:05 PM'
+        col5: '$56',
+        col6: '28/02/2023 ',
+        col7: 'Clinique Des Roses',
+        col8: ' Delivered'
       },
 
     ],
@@ -53,7 +56,7 @@ function OrdersTable() {
 
       {
 
-        Header: 'Date',
+        Header: 'Created',
 
         accessor: 'col2',
 
@@ -61,7 +64,7 @@ function OrdersTable() {
 
       {
 
-        Header: 'Status',
+        Header: 'Staff',
 
         accessor: 'col3',
 
@@ -69,7 +72,7 @@ function OrdersTable() {
 
       {
 
-        Header: 'Ordered by',
+        Header: 'Fulfilled By',
 
         accessor: 'col4',
 
@@ -77,9 +80,34 @@ function OrdersTable() {
 
       {
 
-        Header: 'Receipt Date',
+        Header: 'Total Order Value',
 
         accessor: 'col5',
+
+      },
+
+      {
+
+        Header: 'Delivery Date',
+
+        accessor: 'col6',
+
+      },
+
+      {
+
+        Header: 'Delivery Location',
+
+        accessor: 'col7',
+
+      },
+
+      
+      {
+
+        Header: 'Status',
+
+        accessor: 'col8',
 
       },
 
