@@ -16,10 +16,18 @@ const NewUserForm = () => {
                     <input type="tel" name="staff_tel" id="staff_tel"  placeholder="Phone"/>
                     <input type="text" name="job_title" id="job_title" placeholder="Job Title" />
                     <select name="" id="">
-                        <option value="" selected>Access type</option>
-                        <option value="">Adminitrator</option>
-                        <option value="">User</option>
-                        <option value="">Staff (Client)</option>
+                        <option value="" selected>Status</option>
+                        <option value="">Active</option>
+                        <option value="">On Leave</option>
+                        <option value="">Terminated</option>
+                        <option value="">Suspended</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="" selected>Location</option>
+                        <option value="">Location 1</option>
+                        <option value="">Location 2</option>
+                        <option value="">Location 3</option>
+                        <option value="">Home Care</option>
                     </select>
                 </div>
                 <div className="submit-btn">

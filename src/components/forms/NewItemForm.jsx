@@ -20,15 +20,11 @@ const NewItemForm = () => {
                     <option value="">Durable Medical Equipment</option>
                     <option value="">Acute Care</option>
                 </select>
-                <input type="number" name="cost_per_item" id="cost_per_item" placeholder="Cost Per Item" min={0} />
-                <input type="number" name="stock_quantity" id="stock_quantity" placeholder="Stock Quantity" min={0} />
-                <input type="number" name="reorder_level" id="reorder_level" placeholder="Reorder Level" min={10} />
-                <input type="number" name="days_per_reorder" id="days_per_reorder" placeholder="Days Per Reorder" min={7} />
-                <select name="" id="">
-                    <option value="" selected>Item discontinued?</option>
-                    <option value="">Yes</option>
-                    <option value="">No</option>
-                </select>
+                <input type="number" name="cost_per_item" id="cost_per_item" placeholder="Cost Per Item" min={1} />
+                <input type="number" name="stock_quantity" id="stock_quantity" placeholder="Stock Quantity" min={1} />
+                <input type="number" name="reorder_level" id="reorder_level" placeholder="Reorder Level" min={1} />
+                <input type="number" name="reorder_level" id="reorder_level" placeholder="Reorder Quantity" min={1} />
+                <input type="number" name="days_per_reorder" id="days_per_reorder" placeholder="Days Per Reorder" min={1} />
                 <div className="volume">
                     <select name="" id="">
                         <option value="" selected>Choose a metric unit of liquid volume</option>

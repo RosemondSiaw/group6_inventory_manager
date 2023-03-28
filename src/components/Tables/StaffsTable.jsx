@@ -31,7 +31,8 @@ function UsersTable() {
         col4: 'Surgeon',
         col5: 'carla.jamison@randomemail.com',
         col6: '+2331112223333',
-        col7: 'Standard',
+        col7: 'Active',
+        col8: 'Location 1',
       },
 
     ],
@@ -94,9 +95,17 @@ function UsersTable() {
 
       {
 
-        Header: 'Access Type',
+        Header: 'Status',
 
         accessor: 'col7',
+
+      },
+
+      {
+
+        Header: 'Location',
+
+        accessor: 'col8',
 
       },
 
