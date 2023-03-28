@@ -27,14 +27,16 @@ function ProcurementTable() {
             {
 
                 col1: '38632',
-                col2: '28/02/2023',
-                col3: 'In progress',
-                col4: 'Jeannette Dogbe',
-                col5: 'Johnson & Johnson',
-                col6: '31/03/2023',
+                col2: 'Jeannette Dogbe',
+                col3: 'Johnson & Johnson',
+                col4: '28/02/2023',
+                col5: '31/03/2023',
+                col6: 'In progress ',
                 col7: '7949 Berkshire Road Hobart, IN 46342',
                 col8: '946 Bayberry Avenue Derry, NH 03038',
-                col9: '01/04/2023'
+                col9: '$1,205',
+                col10: 'Bank deposit',
+                col11: '01/04/2023'
             },
 
         ],
@@ -57,7 +59,7 @@ function ProcurementTable() {
 
             {
 
-                Header: 'Date',
+                Header: 'Ordered By',
 
                 accessor: 'col2',
 
@@ -65,7 +67,7 @@ function ProcurementTable() {
 
             {
 
-                Header: 'Status',
+                Header: 'Vendor',
 
                 accessor: 'col3',
 
@@ -73,15 +75,16 @@ function ProcurementTable() {
 
             {
 
-                Header: 'Ordered By',
+                Header: 'Date',
 
                 accessor: 'col4',
 
             },
 
+
             {
 
-                Header: 'Vendor',
+                Header: 'Expected Delivery Date',
 
                 accessor: 'col5',
 
@@ -89,7 +92,7 @@ function ProcurementTable() {
 
             {
 
-                Header: 'Expected Shipment Date',
+                Header: 'Status',
 
                 accessor: 'col6',
 
@@ -113,9 +116,25 @@ function ProcurementTable() {
 
             {
 
-                Header: 'Receipt Date',
+                Header: 'Total Cost',
 
                 accessor: 'col9',
+
+            },
+
+            {
+
+                Header: 'Payment Method',
+
+                accessor: 'col10',
+
+            },
+
+            {
+
+                Header: 'Receipt Date',
+
+                accessor: 'col11',
 
             },
 

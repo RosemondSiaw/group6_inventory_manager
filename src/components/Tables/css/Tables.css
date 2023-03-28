@@ -69,9 +69,6 @@ button {
   border-radius: 10px;
   overflow: auto;
   width: 100%;
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
 }
 .logs-table-container .log-table {
   border-collapse: collapse;
@@ -101,22 +98,6 @@ button {
 .logs-table-container .log-table tfoot tr:last-child td {
   border-bottom: 0;
   color: white;
-}
-.logs-table-container ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-  left: 100px;
-}
-.logs-table-container ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-.logs-table-container ::-webkit-scrollbar-thumb {
-  background: #A5A5A5;
-  border-radius: 10px;
-}
-.logs-table-container ::-webkit-scrollbar-thumb:hover {
-  background: #68B984;
 }
 
 .all-items-table-container {
@@ -317,27 +298,4 @@ button {
 }
 .procurement-table-container .procurement-table tfoot tr:last-child td {
   border-bottom: 0;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-  left: 100px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #A5A5A5;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #68B984;
 }/*# sourceMappingURL=Tables.css.map */
