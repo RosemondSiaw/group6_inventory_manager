@@ -22,7 +22,7 @@
   border-radius: 10px;
 }
 .layout-container ::-webkit-scrollbar-thumb {
-  background: #A5A5A5;
+  background: #cccccc;
   border-radius: 10px;
 }
 .layout-container ::-webkit-scrollbar-thumb:hover {
