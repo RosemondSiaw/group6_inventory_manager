@@ -39,6 +39,8 @@
     "orders.table.header.download.orders.button": "Télécharger la liste des commandes",
     "new.order.form.title": "Créer une nouvellle commande",
     "order.single.page.header.title": "Numéro de commande:",
+    "order.form.save.draft.button": "ENREGISTRER BROUILLON",
+    "send.order.form.send.button": "ENVOYER COMMANDE",
     "procurement.page.header": "Provisions",
     "procurement.table.header.create.supply.order.button": "Créer une commande de stock",
     "procurement.table.header.download.button": "Télécharger la liste de commandes de stock",

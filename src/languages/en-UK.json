@@ -38,6 +38,8 @@
     "orders.table.header.create.order.button": "Create new order",
     "orders.table.header.download.orders.button": "Download orders list",
     "new.order.form.title": "Create a new order",
+    "order.form.save.draft.button": "SAVE AS DRAFT",
+    "send.order.form.send.button": "SEND ORDER",
     "order.single.page.header.title": "Order ID:",
     "procurement.page.header": "Procurement",
     "procurement.table.header.create.supply.order.button": "Create a new supply order",
