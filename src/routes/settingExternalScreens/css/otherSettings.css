@@ -216,6 +216,80 @@ button {
 .locationSetting .main-container {
   padding-bottom: 20px;
 }
+.locationSetting .main-container .locationSetting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.locationSetting .main-container .location_explained {
+  font-size: 14px;
+}
+.locationSetting .main-container .location_items_container {
+  margin-top: 30px;
+  background: #d7d7d7;
+  padding: 10px;
+  border-radius: 12px;
+}
+.locationSetting .main-container .location_items_container .location_items_container_title {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.locationSetting .main-container .location_items_container .location_items .locationItem {
+  display: flex;
+  gap: 20px;
+  border-bottom: 2px solid #c5c5c5;
+  padding: 22px 18px;
+}
+.locationSetting .main-container .location_items_container .location_items .locationItem .icon_container .icon {
+  background: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.locationSetting .main-container .location_items_container .location_items .locationItem:nth-last-child(1) {
+  border-bottom: none;
+}
+.locationSetting .main-container .location_items_container .location_items .location_details .location_details_header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.locationSetting .main-container .location_items_container .location_items .location_details .location_details_header .title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.locationSetting .main-container .location_items_container .location_items .location_details .location_details_header .default {
+  background: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #68B984;
+}
+.locationSetting .main-container .location_items_container .location_items .location_details .address {
+  padding-top: 10px;
+  font-size: 16px;
+}
+.locationSetting .main-container .default_item_selector {
+  margin-top: 30px;
+  background: #d7d7d7;
+  padding: 10px;
+  border-radius: 12px;
+}
+.locationSetting .main-container .default_item_selector .default_item_container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 12px;
+}
+.locationSetting .main-container .default_item_selector .location_items_container_title {
+  font-weight: 500;
+  font-size: 14px;
+}
+.locationSetting .main-container .default_item_selector .default_item_button button {
+  font-size: 12px;
+  border-radius: 8px;
+  background: #bdd8c6;
+}
 
 .filesSetting {
   background-color: #EDE4E0;
