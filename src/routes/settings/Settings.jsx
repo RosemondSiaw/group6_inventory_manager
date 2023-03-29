@@ -66,14 +66,14 @@ const Settings = () => {
                 </div>
               </div>
             </div>
-            <div className="card">
+            <div className="card" style={{display:'none'}}>
               <div className="container">
                 <div className="left_container">
                   <div className="icon_container">
                     {FileIcon}
                   </div>
                 </div>
-                <div className="right_container">
+                <div className="right_container" >
                   <Link to="files" style={{ textDecoration: 'none', color: '#1F8A70', fontWeight: 'bold', fontSize: '16px' }}><FormattedMessage id="settings.files.option.title" defaultMessage="Files" /></Link>
                   <p><FormattedMessage id="settings.files.option.text" defaultMessage="Upload your documents and images." /></p>
                 </div>

@@ -143,6 +143,108 @@
     .main-container {
         padding-bottom: 20px;
 
+        .locationSetting-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .location_explained {
+            font-size: 14px;
+        }
+
+        .location_items_container {
+            margin-top: 30px;
+            background: $background-color-light;
+            padding: 10px;
+            border-radius: 12px;
+
+            .location_items_container_title {
+                margin-bottom: 15px;
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+            .location_items {
+                .locationItem {
+                    display: flex;
+                    gap: 20px;
+                    border-bottom: 2px solid #c5c5c5;
+                    padding: 22px 18px;
+
+                    .icon_container {
+
+
+                        .icon {
+                            background: $text-color-light;
+                            padding: 8px 12px;
+                            border-radius: 8px;
+                        }
+                    }
+
+                }
+
+                .locationItem:nth-last-child(1) {
+                    border-bottom: none;
+                }
+
+                .location_details {
+                    .location_details_header {
+                        display: flex;
+                        align-items: center;
+                        gap: 30px;
+
+                        .title {
+                            font-weight: 600;
+                            font-size: 18px;
+                        }
+
+                        .default {
+                            background: $text-color-light;
+                            padding: 5px;
+                            font-size: 12px;
+                            border-radius: 5px;
+                            font-weight: 500;
+                            color: $secondary-color;
+                        }
+                    }
+
+                    .address {
+                        padding-top: 10px;
+                        font-size: 16px;
+                    }
+                }
+
+            }
+
+        }
+
+        .default_item_selector {
+            margin-top: 30px;
+            background: $background-color-light;
+            padding: 10px;
+            border-radius: 12px;
+
+            .default_item_container {
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                gap: 12px;
+            }
+
+            .location_items_container_title {
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+            .default_item_button {
+                button {
+                    font-size: 12px;
+                    border-radius: 8px;
+                    background: #bdd8c6;
+                }
+            }
+        }
+
     }
 }
 
