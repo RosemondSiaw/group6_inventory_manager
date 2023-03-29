@@ -22,13 +22,7 @@ const NewUserForm = () => {
                         <option value="">Terminated</option>
                         <option value="">Suspended</option>
                     </select>
-                    <select name="" id="">
-                        <option value="" selected>Location</option>
-                        <option value="">Location 1</option>
-                        <option value="">Location 2</option>
-                        <option value="">Location 3</option>
-                        <option value="">Home Care</option>
-                    </select>
+                    <input type="text" placeholder="Shipping addres" />
                 </div>
                 <div className="submit-btn">
                     <button type="submit"><FormattedMessage id="popup.form.save.button" defaultMessage="SAVE" /></button>

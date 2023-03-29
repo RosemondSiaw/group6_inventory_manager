@@ -18,6 +18,12 @@ import Reports from './routes/reports/Reports'
 import Report from './routes/reports/Report'
 import SingleProcurement from './routes/procurement/SingleProcurement'
 import PrivateRoute from './routes/private/PrivateRoute'
+import General from './routes/settingExternalScreens/General'
+import Shipping from './routes/settingExternalScreens/Shipping'
+import Location from './routes/settingExternalScreens/Location'
+import Files from './routes/settingExternalScreens/Files'
+import Account from './routes/settingExternalScreens/Account'
+import Billing from './routes/settingExternalScreens/Billing'
 
 function App() {
   return (
@@ -51,6 +57,15 @@ function App() {
               <Route path=':reportid' element={<Report />} /> {/*A nested route!*/}
             </Route>
             <Route path="/settings" element={<Settings />} />
+            <Route path="/settings">
+              <Route index element={<Settings />} />
+              <Route path='general' element={<General />} /> {/*A nested route!*/}
+              <Route path='shipping' element={<Shipping />} /> {/*A nested route!*/}
+              <Route path='location' element={<Location />} /> {/*A nested route!*/}
+              <Route path='files' element={<Files />} /> {/*A nested route!*/}
+              <Route path='account' element={<Account />} /> {/*A nested route!*/}
+              <Route path='billing' element={<Billing />} /> {/*A nested route!*/}
+            </Route>
           </Routes>
         </AuthProvider>
       </Router>

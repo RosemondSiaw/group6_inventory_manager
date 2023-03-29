@@ -25,6 +25,11 @@ const NewItemForm = () => {
                 <input type="number" name="reorder_level" id="reorder_level" placeholder="Reorder Level" min={1} />
                 <input type="number" name="reorder_level" id="reorder_level" placeholder="Reorder Quantity" min={1} />
                 <input type="number" name="days_per_reorder" id="days_per_reorder" placeholder="Days Per Reorder" min={1} />
+                <select name="" id="">
+                    <option value="" selected disabled>Location</option>
+                    <option value="">Location 1</option>
+                    <option value="">Location 2</option>
+                </select>
                 <div className="volume">
                     <select name="" id="">
                         <option value="" selected>Choose a metric unit of liquid volume</option>

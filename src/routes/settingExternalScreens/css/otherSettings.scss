@@ -1,0 +1,165 @@
+@import '../../../styles/colors/colors.scss';
+@import '../../../styles/typography/Typography.scss';
+
+
+.generalSetting {
+    background-color: $background-color;
+
+    .main-container {
+        padding-bottom: 20px;
+
+        .generalSetting-header {
+            margin-bottom: 50px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+
+            .button {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
+            }
+
+            .company_information,
+            .company_address_information,
+            .standards_formats,
+            .store_currency {
+                display: grid;
+                grid-template-columns: 300px 1fr;
+                gap: 100px;
+                padding-bottom: 30px;
+
+                .section_details {
+                    h2 {
+                        color: $secondary-color;
+                        font-weight: 500;
+                        padding-bottom: 10px;
+
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                .form_group {
+
+                    .form_group_flex {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 20px;
+
+                        .unit_system_field,
+                        .weight_unit_field {
+                            width: 50%;
+                        }
+
+                    }
+
+                    .form_group_field {
+
+
+                        display: grid;
+                        grid-template-rows: auto;
+                        padding-bottom: 20px;
+
+                        label {
+                            padding-bottom: 10px;
+                            font-size: 14px;
+                        }
+
+                        p {
+                            padding-top: 10px;
+                            font-size: 12px;
+                        }
+
+                        input {
+                            background: $text-color-light;
+                            border-radius: 15px;
+                            border: none;
+                            padding: 12px;
+                            font-size: 14px;
+                            color: $primary-color;
+                        }
+
+                        input:focus {
+                            outline-color: $primary-color;
+                        }
+
+                        select {
+                            background: white;
+                            border-radius: 15px;
+                            border: none;
+                            padding: 15px;
+                            font-size: 14px;
+                            color: $primary-color;
+
+                            option {
+                                color: black;
+                            }
+                        }
+
+                        select:focus {
+                            outline-color: $primary-color;
+                        }
+
+                        textarea {
+                            width: 98%;
+                            background: white;
+                            border-radius: 15px;
+                            border: none;
+                            padding: 15px;
+                            font-size: 16px;
+                            color: $primary-color;
+                        }
+
+                        textarea:focus {
+                            outline-color: $primary-color;
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.shippingSetting {
+    background-color: $background-color;
+
+    .main-container {
+        padding-bottom: 20px;
+
+    }
+}
+
+.locationSetting {
+    background-color: $background-color;
+
+    .main-container {
+        padding-bottom: 20px;
+
+    }
+}
+
+.filesSetting {
+    background-color: $background-color;
+
+    .main-container {
+        padding-bottom: 20px;
+
+    }
+}
+
+.billingSetting {
+    background-color: $background-color;
+
+    .main-container {
+        padding-bottom: 20px;
+
+    }
+}

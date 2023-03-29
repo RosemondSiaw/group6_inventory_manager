@@ -32,7 +32,7 @@ function UsersTable() {
         col5: 'carla.jamison@randomemail.com',
         col6: '+2331112223333',
         col7: 'Active',
-        col8: 'Location 1',
+        col8: '(863) 699-2591 651 Concert Dr Lake Placid, Florida(FL), 33852',
       },
 
     ],
@@ -103,7 +103,7 @@ function UsersTable() {
 
       {
 
-        Header: 'Location',
+        Header: 'Shipping Adress',
 
         accessor: 'col8',
 

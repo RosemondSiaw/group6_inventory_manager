@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+Link {
+  text-decoration: none;
+  color: #000000;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+p.num {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 73px;
+  color: #000000;
+}
+
+p.card-num {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 73px;
+  color: #000000;
+}
+
+button {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+.analytics-widget-container h3 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
+.analytics-widget-container p.num {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 73px;
+  color: #000000;
+}
+
+.generalSetting {
+  background-color: #EDE4E0;
+}
+.generalSetting .main-container {
+  padding-bottom: 20px;
+}
+.generalSetting .main-container .generalSetting-header {
+  margin-bottom: 50px;
+}
+.generalSetting .main-container form {
+  display: flex;
+  justify-content: center;
+}
+.generalSetting .main-container form .button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.generalSetting .main-container form .company_information,
+.generalSetting .main-container form .company_address_information,
+.generalSetting .main-container form .standards_formats,
+.generalSetting .main-container form .store_currency {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 100px;
+  padding-bottom: 30px;
+}
+.generalSetting .main-container form .company_information .section_details h2,
+.generalSetting .main-container form .company_address_information .section_details h2,
+.generalSetting .main-container form .standards_formats .section_details h2,
+.generalSetting .main-container form .store_currency .section_details h2 {
+  color: #68B984;
+  font-weight: 500;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.generalSetting .main-container form .company_information .section_details p,
+.generalSetting .main-container form .company_address_information .section_details p,
+.generalSetting .main-container form .standards_formats .section_details p,
+.generalSetting .main-container form .store_currency .section_details p {
+  font-size: 14px;
+}
+.generalSetting .main-container form .company_information .form_group .form_group_flex,
+.generalSetting .main-container form .company_address_information .form_group .form_group_flex,
+.generalSetting .main-container form .standards_formats .form_group .form_group_flex,
+.generalSetting .main-container form .store_currency .form_group .form_group_flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.generalSetting .main-container form .company_information .form_group .form_group_flex .unit_system_field,
+.generalSetting .main-container form .company_information .form_group .form_group_flex .weight_unit_field,
+.generalSetting .main-container form .company_address_information .form_group .form_group_flex .unit_system_field,
+.generalSetting .main-container form .company_address_information .form_group .form_group_flex .weight_unit_field,
+.generalSetting .main-container form .standards_formats .form_group .form_group_flex .unit_system_field,
+.generalSetting .main-container form .standards_formats .form_group .form_group_flex .weight_unit_field,
+.generalSetting .main-container form .store_currency .form_group .form_group_flex .unit_system_field,
+.generalSetting .main-container form .store_currency .form_group .form_group_flex .weight_unit_field {
+  width: 50%;
+}
+.generalSetting .main-container form .company_information .form_group .form_group_field,
+.generalSetting .main-container form .company_address_information .form_group .form_group_field,
+.generalSetting .main-container form .standards_formats .form_group .form_group_field,
+.generalSetting .main-container form .store_currency .form_group .form_group_field {
+  display: grid;
+  grid-template-rows: auto;
+  padding-bottom: 20px;
+}
+.generalSetting .main-container form .company_information .form_group .form_group_field label,
+.generalSetting .main-container form .company_address_information .form_group .form_group_field label,
+.generalSetting .main-container form .standards_formats .form_group .form_group_field label,
+.generalSetting .main-container form .store_currency .form_group .form_group_field label {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.generalSetting .main-container form .company_information .form_group .form_group_field p,
+.generalSetting .main-container form .company_address_information .form_group .form_group_field p,
+.generalSetting .main-container form .standards_formats .form_group .form_group_field p,
+.generalSetting .main-container form .store_currency .form_group .form_group_field p {
+  padding-top: 10px;
+  font-size: 12px;
+}
+.generalSetting .main-container form .company_information .form_group .form_group_field input,
+.generalSetting .main-container form .company_address_information .form_group .form_group_field input,
+.generalSetting .main-container form .standards_formats .form_group .form_group_field input,
+.generalSetting .main-container form .store_currency .form_group .form_group_field input {
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  color: #1F8A70;
+}
+.generalSetting .main-container form .company_information .form_group .form_group_field input:focus,
+.generalSetting .main-container form .company_address_information .form_group .form_group_field input:focus,
+.generalSetting .main-container form .standards_formats .form_group .form_group_field input:focus,
+.generalSetting .main-container form .store_currency .form_group .form_group_field input:focus {
+  outline-color: #1F8A70;
+}
+.generalSetting .main-container form .company_information .form_group .form_group_field select,
+.generalSetting .main-container form .company_address_information .form_group .form_group_field select,
+.generalSetting .main-container form .standards_formats .form_group .form_group_field select,
+.generalSetting .main-container form .store_currency .form_group .form_group_field select {
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  color: #1F8A70;
+}
+.generalSetting .main-container form .company_information .form_group .form_group_field select option,
+.generalSetting .main-container form .company_address_information .form_group .form_group_field select option,
+.generalSetting .main-container form .standards_formats .form_group .form_group_field select option,
+.generalSetting .main-container form .store_currency .form_group .form_group_field select option {
+  color: black;
+}
+.generalSetting .main-container form .company_information .form_group .form_group_field select:focus,
+.generalSetting .main-container form .company_address_information .form_group .form_group_field select:focus,
+.generalSetting .main-container form .standards_formats .form_group .form_group_field select:focus,
+.generalSetting .main-container form .store_currency .form_group .form_group_field select:focus {
+  outline-color: #1F8A70;
+}
+.generalSetting .main-container form .company_information .form_group .form_group_field textarea,
+.generalSetting .main-container form .company_address_information .form_group .form_group_field textarea,
+.generalSetting .main-container form .standards_formats .form_group .form_group_field textarea,
+.generalSetting .main-container form .store_currency .form_group .form_group_field textarea {
+  width: 98%;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #1F8A70;
+}
+.generalSetting .main-container form .company_information .form_group .form_group_field textarea:focus,
+.generalSetting .main-container form .company_address_information .form_group .form_group_field textarea:focus,
+.generalSetting .main-container form .standards_formats .form_group .form_group_field textarea:focus,
+.generalSetting .main-container form .store_currency .form_group .form_group_field textarea:focus {
+  outline-color: #1F8A70;
+}
+
+.shippingSetting {
+  background-color: #EDE4E0;
+}
+.shippingSetting .main-container {
+  padding-bottom: 20px;
+}
+
+.locationSetting {
+  background-color: #EDE4E0;
+}
+.locationSetting .main-container {
+  padding-bottom: 20px;
+}
+
+.filesSetting {
+  background-color: #EDE4E0;
+}
+.filesSetting .main-container {
+  padding-bottom: 20px;
+}
+
+.billingSetting {
+  background-color: #EDE4E0;
+}
+.billingSetting .main-container {
+  padding-bottom: 20px;
+}/*# sourceMappingURL=otherSettings.css.map */
