@@ -13,6 +13,10 @@ import '../../styles/colors/Colors.scss'
 import Header from '../../components/header/Header'
 import Sidebar from '../../components/sidebar/Sidebar'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+const LocationIcon = <FontAwesomeIcon className='iconLocation' icon={faLocationDot} />
+
 const Shipping = () => {
   return (
     <div className="shippingSetting layout-container">
@@ -36,14 +40,20 @@ const Shipping = () => {
             <div className="delivery_location">
               <h2 className="delivery_location_header">MANAGE DELIVERY BY LOCATION</h2>
               <div className="delivery_location_card">
-                <div className="delivery_location_icon">icon</div>
-                <div className="delivery_location_details_container">
-                  <div className="delivery_location_details">
-                  <p className="delivery_location_name">Lorem ipsum dolor.</p>
-                  <p className="delivery_location_address">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit!</p>
+                <div className="delivery_location_card_container">
+                <div className="delivery_location_icon">
+                    <div className="icon">
+                    {LocationIcon} 
+                    </div>
                   </div>
-                  <span className="tag">Doesn't offer delivery</span>
+                  <div className="delivery_location_details_container">
+                    <div className="delivery_location_details">
+                      <p className="delivery_location_name">Lorem ipsum dolor.</p>
+                      <p className="delivery_location_address">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit!</p>
+                    </div>
+                  </div>
                 </div>
+                <span className="tag">Courier delivery</span>
                 <div className="delivery_manage_button">
                   <button className='manage_delivery'>Manage</button>
                 </div>
@@ -61,13 +71,18 @@ const Shipping = () => {
             <div className="delivery_location">
               <h2 className="delivery_location_header">MANAGE PICKUP BY LOCATION</h2>
               <div className="delivery_location_card">
-                <div className="delivery_location_icon">icon</div>
-                <div className="delivery_location_details_container">
-                  <div className="delivery_location_details">
-                  <p className="delivery_location_name">Lorem ipsum dolor.</p>
-                  <p className="delivery_location_address">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit!</p>
+                <div className="delivery_location_card_container">
+                  <div className="delivery_location_icon">
+                    <div className="icon">
+                    {LocationIcon} 
+                    </div>
                   </div>
-                  <span className="tag">Doesn't offer delivery</span>
+                  <div className="delivery_location_details_container">
+                    <div className="delivery_location_details">
+                      <p className="delivery_location_name">Lorem ipsum dolor.</p>
+                      <p className="delivery_location_address">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit!</p>
+                    </div>
+                  </div>
                 </div>
                 <div className="delivery_manage_button">
                   <button className='manage_delivery'>Manage</button>

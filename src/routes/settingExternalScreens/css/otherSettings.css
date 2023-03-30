@@ -209,6 +209,86 @@ button {
 .shippingSetting .main-container {
   padding-bottom: 20px;
 }
+.shippingSetting .main-container .shipping_header_text {
+  font-size: 14px;
+  margin-top: 16px;
+}
+.shippingSetting .main-container .shipping_container,
+.shippingSetting .main-container .pickup_container {
+  margin-top: 30px;
+  background: #d7d7d7;
+  padding: 10px;
+  border-radius: 12px;
+}
+.shippingSetting .main-container .shipping_container .delivery .delivery_header .delivery_title,
+.shippingSetting .main-container .pickup_container .delivery .delivery_header .delivery_title {
+  color: #68B984;
+  font-weight: 500;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+.shippingSetting .main-container .shipping_container .delivery .delivery_header .delivery_explained,
+.shippingSetting .main-container .pickup_container .delivery .delivery_header .delivery_explained {
+  font-size: 14px;
+}
+.shippingSetting .main-container .shipping_container .delivery .delivery_location .delivery_location_header,
+.shippingSetting .main-container .pickup_container .delivery .delivery_location .delivery_location_header {
+  padding-top: 15px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.shippingSetting .main-container .shipping_container .delivery .delivery_location .delivery_location_card,
+.shippingSetting .main-container .pickup_container .delivery .delivery_location .delivery_location_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+}
+.shippingSetting .main-container .shipping_container .delivery .delivery_location .delivery_location_card .delivery_location_card_container,
+.shippingSetting .main-container .pickup_container .delivery .delivery_location .delivery_location_card .delivery_location_card_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.shippingSetting .main-container .shipping_container .delivery .delivery_location .delivery_location_card .delivery_location_card_container .delivery_location_icon .icon,
+.shippingSetting .main-container .pickup_container .delivery .delivery_location .delivery_location_card .delivery_location_card_container .delivery_location_icon .icon {
+  background: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #bdd8c6;
+}
+.shippingSetting .main-container .shipping_container .delivery .delivery_location .delivery_location_card .delivery_location_card_container .delivery_location_icon .icon .iconLocation,
+.shippingSetting .main-container .pickup_container .delivery .delivery_location .delivery_location_card .delivery_location_card_container .delivery_location_icon .icon .iconLocation {
+  font-size: 24px;
+}
+.shippingSetting .main-container .shipping_container .delivery .delivery_location .delivery_location_card .delivery_location_card_container .delivery_location_details_container .delivery_location_details .delivery_location_name,
+.shippingSetting .main-container .pickup_container .delivery .delivery_location .delivery_location_card .delivery_location_card_container .delivery_location_details_container .delivery_location_details .delivery_location_name {
+  font-weight: 600;
+  font-size: 18px;
+}
+.shippingSetting .main-container .shipping_container .delivery .delivery_location .delivery_location_card .delivery_location_card_container .delivery_location_details_container .delivery_location_details .delivery_location_address,
+.shippingSetting .main-container .pickup_container .delivery .delivery_location .delivery_location_card .delivery_location_card_container .delivery_location_details_container .delivery_location_details .delivery_location_address {
+  padding-top: 10px;
+  font-size: 16px;
+  width: 500px;
+}
+.shippingSetting .main-container .shipping_container .delivery .delivery_location .delivery_location_card .tag,
+.shippingSetting .main-container .pickup_container .delivery .delivery_location .delivery_location_card .tag {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #68B984;
+}
+.shippingSetting .main-container .shipping_container .delivery .delivery_location .delivery_location_card .delivery_manage_button button,
+.shippingSetting .main-container .pickup_container .delivery .delivery_location .delivery_location_card .delivery_manage_button button {
+  font-size: 12px;
+  border-radius: 8px;
+  background: #bdd8c6;
+  color: #1aa108;
+  padding: 5px 8px;
+  font-weight: 500;
+}
 
 .locationSetting {
   background-color: #EDE4E0;
@@ -263,11 +343,10 @@ button {
   font-size: 18px;
 }
 .locationSetting .main-container .location_items_container .location_items .location_details .location_details_header .default {
-  background: white;
   padding: 5px;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 5px;
-  font-weight: 500;
+  font-weight: 700;
   color: #68B984;
 }
 .locationSetting .main-container .location_items_container .location_items .location_details .address {

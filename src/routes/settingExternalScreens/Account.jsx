@@ -71,10 +71,10 @@ const Account = () => {
             </div>
             <div className="user_account_management">
               <div className="user_account_management_header">
-                <h2 className="user_account_management_header_title">Staff accounts (1 of 1)</h2>
+                <h2 className="user_account_management_header_title">User accounts (1 of 1)</h2>
                 <div className="user_account_management_buttons">
-                  <button className='logout_users_butn'>Log out of all staff acounts</button>
-                  <button className='add_users'>Add staff account</button>
+                  <button className='logout_users_butn'>Log out of all user acounts</button>
+                  <button className='add_users'>Add user account</button>
                 </div>
               </div>
               <div className="user_account_container">
@@ -100,7 +100,7 @@ const Account = () => {
           <div className="inventory_status_container">
             <div className="pause_inventory close_pause_container">
               <img className='inventory_status_img' src={pauseImg} alt="" />
-              <p className="inventory_status_text">Take a break from managing your inventory at a reduced plan price. You're settings will be paused until you ar ready to come back.</p>
+              <p className="inventory_status_text">Take a break from managing your inventory at a reduced plan price. Your settings will be paused until you are ready to come back.</p>
               <button className="inventory_status_button">Pause Inventory</button>
             </div>
             <div className="close_inventory close_pause_container">

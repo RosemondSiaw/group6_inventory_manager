@@ -134,6 +134,103 @@
     .main-container {
         padding-bottom: 20px;
 
+        .shipping_header_text {
+            font-size: 14px;
+            margin-top: 16px;
+        }
+
+        .shipping_container,
+        .pickup_container {
+            margin-top: 30px;
+            background: $background-color-light;
+            padding: 10px;
+            border-radius: 12px;
+
+            .delivery {
+                .delivery_header {
+                    .delivery_title {
+                        color: $secondary-color;
+                        font-weight: 500;
+                        padding-bottom: 5px;
+                        font-size: 16px;
+                    }
+
+                    .delivery_explained {
+                        font-size: 14px;
+                    }
+                }
+
+                .delivery_location {
+                    .delivery_location_header {
+                        padding-top: 15px;
+                        font-weight: 700;
+                        font-size: 14px;
+                    }
+
+                    .delivery_location_card {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-top: 14px;
+
+                        .delivery_location_card_container {
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 20px;
+
+                            .delivery_location_icon {
+                                .icon {
+                                    background: $text-color-light;
+                                    padding: 10px 14px;
+                                    border-radius: 8px;
+                                    color: $secondary-button-color;
+
+                                    .iconLocation {
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+
+                            .delivery_location_details_container {
+                                .delivery_location_details {
+                                    .delivery_location_name {
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                    }
+
+                                    .delivery_location_address {
+                                        padding-top: 10px;
+                                        font-size: 16px;
+                                        width:500px;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .tag {
+                            padding: 5px;
+                            font-size: 14px;
+                            border-radius: 5px;
+                            font-weight: 700;
+                            color: $secondary-color;
+                        }
+
+                        .delivery_manage_button {
+                            button {
+                                font-size: 12px;
+                                border-radius: 8px;
+                                background: $secondary-button-color;
+                                color: $links-color;
+                                padding: 5px 8px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
     }
 }
 
@@ -205,11 +302,10 @@
                         }
 
                         .default {
-                            background: $text-color-light;
                             padding: 5px;
-                            font-size: 12px;
+                            font-size: 14px;
                             border-radius: 5px;
-                            font-weight: 500;
+                            font-weight: 700;
                             color: $secondary-color;
                         }
                     }
