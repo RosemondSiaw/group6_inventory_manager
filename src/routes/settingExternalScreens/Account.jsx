@@ -19,6 +19,10 @@ import Sidebar from '../../components/sidebar/Sidebar'
 
 const Account = () => {
   const { currentUser } = useAuth()
+
+  const creationDate = useAuth().currentUser?.metadata?.creationTime
+  const lastLogin = useAuth().currentUser?.metadata?.lastSignInTime
+
   return (
     <div className="accountSetting layout-container">
       <Sidebar />
@@ -38,7 +42,7 @@ const Account = () => {
             <div className="account_overview_cards">
               <div className="membership_start_date account_overview_card">
                 <h2 className='account_overview_card_title'>Member since</h2>
-                <p className='account_overview_card_detail'>April 2, 2023</p>
+                <p className='account_overview_card_detail'> {creationDate} </p>
               </div>
               <div className="current_plan account_overview_card">
                 <h2 className='account_overview_card_title'>Current plan</h2>
@@ -65,7 +69,7 @@ const Account = () => {
                 </div>
                 <div className="account_owner_last_login">
                   <p className="account_owner_email"> <Link className='external_link' to="#"> {currentUser.email} </Link> </p>
-                  <p className="last_login">Last login was Wednesday, March 29, 2023, 2:30 PM GMT</p>
+                  <p className="last_login">Last login was {lastLogin} </p>
                 </div>
               </div>
             </div>
