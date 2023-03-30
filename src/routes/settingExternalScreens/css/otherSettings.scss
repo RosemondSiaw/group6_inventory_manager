@@ -177,8 +177,13 @@
 
                         .icon {
                             background: $text-color-light;
-                            padding: 8px 12px;
+                            padding: 10px 14px;
                             border-radius: 8px;
+                            color: $secondary-button-color;
+
+                            .iconLocation {
+                                font-size: 24px;
+                            }
                         }
                     }
 
@@ -240,11 +245,220 @@
                 button {
                     font-size: 12px;
                     border-radius: 8px;
-                    background: #bdd8c6;
+                    background: $secondary-button-color;
                 }
             }
         }
 
+    }
+}
+
+.accountSetting {
+    background-color: $background-color;
+
+    .main-container {
+        padding-bottom: 20px;
+
+        .account_setting_header {
+            margin-bottom: 50px;
+        }
+
+        .account_overview_container,
+        .account_and_permissions,
+        .login_services,
+        .inventory_status {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 100px;
+            padding-bottom: 30px;
+
+            .account_detail_title {
+                h2 {
+                    color: $secondary-color;
+                    font-weight: 500;
+                    padding-bottom: 10px;
+
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 14px;
+
+                    .external_link {
+                        color: $links-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .account_overview_card_container {
+                background: $background-color-light;
+                padding: 20px;
+                border-radius: 12px;
+
+                .account_overview_cards {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    gap: 100px;
+
+                    .account_overview_card {
+                        .account_overview_card_title {
+                            margin-bottom: 15px;
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .account_and_permissions_container {
+                .account_owner_container {
+                    background: $background-color-light;
+                    padding: 10px;
+                    border-radius: 12px;
+
+                    .account_owner_title {
+
+                        margin-bottom: 15px;
+                        font-weight: 500;
+                        font-size: 14px;
+
+                    }
+
+                    .account_owner_details {
+                        display: flex;
+                        gap: 20px;
+
+                        .account_owner_profile_picture {
+                            img {
+                                width: 48px;
+                            }
+                        }
+
+                        .account_owner_last_login {
+                            .account_owner_email .external_link {
+                                color: $links-color;
+                                text-decoration: none;
+                            }
+
+                            .last_login {
+                                font-size: 14px;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+            .user_account_management {
+                background: $background-color-light;
+                padding: 10px;
+                border-radius: 12px;
+                margin-top: 20px;
+
+                .user_account_management_header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .user_account_management_header_title {
+                        margin-bottom: 15px;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+
+                    .user_account_management_buttons {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 10px;
+
+                        .logout_users_butn,
+                        .add_users {
+                            font-size: 12px;
+                            background: $secondary-button-color;
+                            padding: 8px;
+                            margin: 0;
+                            color: $primary-color;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .user_account_container {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10px;
+
+                    .user_account_details {
+                        display: flex;
+                        gap: 20px;
+
+                        .user_account_profile_picture {
+                            img {
+                                width: 48px;
+                            }
+                        }
+
+                        .user_account_name {
+                            .username .external_link {
+                                color: $links-color;
+                                text-decoration: none;
+                            }
+
+                            .status {
+                                font-size: 14px;
+                                padding-top: 8px;
+                            }
+                        }
+                    }
+
+                    .user_access_type {
+                        .access_type {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .inventory_status_container {
+                background: $background-color-light;
+                padding: 20px;
+                border-radius: 12px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                gap: 50px;
+
+                .close_pause_container {
+
+                    .inventory_status_img {
+                        width: 150px;
+                        border-radius: 100%;
+                        background: $secondary-button-color;
+                    }
+
+                    .inventory_status_text {
+                        font-size: 14px;
+                        padding-top: 30px;
+                        width: 280px;
+                    }
+
+                    .inventory_status_button {
+                        font-size: 14px;
+                        background: $secondary-button-color;
+                        padding: 8px;
+                        margin: 0;
+                        color: $primary-color;
+                        font-weight: 500;
+                        margin-top: 40px;
+                    }
+                }
+            }
+
+
+        }
     }
 }
 

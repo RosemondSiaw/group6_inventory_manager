@@ -243,8 +243,12 @@ button {
 }
 .locationSetting .main-container .location_items_container .location_items .locationItem .icon_container .icon {
   background: white;
-  padding: 8px 12px;
+  padding: 10px 14px;
   border-radius: 8px;
+  color: #bdd8c6;
+}
+.locationSetting .main-container .location_items_container .location_items .locationItem .icon_container .icon .iconLocation {
+  font-size: 24px;
 }
 .locationSetting .main-container .location_items_container .location_items .locationItem:nth-last-child(1) {
   border-bottom: none;
@@ -289,6 +293,243 @@ button {
   font-size: 12px;
   border-radius: 8px;
   background: #bdd8c6;
+}
+
+.accountSetting {
+  background-color: #EDE4E0;
+}
+.accountSetting .main-container {
+  padding-bottom: 20px;
+}
+.accountSetting .main-container .account_setting_header {
+  margin-bottom: 50px;
+}
+.accountSetting .main-container .account_overview_container,
+.accountSetting .main-container .account_and_permissions,
+.accountSetting .main-container .login_services,
+.accountSetting .main-container .inventory_status {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 100px;
+  padding-bottom: 30px;
+}
+.accountSetting .main-container .account_overview_container .account_detail_title h2,
+.accountSetting .main-container .account_and_permissions .account_detail_title h2,
+.accountSetting .main-container .login_services .account_detail_title h2,
+.accountSetting .main-container .inventory_status .account_detail_title h2 {
+  color: #68B984;
+  font-weight: 500;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.accountSetting .main-container .account_overview_container .account_detail_title p,
+.accountSetting .main-container .account_and_permissions .account_detail_title p,
+.accountSetting .main-container .login_services .account_detail_title p,
+.accountSetting .main-container .inventory_status .account_detail_title p {
+  font-size: 14px;
+}
+.accountSetting .main-container .account_overview_container .account_detail_title p .external_link,
+.accountSetting .main-container .account_and_permissions .account_detail_title p .external_link,
+.accountSetting .main-container .login_services .account_detail_title p .external_link,
+.accountSetting .main-container .inventory_status .account_detail_title p .external_link {
+  color: #1aa108;
+  text-decoration: none;
+}
+.accountSetting .main-container .account_overview_container .account_overview_card_container,
+.accountSetting .main-container .account_and_permissions .account_overview_card_container,
+.accountSetting .main-container .login_services .account_overview_card_container,
+.accountSetting .main-container .inventory_status .account_overview_card_container {
+  background: #d7d7d7;
+  padding: 20px;
+  border-radius: 12px;
+}
+.accountSetting .main-container .account_overview_container .account_overview_card_container .account_overview_cards,
+.accountSetting .main-container .account_and_permissions .account_overview_card_container .account_overview_cards,
+.accountSetting .main-container .login_services .account_overview_card_container .account_overview_cards,
+.accountSetting .main-container .inventory_status .account_overview_card_container .account_overview_cards {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 100px;
+}
+.accountSetting .main-container .account_overview_container .account_overview_card_container .account_overview_cards .account_overview_card .account_overview_card_title,
+.accountSetting .main-container .account_and_permissions .account_overview_card_container .account_overview_cards .account_overview_card .account_overview_card_title,
+.accountSetting .main-container .login_services .account_overview_card_container .account_overview_cards .account_overview_card .account_overview_card_title,
+.accountSetting .main-container .inventory_status .account_overview_card_container .account_overview_cards .account_overview_card .account_overview_card_title {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.accountSetting .main-container .account_overview_container .account_and_permissions_container .account_owner_container,
+.accountSetting .main-container .account_and_permissions .account_and_permissions_container .account_owner_container,
+.accountSetting .main-container .login_services .account_and_permissions_container .account_owner_container,
+.accountSetting .main-container .inventory_status .account_and_permissions_container .account_owner_container {
+  background: #d7d7d7;
+  padding: 10px;
+  border-radius: 12px;
+}
+.accountSetting .main-container .account_overview_container .account_and_permissions_container .account_owner_container .account_owner_title,
+.accountSetting .main-container .account_and_permissions .account_and_permissions_container .account_owner_container .account_owner_title,
+.accountSetting .main-container .login_services .account_and_permissions_container .account_owner_container .account_owner_title,
+.accountSetting .main-container .inventory_status .account_and_permissions_container .account_owner_container .account_owner_title {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.accountSetting .main-container .account_overview_container .account_and_permissions_container .account_owner_container .account_owner_details,
+.accountSetting .main-container .account_and_permissions .account_and_permissions_container .account_owner_container .account_owner_details,
+.accountSetting .main-container .login_services .account_and_permissions_container .account_owner_container .account_owner_details,
+.accountSetting .main-container .inventory_status .account_and_permissions_container .account_owner_container .account_owner_details {
+  display: flex;
+  gap: 20px;
+}
+.accountSetting .main-container .account_overview_container .account_and_permissions_container .account_owner_container .account_owner_details .account_owner_profile_picture img,
+.accountSetting .main-container .account_and_permissions .account_and_permissions_container .account_owner_container .account_owner_details .account_owner_profile_picture img,
+.accountSetting .main-container .login_services .account_and_permissions_container .account_owner_container .account_owner_details .account_owner_profile_picture img,
+.accountSetting .main-container .inventory_status .account_and_permissions_container .account_owner_container .account_owner_details .account_owner_profile_picture img {
+  width: 48px;
+}
+.accountSetting .main-container .account_overview_container .account_and_permissions_container .account_owner_container .account_owner_details .account_owner_last_login .account_owner_email .external_link,
+.accountSetting .main-container .account_and_permissions .account_and_permissions_container .account_owner_container .account_owner_details .account_owner_last_login .account_owner_email .external_link,
+.accountSetting .main-container .login_services .account_and_permissions_container .account_owner_container .account_owner_details .account_owner_last_login .account_owner_email .external_link,
+.accountSetting .main-container .inventory_status .account_and_permissions_container .account_owner_container .account_owner_details .account_owner_last_login .account_owner_email .external_link {
+  color: #1aa108;
+  text-decoration: none;
+}
+.accountSetting .main-container .account_overview_container .account_and_permissions_container .account_owner_container .account_owner_details .account_owner_last_login .last_login,
+.accountSetting .main-container .account_and_permissions .account_and_permissions_container .account_owner_container .account_owner_details .account_owner_last_login .last_login,
+.accountSetting .main-container .login_services .account_and_permissions_container .account_owner_container .account_owner_details .account_owner_last_login .last_login,
+.accountSetting .main-container .inventory_status .account_and_permissions_container .account_owner_container .account_owner_details .account_owner_last_login .last_login {
+  font-size: 14px;
+}
+.accountSetting .main-container .account_overview_container .user_account_management,
+.accountSetting .main-container .account_and_permissions .user_account_management,
+.accountSetting .main-container .login_services .user_account_management,
+.accountSetting .main-container .inventory_status .user_account_management {
+  background: #d7d7d7;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.accountSetting .main-container .account_overview_container .user_account_management .user_account_management_header,
+.accountSetting .main-container .account_and_permissions .user_account_management .user_account_management_header,
+.accountSetting .main-container .login_services .user_account_management .user_account_management_header,
+.accountSetting .main-container .inventory_status .user_account_management .user_account_management_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accountSetting .main-container .account_overview_container .user_account_management .user_account_management_header .user_account_management_header_title,
+.accountSetting .main-container .account_and_permissions .user_account_management .user_account_management_header .user_account_management_header_title,
+.accountSetting .main-container .login_services .user_account_management .user_account_management_header .user_account_management_header_title,
+.accountSetting .main-container .inventory_status .user_account_management .user_account_management_header .user_account_management_header_title {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.accountSetting .main-container .account_overview_container .user_account_management .user_account_management_header .user_account_management_buttons,
+.accountSetting .main-container .account_and_permissions .user_account_management .user_account_management_header .user_account_management_buttons,
+.accountSetting .main-container .login_services .user_account_management .user_account_management_header .user_account_management_buttons,
+.accountSetting .main-container .inventory_status .user_account_management .user_account_management_header .user_account_management_buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.accountSetting .main-container .account_overview_container .user_account_management .user_account_management_header .user_account_management_buttons .logout_users_butn,
+.accountSetting .main-container .account_overview_container .user_account_management .user_account_management_header .user_account_management_buttons .add_users,
+.accountSetting .main-container .account_and_permissions .user_account_management .user_account_management_header .user_account_management_buttons .logout_users_butn,
+.accountSetting .main-container .account_and_permissions .user_account_management .user_account_management_header .user_account_management_buttons .add_users,
+.accountSetting .main-container .login_services .user_account_management .user_account_management_header .user_account_management_buttons .logout_users_butn,
+.accountSetting .main-container .login_services .user_account_management .user_account_management_header .user_account_management_buttons .add_users,
+.accountSetting .main-container .inventory_status .user_account_management .user_account_management_header .user_account_management_buttons .logout_users_butn,
+.accountSetting .main-container .inventory_status .user_account_management .user_account_management_header .user_account_management_buttons .add_users {
+  font-size: 12px;
+  background: #bdd8c6;
+  padding: 8px;
+  margin: 0;
+  color: #1F8A70;
+  font-weight: 500;
+}
+.accountSetting .main-container .account_overview_container .user_account_management .user_account_container,
+.accountSetting .main-container .account_and_permissions .user_account_management .user_account_container,
+.accountSetting .main-container .login_services .user_account_management .user_account_container,
+.accountSetting .main-container .inventory_status .user_account_management .user_account_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.accountSetting .main-container .account_overview_container .user_account_management .user_account_container .user_account_details,
+.accountSetting .main-container .account_and_permissions .user_account_management .user_account_container .user_account_details,
+.accountSetting .main-container .login_services .user_account_management .user_account_container .user_account_details,
+.accountSetting .main-container .inventory_status .user_account_management .user_account_container .user_account_details {
+  display: flex;
+  gap: 20px;
+}
+.accountSetting .main-container .account_overview_container .user_account_management .user_account_container .user_account_details .user_account_profile_picture img,
+.accountSetting .main-container .account_and_permissions .user_account_management .user_account_container .user_account_details .user_account_profile_picture img,
+.accountSetting .main-container .login_services .user_account_management .user_account_container .user_account_details .user_account_profile_picture img,
+.accountSetting .main-container .inventory_status .user_account_management .user_account_container .user_account_details .user_account_profile_picture img {
+  width: 48px;
+}
+.accountSetting .main-container .account_overview_container .user_account_management .user_account_container .user_account_details .user_account_name .username .external_link,
+.accountSetting .main-container .account_and_permissions .user_account_management .user_account_container .user_account_details .user_account_name .username .external_link,
+.accountSetting .main-container .login_services .user_account_management .user_account_container .user_account_details .user_account_name .username .external_link,
+.accountSetting .main-container .inventory_status .user_account_management .user_account_container .user_account_details .user_account_name .username .external_link {
+  color: #1aa108;
+  text-decoration: none;
+}
+.accountSetting .main-container .account_overview_container .user_account_management .user_account_container .user_account_details .user_account_name .status,
+.accountSetting .main-container .account_and_permissions .user_account_management .user_account_container .user_account_details .user_account_name .status,
+.accountSetting .main-container .login_services .user_account_management .user_account_container .user_account_details .user_account_name .status,
+.accountSetting .main-container .inventory_status .user_account_management .user_account_container .user_account_details .user_account_name .status {
+  font-size: 14px;
+  padding-top: 8px;
+}
+.accountSetting .main-container .account_overview_container .user_account_management .user_account_container .user_access_type .access_type,
+.accountSetting .main-container .account_and_permissions .user_account_management .user_account_container .user_access_type .access_type,
+.accountSetting .main-container .login_services .user_account_management .user_account_container .user_access_type .access_type,
+.accountSetting .main-container .inventory_status .user_account_management .user_account_container .user_access_type .access_type {
+  font-size: 12px;
+}
+.accountSetting .main-container .account_overview_container .inventory_status_container,
+.accountSetting .main-container .account_and_permissions .inventory_status_container,
+.accountSetting .main-container .login_services .inventory_status_container,
+.accountSetting .main-container .inventory_status .inventory_status_container {
+  background: #d7d7d7;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+.accountSetting .main-container .account_overview_container .inventory_status_container .close_pause_container .inventory_status_img,
+.accountSetting .main-container .account_and_permissions .inventory_status_container .close_pause_container .inventory_status_img,
+.accountSetting .main-container .login_services .inventory_status_container .close_pause_container .inventory_status_img,
+.accountSetting .main-container .inventory_status .inventory_status_container .close_pause_container .inventory_status_img {
+  width: 150px;
+  border-radius: 100%;
+  background: #bdd8c6;
+}
+.accountSetting .main-container .account_overview_container .inventory_status_container .close_pause_container .inventory_status_text,
+.accountSetting .main-container .account_and_permissions .inventory_status_container .close_pause_container .inventory_status_text,
+.accountSetting .main-container .login_services .inventory_status_container .close_pause_container .inventory_status_text,
+.accountSetting .main-container .inventory_status .inventory_status_container .close_pause_container .inventory_status_text {
+  font-size: 14px;
+  padding-top: 30px;
+  width: 280px;
+}
+.accountSetting .main-container .account_overview_container .inventory_status_container .close_pause_container .inventory_status_button,
+.accountSetting .main-container .account_and_permissions .inventory_status_container .close_pause_container .inventory_status_button,
+.accountSetting .main-container .login_services .inventory_status_container .close_pause_container .inventory_status_button,
+.accountSetting .main-container .inventory_status .inventory_status_container .close_pause_container .inventory_status_button {
+  font-size: 14px;
+  background: #bdd8c6;
+  padding: 8px;
+  margin: 0;
+  color: #1F8A70;
+  font-weight: 500;
+  margin-top: 40px;
 }
 
 .filesSetting {

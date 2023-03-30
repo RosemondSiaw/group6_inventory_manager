@@ -86,6 +86,7 @@ const General = () => {
                                 <div className="country_field form_group_field">
                                     <label htmlFor="">Country</label>
                                     <select id="country" name="country" class="form-control">
+                                        <option value="Choose a country" selected disabled>Choose a country</option>
                                         <option value="Afghanistan">Afghanistan</option>
                                         <option value="Åland Islands">Åland Islands</option>
                                         <option value="Albania">Albania</option>

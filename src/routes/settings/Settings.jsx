@@ -92,7 +92,7 @@ const Settings = () => {
                 </div>
               </div>
             </div>
-            <div className="card">
+            <div className="card" style={{display:'none'}}>
               <div className="container">
                 <div className="left_container">
                   <div className="icon_container">

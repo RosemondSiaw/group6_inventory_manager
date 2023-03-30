@@ -15,7 +15,7 @@ const DateTime = () => {
                     day='numeric'
                     month='long'
                     year='numeric'
-                />, <span> <FormattedTime
+                />, &nbsp; <span> <FormattedTime
                     hour='numeric'
                     minute='numeric'
                 /> </span></p>
