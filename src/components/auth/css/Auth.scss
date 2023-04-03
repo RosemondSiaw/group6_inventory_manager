@@ -4,7 +4,9 @@
 
 .login_form_container {
     background-color: $background-color;
+    background-color: $background-color;
     padding: 30px;
+    border-radius: 15px;
     border-radius: 15px;
     height: 500px;
     width: 400px;
@@ -133,13 +135,12 @@
 }
 
 .signup_form_container {
-    background-color: $background-color;
     padding: 30px;
     border-radius: 15px;
     height: 500px;
     width: 400px;
     margin: 0 auto;
-    overflow-y: scroll;
+    overflow-y: auto;
 
     h1 {
         font-size: 28px;

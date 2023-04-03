@@ -64,7 +64,9 @@ button {
 
 .login_form_container {
   background-color: #EDE4E0;
+  background-color: #EDE4E0;
   padding: 30px;
+  border-radius: 15px;
   border-radius: 15px;
   height: 500px;
   width: 400px;
@@ -178,13 +180,12 @@ button {
 }
 
 .signup_form_container {
-  background-color: #EDE4E0;
   padding: 30px;
   border-radius: 15px;
   height: 500px;
   width: 400px;
   margin: 0 auto;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .signup_form_container h1 {
   font-size: 28px;

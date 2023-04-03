@@ -51,7 +51,27 @@
     }
 
     .form_container {
-        margin: 3.9% 10% 0 0;
+        margin: 2% 10% 0 0;
+
+        .select_user_login {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+
+            .i_am_user {
+                background: $secondary-button-color;
+                color: $primary-color;
+                font-weight: 500;
+                padding: 10px;
+                border-radius: 8px;
+            }
+        }
+
+        .form {
+            background-color: $background-color;
+            border-radius: 15px;
+        }
     }
 }
 
@@ -64,7 +84,7 @@
             }
 
         }
-        
+
         .logo_container {
             padding: 20px 0 0 30px;
 

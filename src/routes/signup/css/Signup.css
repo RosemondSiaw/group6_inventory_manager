@@ -134,7 +134,24 @@ button {
   width: 150px;
 }
 .signup_container .form_container {
-  margin: 3.9% 10% 0 0;
+  margin: 2% 10% 0 0;
+}
+.signup_container .form_container .select_user_login {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.signup_container .form_container .select_user_login .i_am_user {
+  background: #bdd8c6;
+  color: #1F8A70;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+}
+.signup_container .form_container .form {
+  background-color: #EDE4E0;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 1400px) {
