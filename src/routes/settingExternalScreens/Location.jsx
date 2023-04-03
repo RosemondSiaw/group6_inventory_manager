@@ -45,10 +45,11 @@ const Location = () => {
               </div>
               <div className="location_details">
                 <div className="location_details_header">
-                  <h2 className='title'>Location 1</h2>
+                  <h2 className='title'>Clinique Des Roses</h2>
                   <div className="default">Default</div>
                 </div>
-                <p className='address'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repudiandae, adipisci blanditiis velit quaerat quam?</p>
+                <p className='address'>5331 Rexford Court, Montgomery AL 36116
+                </p>
               </div>
             </div>
             <div className="locationItem">
@@ -57,10 +58,11 @@ const Location = () => {
               </div>
               <div className="location_details">
                 <div className="location_details_header">
-                  <h2 className='title'>Location 2</h2>
-                  <div className="default" style={{ display: 'none' }}>Default</div>
+                  <h2 className='title'>En'roth</h2>
+                  <div className="default" style={{ display: 'none' }}>Default
+                  </div>
                 </div>
-                <p className='address'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repudiandae, adipisci blanditiis velit quaerat quam?</p>
+                <p className='address'>8642 Yule Street, Arvada CO 80007</p>
               </div>
             </div>
             <div className="locationItem">
@@ -69,10 +71,10 @@ const Location = () => {
               </div>
               <div className="location_details">
                 <div className="location_details_header">
-                  <h2 className='title'>Location 3</h2>
+                  <h2 className='title'>Forever Site</h2>
                   <div className="default" style={{ display: 'none' }}>Default</div>
                 </div>
-                <p className='address'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repudiandae, adipisci blanditiis velit quaerat quam?</p>
+                <p className='address'>915 Heath Drive, Montgomery AL 36108</p>
               </div>
             </div>
           </div>

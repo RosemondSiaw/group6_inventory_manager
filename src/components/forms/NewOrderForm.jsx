@@ -101,6 +101,7 @@ const NewOrderForm = () => {
                             <input type="date" />
                         </div>
                     </div>
+
                     <div className="order_items">
                         <div className="title">
                             <p>Add items or products</p>
@@ -154,7 +155,7 @@ const NewOrderForm = () => {
                         ))}
 
                         <div className="calculate">
-                            <p>Total: <span>80.000Fcfa</span></p>
+                            <p>Total: <span>0</span></p>
                         </div>
                         <div className="notes">
                             <textarea
@@ -168,6 +169,11 @@ const NewOrderForm = () => {
                                 placeholder="Add a note"
                             />
                         </div>
+                    </div>
+
+                    <div className="checkbox_urgent">
+                        <input type="checkbox" name="urgent" id="urgent" />
+                        <label htmlFor="">Urgent</label>
                     </div>
                 </div>
                 <div className="submit-btn">

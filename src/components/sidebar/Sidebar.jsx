@@ -73,7 +73,7 @@ const Sidebar = () => {
               <Link to='/analytics' style={{ textDecoration: 'none' }}>
                 <li className="sidebar-list-item"> {analyticsIcon} <span><FormattedMessage id="navbar.link.analytics" defaultMessage="Analytics" /></span></li>
               </Link>
-              <Link to='/reports' style={{ textDecoration: 'none' }}>
+              <Link to='/reports' style={{ textDecoration: 'none', display: 'none' }}>
                 <li className="sidebar-list-item"> {reportsIcon} <span><FormattedMessage id="navbar.link.reports" defaultMessage="Reports" /></span></li>
               </Link>
               <Link to='/settings' style={{ textDecoration: 'none' }}>

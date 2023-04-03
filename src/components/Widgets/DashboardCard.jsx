@@ -8,19 +8,19 @@ const DashboardCard = ({ type }) => {
         case "all-items":
             data = {
                 title: "All items",
-                count: 568,
+                count: 1,
             };
             break;
         case "in-stock":
             data = {
                 title: "In stock",
-                count: 130,
+                count: 1,
             };
             break;
         case "low-stock":
             data = {
                 title: "Low of stock",
-                count: 41,
+                count: 0,
             };
             break;
         case "out-of-stock":
@@ -32,7 +32,7 @@ const DashboardCard = ({ type }) => {
         case "on-order":
             data = {
                 title: "On order",
-                count: 15,
+                count: 0,
             };
             break;
         default:
