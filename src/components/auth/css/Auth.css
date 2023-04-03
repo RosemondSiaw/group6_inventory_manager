@@ -63,14 +63,12 @@ button {
 }
 
 .login_form_container {
-  background-color: #EDE4E0;
   padding: 30px;
-  border-radius: 15px;
   border-radius: 15px;
   height: 500px;
   width: 400px;
   margin: 0 auto;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .login_form_container h1 {
   font-size: 30px;
@@ -311,7 +309,7 @@ button {
 .employee_signup {
   padding: 30px;
   border-radius: 15px;
-  height: auto;
+  height: 100px;
   width: 400px;
   margin: 0 auto;
   overflow-y: auto;
@@ -323,6 +321,14 @@ button {
   line-height: 20px;
 }
 
+@media screen and (min-width: 1400px) {
+  .login_form_container {
+    height: auto;
+  }
+  .signup_form_container {
+    height: auto !important;
+  }
+}
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;

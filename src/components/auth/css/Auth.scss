@@ -3,14 +3,12 @@
 
 
 .login_form_container {
-    background-color: $background-color;
     padding: 30px;
-    border-radius: 15px;
     border-radius: 15px;
     height: 500px;
     width: 400px;
     margin: 0 auto;
-    overflow-y: scroll;
+    overflow-y: auto;
 
     h1 {
         font-size: 30px;
@@ -272,7 +270,7 @@
 .employee_signup {
     padding: 30px;
     border-radius: 15px;
-    height: auto;
+    height: 100px;
     width: 400px;
     margin: 0 auto;
     overflow-y: auto;
@@ -283,6 +281,16 @@
 
     p {
         line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .login_form_container {
+        height: auto;
+    }
+
+    .signup_form_container {
+        height:  auto !important;
     }
 }
 

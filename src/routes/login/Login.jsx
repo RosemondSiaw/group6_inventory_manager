@@ -19,7 +19,9 @@ const Login = () => {
             <img src={Logo} alt="" />
           </div>
           <div className="form_container">
-            <LoginForm />
+            <div className="form">
+              <LoginForm />
+            </div>
           </div>
         </div>
       </div>
