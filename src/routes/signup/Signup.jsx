@@ -31,8 +31,8 @@ const Signup = () => {
           </div>
           <div className="form_container">
             <div className="select_user_login">
-              <div className="i_am_user"> <input type="radio" value="admin" id="amin" checked={userType === 'admin'} onChange={handleChange} /> &nbsp; I am an administrator</div>
-              <div className="i_am_user"> <input type="radio" value="employee" id="employee" checked={userType === 'employee'} onChange={handleChange} /> &nbsp; I am an employee</div>
+              <div className="i_am_user"> <input type="radio" className="radio_btn" value="admin" id="amin" checked={userType === 'admin'} onChange={handleChange} /> &nbsp; I Am An Administrator</div>
+              <div className="i_am_user"> <input type="radio" className="radio_btn" value="employee" id="employee" checked={userType === 'employee'} onChange={handleChange} /> &nbsp; I Am An Employee</div>
             </div>
             <div className="form">
               {userType === 'admin' ? <SignupForm /> : <EmployeeSignup />}
