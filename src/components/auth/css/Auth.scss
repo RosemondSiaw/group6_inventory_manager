@@ -4,7 +4,6 @@
 
 .login_form_container {
     background-color: $background-color;
-    background-color: $background-color;
     padding: 30px;
     border-radius: 15px;
     border-radius: 15px;
@@ -267,6 +266,23 @@
         padding-top: 15px;
         display: flex;
         justify-content: center;
+    }
+}
+
+.employee_signup {
+    padding: 30px;
+    border-radius: 15px;
+    height: auto;
+    width: 400px;
+    margin: 0 auto;
+    overflow-y: auto;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        line-height: 20px;
     }
 }
 

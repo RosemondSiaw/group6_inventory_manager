@@ -74,7 +74,7 @@ const SignupForm = () => {
 
     return (
         <div className="signup_form_container">
-            <h1>Join Us!</h1>
+            <h1>Join Us As An Organisation!</h1>
             {error && <div className="error_container"> <span className="error">{error}</span> </div>}
             <form onSubmit={handleSubmit} autoComplete='none'>
                 {/* 

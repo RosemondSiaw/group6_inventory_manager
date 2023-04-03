@@ -64,7 +64,6 @@ button {
 
 .login_form_container {
   background-color: #EDE4E0;
-  background-color: #EDE4E0;
   padding: 30px;
   border-radius: 15px;
   border-radius: 15px;
@@ -307,6 +306,21 @@ button {
   padding-top: 15px;
   display: flex;
   justify-content: center;
+}
+
+.employee_signup {
+  padding: 30px;
+  border-radius: 15px;
+  height: auto;
+  width: 400px;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+.employee_signup h1 {
+  margin-bottom: 10px;
+}
+.employee_signup p {
+  line-height: 20px;
 }
 
 ::-webkit-scrollbar {
