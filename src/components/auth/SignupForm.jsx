@@ -12,6 +12,8 @@ import './css/Auth.scss';
 const SignupForm = () => {
 
     //declaring variables
+    const firstNameRef = useRef();
+    const lastNameRef = useRef();
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
@@ -61,7 +63,10 @@ const SignupForm = () => {
         try {
             setError("")
             setLoading(true)
-            await signup(emailRef.current.value, passwordRef.current.value)
+            const firstName = firstNameRef.current.value;
+            const lastName = lastNameRef.current.value;
+            const username = `${firstName} ${lastName}`;
+            await signup(emailRef.current.value, passwordRef.current.value, username)
             navigate("/")
         } catch {
             setError("Failed to create an account. Try again")
@@ -94,6 +99,14 @@ const SignupForm = () => {
                     </div>
                 </div> */}
 
+                <div className="email_field">
+                    <label htmlFor="fname">First Name</label>
+                    <input type="text" placeholder="Your first name" ref={firstNameRef} autoComplete='none' required />
+                </div>
+                <div className="email_field">
+                    <label htmlFor="lname">Last Name</label>
+                    <input type="text" placeholder="Your last name" ref={lastNameRef} autoComplete='none' required />
+                </div>
                 <div className="email_field">
                     <label htmlFor="email">Email</label>
                     <input type="email" placeholder="Your email address" ref={emailRef} autoComplete='none' required />

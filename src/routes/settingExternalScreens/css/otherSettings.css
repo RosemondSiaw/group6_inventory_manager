@@ -280,8 +280,8 @@ button {
   font-weight: 700;
   color: #68B984;
 }
-.shippingSetting .main-container .shipping_container .delivery .delivery_location .delivery_location_card .delivery_manage_button button,
-.shippingSetting .main-container .pickup_container .delivery .delivery_location .delivery_location_card .delivery_manage_button button {
+.shippingSetting .main-container .shipping_container .delivery .delivery_location .delivery_location_card .delivery_manage_button,
+.shippingSetting .main-container .pickup_container .delivery .delivery_location .delivery_location_card .delivery_manage_button {
   font-size: 12px;
   border-radius: 8px;
   background: #bdd8c6;
@@ -367,11 +367,6 @@ button {
 .locationSetting .main-container .default_item_selector .location_items_container_title {
   font-weight: 500;
   font-size: 14px;
-}
-.locationSetting .main-container .default_item_selector .default_item_button button {
-  font-size: 12px;
-  border-radius: 8px;
-  background: #bdd8c6;
 }
 
 .accountSetting {

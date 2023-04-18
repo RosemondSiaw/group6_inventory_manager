@@ -78,4 +78,22 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.manage_delivery {
+  font-size: 12px;
+  border-radius: 8px;
+  background: #bdd8c6;
+  color: #1aa108;
+  padding: 5px 8px;
+  font-weight: 500;
+}
+.manage_delivery:hover {
+  background: none;
+}
+
+.default_item_button {
+  font-size: 12px;
+  border-radius: 8px;
+  background: #bdd8c6;
 }/*# sourceMappingURL=Buttons.css.map */

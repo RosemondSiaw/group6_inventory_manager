@@ -16,6 +16,7 @@ import AddLocation from '../../components/buttons/AddLocation';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import DefaultLocation from '../../components/buttons/DefaultLocation';
 const LocationIcon = <FontAwesomeIcon className='iconLocation' icon={faLocationDot} />
 
 const Location = () => {
@@ -84,9 +85,7 @@ const Location = () => {
           <div className="default_item_container">
             <h2 className='location_items_container_title'>Default Location</h2>
             <p>Choose which location is used by Geia when no other location is specified.</p>
-            <div className="default_item_button">
-              <button>Change default location</button>
-            </div>
+            <DefaultLocation />
           </div>
         </div>
       </div>

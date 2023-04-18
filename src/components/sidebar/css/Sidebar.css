@@ -27,21 +27,20 @@
   padding-right: 20px;
 }
 .sidebar .sidebarContainer .sidebar-title {
-  margin-bottom: 30px;
   margin-top: 10px;
 }
 .sidebar .sidebarContainer .sidebar-title .sidebar-brand {
   text-align: center;
 }
 .sidebar .sidebarContainer .sidebar-title .sidebar-brand > img {
-  width: 100px;
+  width: 60px;
 }
 .sidebar .sidebarContainer .list-scroll {
   overflow-y: visible;
   overflow-x: hidden;
 }
 .sidebar .sidebarContainer ul.sidebar-list {
-  margin-top: 40%;
+  margin-top: 10%;
 }
 .sidebar .sidebarContainer .sidebar-list .sidebar-list-item {
   font-size: 17px;

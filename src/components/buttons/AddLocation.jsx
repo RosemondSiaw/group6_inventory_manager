@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../../styles/buttons/Buttons.scss'
 import { Link } from 'react-router-dom';
 
-//import popup components
+//import popup component
 import Popup from '../../components/popup/Popup'
 
 //import Language translator json files

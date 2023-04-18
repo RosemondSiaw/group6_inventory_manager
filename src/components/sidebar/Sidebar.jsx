@@ -67,10 +67,10 @@ const Sidebar = () => {
               <Link to='/orders' style={{ textDecoration: 'none' }}>
                 <li className="sidebar-list-item"> {ordersIcon} <span><FormattedMessage id="navbar.link.orders" defaultMessage="Orders" /></span></li>
               </Link>
-              <Link to='/procurement' style={{ textDecoration: 'none' }}>
+              <Link to='/procurement' style={{ textDecoration: 'none', display: 'none' }}>
                 <li className="sidebar-list-item"> {procurementIcon} <span><FormattedMessage id="navbar.link.procurement" defaultMessage="Procurement" /></span></li>
               </Link>
-              <Link to='/analytics' style={{ textDecoration: 'none' }}>
+              <Link to='/analytics' style={{ textDecoration: 'none', display: 'none' }}>
                 <li className="sidebar-list-item"> {analyticsIcon} <span><FormattedMessage id="navbar.link.analytics" defaultMessage="Analytics" /></span></li>
               </Link>
               <Link to='/reports' style={{ textDecoration: 'none', display: 'none' }}>

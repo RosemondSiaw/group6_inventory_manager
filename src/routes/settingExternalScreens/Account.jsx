@@ -16,9 +16,10 @@ import '../../styles/colors/Colors.scss'
 //import components
 import Header from '../../components/header/Header'
 import Sidebar from '../../components/sidebar/Sidebar'
+import AccountOwnerRead from '../../components/buttons/AccountOwnerRead';
+import AddUser from '../../components/buttons/AddUser';
 
 const Account = () => {
-  const { currentUser } = useAuth()
 
   const creationDate = useAuth().currentUser?.metadata?.creationTime
   const lastLogin = useAuth().currentUser?.metadata?.lastSignInTime
@@ -68,7 +69,7 @@ const Account = () => {
                   <img src={profile} alt="" />
                 </div>
                 <div className="account_owner_last_login">
-                  <p className="account_owner_email"> <Link className='external_link' to="#"> {currentUser.email} </Link> </p>
+                  <AccountOwnerRead />
                   <p className="last_login">Last login was {lastLogin} </p>
                 </div>
               </div>
@@ -78,7 +79,7 @@ const Account = () => {
                 <h2 className="user_account_management_header_title">User accounts (1 of 1)</h2>
                 <div className="user_account_management_buttons">
                   <button className='logout_users_butn'>Log out of all user acounts</button>
-                  <button className='add_users'>Add user account</button>
+                  <AddUser />
                 </div>
               </div>
               <div className="user_account_container">

@@ -20,3 +20,22 @@ button {
     gap: 10px;
 
 }
+
+.manage_delivery {
+    font-size: 12px;
+    border-radius: 8px;
+    background: $secondary-button-color;
+    color: $links-color;
+    padding: 5px 8px;
+    font-weight: 500;
+
+    &:hover {
+        background: none;
+    }
+}
+
+.default_item_button {
+    font-size: 12px;
+    border-radius: 8px;
+    background: $secondary-button-color;
+}

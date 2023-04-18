@@ -15,6 +15,8 @@ import Sidebar from '../../components/sidebar/Sidebar'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import ManageLocalDelivery from '../../components/buttons/ManageLocalDelivery';
+import ManagePickupLocation from '../../components/buttons/ManagePickupLocation';
 const LocationIcon = <FontAwesomeIcon className='iconLocation' icon={faLocationDot} />
 
 const Shipping = () => {
@@ -41,9 +43,9 @@ const Shipping = () => {
               <h2 className="delivery_location_header">MANAGE DELIVERY BY LOCATION</h2>
               <div className="delivery_location_card">
                 <div className="delivery_location_card_container">
-                <div className="delivery_location_icon">
+                  <div className="delivery_location_icon">
                     <div className="icon">
-                    {LocationIcon} 
+                      {LocationIcon}
                     </div>
                   </div>
                   <div className="delivery_location_details_container">
@@ -55,7 +57,7 @@ const Shipping = () => {
                 </div>
                 <span className="tag">Courier delivery</span>
                 <div className="delivery_manage_button">
-                  <button className='manage_delivery'>Manage</button>
+                  <ManageLocalDelivery />
                 </div>
               </div>
             </div>
@@ -74,7 +76,7 @@ const Shipping = () => {
                 <div className="delivery_location_card_container">
                   <div className="delivery_location_icon">
                     <div className="icon">
-                    {LocationIcon} 
+                      {LocationIcon}
                     </div>
                   </div>
                   <div className="delivery_location_details_container">
@@ -85,7 +87,7 @@ const Shipping = () => {
                   </div>
                 </div>
                 <div className="delivery_manage_button">
-                  <button className='manage_delivery'>Manage</button>
+                  <ManagePickupLocation />
                 </div>
               </div>
             </div>

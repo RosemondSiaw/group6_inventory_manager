@@ -217,14 +217,14 @@
                         }
 
                         .delivery_manage_button {
-                            button {
+                            
                                 font-size: 12px;
                                 border-radius: 8px;
                                 background: $secondary-button-color;
                                 color: $links-color;
                                 padding: 5px 8px;
                                 font-weight: 500;
-                            }
+                            
                         }
                     }
                 }
@@ -335,14 +335,6 @@
             .location_items_container_title {
                 font-weight: 500;
                 font-size: 14px;
-            }
-
-            .default_item_button {
-                button {
-                    font-size: 12px;
-                    border-radius: 8px;
-                    background: $secondary-button-color;
-                }
             }
         }
 
