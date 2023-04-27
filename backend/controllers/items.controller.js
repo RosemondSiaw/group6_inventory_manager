@@ -27,11 +27,11 @@ const getItem = async (req, res) => {
 
 // CREATE a new item
 const createItem = async (req, res) => {
-    const { name, barcode } = req.body
+    const { name, barcode, category, costPerItem, daysPerReorder, description, dimensions, inventoryValue, location, manufacturer, reorderLevel, reorderQuantity, status, stockQuantity, tenantId, vendor, volume, weight } = req.body
 
     // add doc to db
     try {
-        const item = await ItemModel.create({ name, barcode })
+        const item = await ItemModel.create({ name, barcode, category, costPerItem, daysPerReorder, description, dimensions, inventoryValue, location, manufacturer, reorderLevel, reorderQuantity, status, stockQuantity, tenantId, vendor, volume, weight })
         res.status(200).json(item)
     } catch (error) {
         res.status(400).json({ error: error.message })
