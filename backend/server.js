@@ -1,13 +1,33 @@
 import express from "express"
-import cors from "cors"
-import users from "./api/users.route.js"
+import mongoose from "mongoose"
+import dotenv from "dotenv"
+import itemRoutes from './routes/items.js'
+
+dotenv.config()
+
+// express app
 
 const app = express()
 
-app.use(cors())
+//middleware
 app.use(express.json())
 
-app.get("/api/v1/users", users)
-app.use("*", (req, res) => res.status(404).json({ error: "not found" }))
+app.use((req, res, next) => {
+    console.log(req.path, req.method)
+    next()
+})
 
-export default app
+//routes
+app.use('/api/items', itemRoutes)
+
+// connect to database
+mongoose.connect(process.env.GEIA_INV_DB_URI)
+    .then(() => {
+        //listen for requests
+        app.listen(process.env.PORT, () => {
+            console.log('connected to db & listening on port', process.env.PORT)
+        })
+    })
+    .catch((error) => {
+        console.log(error)
+    })
