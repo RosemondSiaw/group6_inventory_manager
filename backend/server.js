@@ -2,6 +2,7 @@ import express from "express"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
 import itemRoutes from './routes/items.js'
+import staffRoutes from './routes/staffs.js'
 
 dotenv.config()
 
@@ -19,6 +20,7 @@ app.use((req, res, next) => {
 
 //routes
 app.use('/api/items', itemRoutes)
+app.use('/api/staffs', staffRoutes)
 
 // connect to database
 mongoose.connect(process.env.GEIA_INV_DB_URI)

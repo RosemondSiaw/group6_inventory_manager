@@ -18,6 +18,7 @@ import LogTable from '../../components/Tables/LogTable';
 import ViewAllLogs from '../../components/buttons/ViewAllLogs';
 
 const Home = () => {
+    
     return (
         <div className="home layout-container">
             <Sidebar />
@@ -38,15 +39,15 @@ const Home = () => {
                 <div className="table-header">
                     <h1><FormattedMessage id="dashboard.table.header.tile" defaultMessage="Items Log" /></h1>
                     <div className="dashboard-buttons">
-                        <ViewAllLogs />
+                            <ViewAllLogs />
                     </div>
                 </div>
                 <div className="table-container">
-                    <LogTable />
-                </div>
+                                <LogTable />
+                            </div>
             </div>
         </div>
-    )
+                            )
 }
 
 export default Home

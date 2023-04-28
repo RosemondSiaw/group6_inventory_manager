@@ -20,6 +20,7 @@ const IndeterminateCheckbox = React.forwardRef(
 )
 
 function AllItemsTable() {
+
   const data = React.useMemo(
 
     () => [
