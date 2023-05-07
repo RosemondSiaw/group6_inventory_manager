@@ -27,11 +27,11 @@ const getStaff = async (req, res) => {
 
 // CREATE a new staff
 const createStaff = async (req, res) => {
-    const { firstName, lastName, email, phone, jobTitle, userStatus, shippingAddress, location, tenantId} = req.body
+    const { staffId, firstName, lastName, email, phone, jobTitle, userStatus, shippingAddress, location, tenantId} = req.body
 
     // add doc to db
     try {
-        const staff = await StaffModel.create({firstName, lastName, email, phone, jobTitle, userStatus, shippingAddress, location, tenantId })
+        const staff = await StaffModel.create({staffId, firstName, lastName, email, phone, jobTitle, userStatus, shippingAddress, location, tenantId })
         res.status(200).json(staff)
     } catch (error) {
         res.status(400).json({ error: error.message })

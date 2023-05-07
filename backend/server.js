@@ -3,6 +3,8 @@ import mongoose from "mongoose"
 import dotenv from "dotenv"
 import itemRoutes from './routes/items.js'
 import staffRoutes from './routes/staffs.js'
+import userRoutes from './routes/users.js'
+import orderRoutes from './routes/orders.js'
 
 dotenv.config()
 
@@ -21,13 +23,15 @@ app.use((req, res, next) => {
 //routes
 app.use('/api/items', itemRoutes)
 app.use('/api/staffs', staffRoutes)
+app.use('/api/users', userRoutes)
+app.use('/api/orders', orderRoutes)
 
 // connect to database
 mongoose.connect(process.env.GEIA_INV_DB_URI)
     .then(() => {
         //listen for requests
         app.listen(process.env.PORT, () => {
-            console.log('connected to db & listening on port', process.env.PORT)
+            console.log('connected to inventory db & listening on port', process.env.PORT)
         })
     })
     .catch((error) => {

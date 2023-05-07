@@ -2,11 +2,7 @@ import mongoose from "mongoose"
 
 const Schema = mongoose.Schema
 
-const staffSchema = new Schema({
-    staffId: {
-        type: String,
-        required: true
-    },
+const userSchema = new Schema({
     firstName: {
         type: String,
         required: true
@@ -29,16 +25,20 @@ const staffSchema = new Schema({
     },
     userStatus: {
         type: String,
+        required: false
     },
-    shippingAddress: {
+    userPermission: {
         type: String,
+        required: false
     },
     location: {
         type: String,
+        required: false
     },
     tenantId: {
         type: mongoose.ObjectId,
+        required: true
     },
 }, { timestamps: true })
 
-export default mongoose.model('Staff', staffSchema)
+export default mongoose.model('User', userSchema)

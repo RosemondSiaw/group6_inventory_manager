@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useTable, usePagination, useRowSelect } from 'react-table'
 import './css/Tables.scss'
 
@@ -20,26 +20,26 @@ const IndeterminateCheckbox = React.forwardRef(
 )
 
 function UsersTable() {
-  const data = React.useMemo(
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
 
-    () => [
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-      {
-        col1: 'SYR64867-5322',
-        col2: 'Carla',
-        col3: 'Jamison',
-        col4: 'Surgeon',
-        col5: 'carla.jamison@randomemail.com',
-        col6: '+2331112223333',
-        col7: 'Active',
-        col8: '(863) 699-2591 651 Concert Dr Lake Placid, Florida(FL), 33852',
-      },
-
-    ],
-
-    []
-
-  )
+  async function fetchData() {
+    try {
+      const response = await fetch('/api/staffs'); // Replace with your API endpoint
+      const data = await response.json();
+      setData(data);
+      setIsLoading(false);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setIsLoading(false);
+      setIsError(true);
+    }
+  }
 
   const columns = React.useMemo(
 
@@ -49,7 +49,7 @@ function UsersTable() {
 
         Header: 'Staff ID',
 
-        accessor: 'col1', // accessor is the "key" in the data
+        accessor: 'staffId', // accessor is the "key" in the data
 
       },
 
@@ -57,7 +57,7 @@ function UsersTable() {
 
         Header: 'First Name',
 
-        accessor: 'col2',
+        accessor: 'firstName',
 
       },
 
@@ -65,7 +65,7 @@ function UsersTable() {
 
         Header: 'Last Name',
 
-        accessor: 'col3',
+        accessor: 'lastName',
 
       },
 
@@ -73,7 +73,7 @@ function UsersTable() {
 
         Header: 'Job Title',
 
-        accessor: 'col4',
+        accessor: 'jobTitle',
 
       },
 
@@ -81,7 +81,7 @@ function UsersTable() {
 
         Header: 'Email',
 
-        accessor: 'col5',
+        accessor: 'email',
 
       },
 
@@ -89,7 +89,7 @@ function UsersTable() {
 
         Header: 'Telephone Number',
 
-        accessor: 'col6',
+        accessor: 'phone',
 
       },
 
@@ -97,7 +97,7 @@ function UsersTable() {
 
         Header: 'Status',
 
-        accessor: 'col7',
+        accessor: 'userStatus',
 
       },
 
@@ -105,7 +105,15 @@ function UsersTable() {
 
         Header: 'Shipping Adress',
 
-        accessor: 'col8',
+        accessor: 'shippingAddress',
+
+      },
+
+      {
+
+        Header: 'Location',
+
+        accessor: 'location',
 
       },
 
@@ -166,6 +174,15 @@ function UsersTable() {
       ])
     }
   )
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (isError) {
+    return <div>Error fetching data</div>;
+  }
+
   return (
     <>
       {/*
