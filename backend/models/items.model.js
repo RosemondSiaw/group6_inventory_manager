@@ -72,11 +72,9 @@ const itemSchema = new Schema({
     volume: {
         metric: {
             type: String,
-            required: false
         },
         volumeNum: {
             type: Number,
-            required: false
         }
     },
     weight: {

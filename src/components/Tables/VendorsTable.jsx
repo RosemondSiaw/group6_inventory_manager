@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useTable, usePagination, useRowSelect } from 'react-table'
 import './css/Tables.scss'
 
@@ -20,26 +20,26 @@ const IndeterminateCheckbox = React.forwardRef(
 )
 
 function VendorsTable() {
-  const data = React.useMemo(
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
 
-    () => [
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-      {
-        col1: '5322',
-        col2: 'Johnson & Johnson',
-        col3: 'Koffi Lyman',
-        col4: '+2337776665555',
-        col5: 'koffi.ly@johnson-johnson.com',
-        col6: 'Due on receipt',
-        col7: '151 North Pendergast Circle Rockville, MD 20850',
-        col8: 'Active'
-      },
-
-    ],
-
-    []
-
-  )
+  async function fetchData() {
+    try {
+      const response = await fetch('/api/vendors'); // Replace with your API endpoint
+      const data = await response.json();
+      setData(data);
+      setIsLoading(false);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setIsLoading(false);
+      setIsError(true);
+    }
+  }
 
   const columns = React.useMemo(
 
@@ -49,7 +49,7 @@ function VendorsTable() {
 
         Header: 'Vendor ID',
 
-        accessor: 'col1', // accessor is the "key" in the data
+        accessor: '_id', // accessor is the "key" in the data
 
       },
 
@@ -57,7 +57,7 @@ function VendorsTable() {
 
         Header: 'Vendor Name',
 
-        accessor: 'col2', // accessor is the "key" in the data
+        accessor: 'name', // accessor is the "key" in the data
 
       },
 
@@ -65,7 +65,13 @@ function VendorsTable() {
 
         Header: 'Contact Person',
 
-        accessor: 'col3',
+        accessor: 'contactPerson',
+
+        Cell: row => (
+          <span>
+            {row.value.firstName} {row.value.lastName}
+          </span>
+        ),
 
       },
 
@@ -73,7 +79,7 @@ function VendorsTable() {
 
         Header: 'Phone',
 
-        accessor: 'col4',
+        accessor: 'contactPerson.phone',
 
       },
 
@@ -81,7 +87,7 @@ function VendorsTable() {
 
         Header: 'Email',
 
-        accessor: 'col5',
+        accessor: 'contactPerson.email',
 
       },
 
@@ -89,7 +95,7 @@ function VendorsTable() {
 
         Header: 'Payment Terms',
 
-        accessor: 'col6',
+        accessor: 'paymentTerm',
 
       },
 
@@ -97,7 +103,7 @@ function VendorsTable() {
 
         Header: 'Billing Address',
 
-        accessor: 'col7',
+        accessor: 'billingAddress',
 
       },
 
@@ -105,17 +111,9 @@ function VendorsTable() {
 
         Header: 'Status',
 
-        accessor: 'col8',
+        accessor: 'status',
 
-      },
-
-      {
-
-        Header: 'Status',
-
-        accessor: 'col9',
-
-      },
+      }
 
     ],
 
@@ -174,6 +172,15 @@ function VendorsTable() {
       ])
     }
   )
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (isError) {
+    return <div>Error fetching data</div>;
+  }
+
   return (
     <>
       {/*

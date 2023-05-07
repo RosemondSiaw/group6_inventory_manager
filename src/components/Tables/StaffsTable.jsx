@@ -95,14 +95,6 @@ function UsersTable() {
 
       {
 
-        Header: 'Status',
-
-        accessor: 'userStatus',
-
-      },
-
-      {
-
         Header: 'Shipping Adress',
 
         accessor: 'shippingAddress',
@@ -114,6 +106,14 @@ function UsersTable() {
         Header: 'Location',
 
         accessor: 'location',
+
+      },
+
+      {
+
+        Header: 'Status',
+
+        accessor: 'userStatus',
 
       },
 

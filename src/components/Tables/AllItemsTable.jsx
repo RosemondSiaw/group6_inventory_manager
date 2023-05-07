@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useTable, usePagination, useRowSelect } from 'react-table'
 import './css/Tables.scss'
 
@@ -21,36 +21,26 @@ const IndeterminateCheckbox = React.forwardRef(
 
 function AllItemsTable() {
 
-  const data = React.useMemo(
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
 
-    () => [
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-      {
-        col1: 'SYR64867-5322',
-        col2: '752378594',
-        col3: 'Walmeck Prenium 10oz syringe',
-        col4: 'Bany Laboratory Supplies',
-        col5: 'Kiron',
-        col6: ' Syringes are made of medical-grade plastic materials that are durable and sterile.',
-        col7: 'Acute care',
-        col8: 'XOF 250.00',
-        col9: '200',
-        col10: 'XOF 50,000.00',
-        col11: '50',
-        col12: '14',
-        col13: '100',
-        col14: 'In stock',
-        col15: '60 ml',
-        col16: '17.09 x 9.45 x 6.46 inches; 4.21 Pounds',
-        col17: 'Location 1',
-        col18: '10/03/2023'
-      },
-
-    ],
-
-    []
-
-  )
+  async function fetchData() {
+    try {
+      const response = await fetch('/api/items'); // Replace with your API endpoint
+      const data = await response.json();
+      setData(data);
+      setIsLoading(false);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setIsLoading(false);
+      setIsError(true);
+    }
+  }
 
   const columns = React.useMemo(
 
@@ -60,7 +50,7 @@ function AllItemsTable() {
 
         Header: 'ID',
 
-        accessor: 'col1', // accessor is the "key" in the data
+        accessor: '_id', // accessor is the "key" in the data
 
       },
 
@@ -68,7 +58,7 @@ function AllItemsTable() {
 
         Header: 'Barcode',
 
-        accessor: 'col2',
+        accessor: 'barcode',
 
       },
 
@@ -76,7 +66,7 @@ function AllItemsTable() {
 
         Header: 'Name',
 
-        accessor: 'col3',
+        accessor: 'name',
 
       },
 
@@ -84,14 +74,14 @@ function AllItemsTable() {
 
         Header: 'Vendor',
 
-        accessor: 'col4',
+        accessor: 'vendor',
 
       },
       {
 
         Header: 'Manufacturer',
 
-        accessor: 'col5',
+        accessor: 'manufacturer',
 
       },
 
@@ -99,7 +89,7 @@ function AllItemsTable() {
 
         Header: 'Description',
 
-        accessor: 'col6',
+        accessor: 'description',
 
       },
 
@@ -107,7 +97,7 @@ function AllItemsTable() {
 
         Header: 'Category',
 
-        accessor: 'col7',
+        accessor: 'category',
 
       },
 
@@ -115,7 +105,7 @@ function AllItemsTable() {
 
         Header: 'Cost per item',
 
-        accessor: 'col8',
+        accessor: 'costPerItem',
 
       },
 
@@ -123,7 +113,7 @@ function AllItemsTable() {
 
         Header: 'Stock quantity',
 
-        accessor: 'col9',
+        accessor: 'stockQuantity',
 
       },
 
@@ -131,7 +121,7 @@ function AllItemsTable() {
 
         Header: 'Inventory value',
 
-        accessor: 'col10',
+        accessor: 'inventoryValue',
 
       },
 
@@ -139,7 +129,7 @@ function AllItemsTable() {
 
         Header: 'Reorder level',
 
-        accessor: 'col11',
+        accessor: 'reorderLevel',
 
       },
 
@@ -147,7 +137,7 @@ function AllItemsTable() {
 
         Header: 'Days per reorder',
 
-        accessor: 'col12',
+        accessor: 'daysPerReorder',
 
       },
 
@@ -155,23 +145,35 @@ function AllItemsTable() {
 
         Header: 'Item reorder quantity',
 
-        accessor: 'col13',
+        accessor: 'reorderQuantity',
 
       },
 
       {
 
-        Header: 'Status',
+        Header: 'Weight',
 
-        accessor: 'col14',
+        accessor: 'weight',
+
+        Cell: row => (
+          <span>
+            {row.value.weightNum} {row.value.unit}
+          </span>
+        ),
 
       },
-
+ 
       {
 
         Header: 'Item volume',
 
-        accessor: 'col15',
+        accessor: 'volume',
+
+        Cell: row => (
+          <span>
+            {row.value.volumeNum} {row.value.metric}
+          </span>
+        ),
 
       },
 
@@ -179,15 +181,30 @@ function AllItemsTable() {
 
         Header: 'Item Dimensions',
 
-        accessor: 'col16',
+        accessor: 'dimensions',
+
+        Cell: row => (
+          <span>
+            {row.value.length} x {row.value.width} x {row.value.height} {row.value.unit}
+          </span>
+        ),
 
       },
+  
 
       {
 
         Header: 'Location',
 
-        accessor: 'col17',
+        accessor: 'location',
+
+      },
+
+      {
+
+        Header: 'Status',
+
+        accessor: 'status',
 
       },
 
@@ -195,7 +212,7 @@ function AllItemsTable() {
 
         Header: 'Last update',
 
-        accessor: 'col18',
+        accessor: 'updatedAt',
 
       },
 
@@ -256,6 +273,15 @@ function AllItemsTable() {
       ])
     }
   )
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (isError) {
+    return <div>Error fetching data</div>;
+  }
+
   return (
     <>
       {/*

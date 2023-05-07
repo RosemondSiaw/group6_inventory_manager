@@ -5,6 +5,7 @@ import itemRoutes from './routes/items.js'
 import staffRoutes from './routes/staffs.js'
 import userRoutes from './routes/users.js'
 import orderRoutes from './routes/orders.js'
+import vendorRoutes from './routes/vendors.js'
 
 dotenv.config()
 
@@ -25,6 +26,7 @@ app.use('/api/items', itemRoutes)
 app.use('/api/staffs', staffRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/orders', orderRoutes)
+app.use('/api/vendors', vendorRoutes)
 
 // connect to database
 mongoose.connect(process.env.GEIA_INV_DB_URI)

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useTable, usePagination, useRowSelect } from 'react-table'
 import './css/Tables.scss'
 
@@ -20,27 +20,26 @@ const IndeterminateCheckbox = React.forwardRef(
 )
 
 function OrdersTable() {
-  const data = React.useMemo(
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
 
-    () => [
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-      {
-
-        col1: 'ORD38632',
-        col2: '28/02/2023',
-        col3: 'Sammy Kpeglo',
-        col4: 'Jeannette Dogbe',
-        col5: '$56',
-        col6: '28/02/2023 ',
-        col7: 'Clinique Des Roses',
-        col8: ' Delivered'
-      },
-
-    ],
-
-    []
-
-  )
+  async function fetchData() {
+    try {
+      const response = await fetch('/api/orders'); // Replace with your API endpoint
+      const data = await response.json();
+      setData(data);
+      setIsLoading(false);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setIsLoading(false);
+      setIsError(true);
+    }
+  }
 
   const columns = React.useMemo(
 
@@ -50,7 +49,7 @@ function OrdersTable() {
 
         Header: 'ID',
 
-        accessor: 'col1', // accessor is the "key" in the data
+        accessor: '_id', // accessor is the "key" in the data
 
       },
 
@@ -58,7 +57,7 @@ function OrdersTable() {
 
         Header: 'Created',
 
-        accessor: 'col2',
+        accessor: 'createdAt',
 
       },
 
@@ -66,7 +65,7 @@ function OrdersTable() {
 
         Header: 'Staff',
 
-        accessor: 'col3',
+        accessor: 'staffId',
 
       },
 
@@ -74,7 +73,7 @@ function OrdersTable() {
 
         Header: 'Fulfilled By',
 
-        accessor: 'col4',
+        accessor: 'userId',
 
       },
 
@@ -82,7 +81,15 @@ function OrdersTable() {
 
         Header: 'Total Order Value',
 
-        accessor: 'col5',
+        accessor: 'totalOrderValue',
+
+      },
+
+      {
+
+        Header: 'Expected Delivery Date',
+
+        accessor: 'expectedDeliveryDate',
 
       },
 
@@ -90,7 +97,7 @@ function OrdersTable() {
 
         Header: 'Delivery Date',
 
-        accessor: 'col6',
+        accessor: 'delivered',
 
       },
 
@@ -98,16 +105,28 @@ function OrdersTable() {
 
         Header: 'Delivery Location',
 
-        accessor: 'col7',
+        accessor: 'shippingAddress',
 
       },
 
-      
+
       {
 
         Header: 'Status',
 
-        accessor: 'col8',
+        accessor: 'orderStatus',
+
+      },
+
+      {
+
+        Header: 'Urgent',
+
+        accessor: 'urgent',
+
+        Cell: row => (
+          <span>{row.value ? 'Yes' : 'No'}</span>
+        ),
 
       },
 
@@ -168,6 +187,15 @@ function OrdersTable() {
       ])
     }
   )
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (isError) {
+    return <div>Error fetching data</div>;
+  }
+
   return (
     <>
       {/*
