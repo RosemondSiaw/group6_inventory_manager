@@ -1,3 +1,7 @@
+#Credentials to access the app in development mode:
+Username: othnielamd@gmail.com
+Password: GR7ZhPiWUgY86tv
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
